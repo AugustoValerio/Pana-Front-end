@@ -58,6 +58,11 @@ body {
 	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+footer{
+	background-color: #1f1f1f;
+	color: #FFF;
+}
+
 nav ul{
 	list-style-type: none;
     text-align: center;
@@ -77,13 +82,17 @@ nav ul li a{
 
 }
 
+#content{
+	background-color: #f4f4f4;
+}
+
 #nav_one{
 	background:url(../images/nav_bg.jpg);
 	height: 70px;
 }
 
 #nav_two{
-	background: #1f1f1f;
+	background-color: #1f1f1f;
 	color: #fff;
 	height: 100px;
 }
@@ -92,6 +101,12 @@ nav ul li a{
 	float: left;
 	margin-right: 10px;
 	width: 230px;
+}
+
+.box{
+	background-color: #fff;
+	border: #000 solid 1px;
+	margin-top: 50px;
 }
 
 .container {
