@@ -63,6 +63,14 @@ table {
 	background: url('../images/header_bg.png') repeat-x;
 }
 
+#content {
+	background-color: #f4f4f4;
+}
+
+#footer {
+	background-color: #1f1f1f;
+}
+
 
 
 
