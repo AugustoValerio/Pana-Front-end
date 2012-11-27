@@ -13,7 +13,7 @@
   
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="resources/css/style.css">
-
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
           <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
@@ -34,7 +34,12 @@
              </ul>
            </nav>
        <div class="main_search">
-             search
+             <span id="bustype"><a href="#">Business</a><a href="#">Industrial</a></span>
+             <form role="search" method="get" id="searchform-head" action="#">
+             	<label for="s" class="assistive-text">Search Here</label>
+             	<input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
+             	<input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+             </form>
            </div>
        </div>
      </header><!--header-->

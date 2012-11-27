@@ -61,16 +61,76 @@ table {
 
 #header {
 	background: url('../images/header_bg.png') repeat-x;
+	height:115px;
 }
-
-
-
-
-
-
-
-
-
+#logo {
+	float: left;
+}
+.main_menu {
+	float: left;
+	margin-left: 170px;
+}
+.main_menu li {
+	float: left;
+	margin: 30px 15px;
+	line-height: 0;
+}
+.main_menu li a {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+#bustype {
+	float: right;
+	display: block;
+}
+#bustype a{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 10px 0px;
+	padding: 0 7px;
+}
+#bustype a:first-child {
+	border-right: 1px solid #767676;
+}
+#searchform-head {
+	clear: right;
+	float: right;
+}
+#searchform-head label {
+	display: none;
+}
+#searchform-head input[type=text] {
+	background: #373737;
+	border: 0;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	color: #b5b5b9;
+	font-weight: bold;
+	border-bottom: 1px solid #5c5c5c;
+	width: 125px;
+	padding: 4px 0 3px 5px;
+}
+#searchform-head input[type=submit] {
+	background: url('../images/btn-nav-global-search.png') no-repeat left top;
+	border: 0;
+	width: 27px;
+	height: 28px;
+	font-size: 1px;
+	text-indent: -99999px;
+	margin-left: -24px;
+	float: right;
+	position: relative;
+}
 
 
 
