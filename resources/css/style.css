@@ -57,48 +57,12 @@ table {
 	margin: 0 auto;
 }
 
-footer{
-	background-color: #1f1f1f;
-	color: #FFF;
-}
-
-nav ul{
-	list-style-type: none;
-    text-align: center;
-    background-color: red;
-}
-
 /* === Style === */
 
 #header {
 	background: url('../images/header_bg.png') repeat-x;
 }
 
-#content{
-	background-color: #f4f4f4;
-}
-
-#nav_one{
-	background:url(../images/nav_bg.jpg);
-	height: 70px;
-}
-
-#nav_two{
-	background-color: #1f1f1f;
-	color: #fff;
-	height: 100px;
-}
-
-.box{
-	background-color: #fff;
-	border: #000 solid 1px;
-	margin-top: 50px;
-}
-
-.container {
-	margin:0 auto;
-	width:950px;
-}
 
 
 
