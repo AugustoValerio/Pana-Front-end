@@ -28,7 +28,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+	font-size: 75%;
 	line-height: 1;
+	color:#222;
+	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 ol, ul {
@@ -57,7 +60,38 @@ table {
 	margin: 0 auto;
 }
 
+.block-2{
+	font-size: 13px;
+	float:left;
+	line-height: 1.5em;
+	margin-top: 35px;
+	padding-left: 5px;
+	padding-right: 40px;
+	width: 400px;
+}
+
+.block-4{
+	font-size: 13px;
+	float: left;
+	line-height: 1.5em;
+	margin-top: 35px;
+	padding-left: 5px;
+	width: 217px;
+}
+
+.clear{
+	clear: both;
+}
+
 /* === Style === */
+
+h3{
+	font-size:1.5em;
+	line-height:1;
+	margin-bottom:1em;
+	font-weight: normal;
+	color: 111;
+}
 
 #header {
 	background: url('../images/header_bg.png') repeat-x;
@@ -185,6 +219,10 @@ table {
 	-webkit-box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     padding: 35px;
+}
+
+#featured{
+	margin-top: 35px;
 }
 
 
