@@ -50,14 +50,14 @@ table {
 	border-spacing: 0;
 }
 
-/* style */
+/* === Structure === */
 
-body {
-	font-size:75%;
-	color:#222;
-	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+.container {
+	width: 960px;
+	margin: 0 auto;
 }
 
+<<<<<<< HEAD
 footer{
 	background-color: #1f1f1f;
 	color: #FFF;
@@ -68,20 +68,18 @@ nav ul{
     text-align: center;
     background-color: red;
 }
+=======
+>>>>>>> html  update
 
-nav ul li{
-	float: left;
-    height: 45px;
-    width: 100px;
+/* === Style === */
+
+#header {
+	background: url('../images/header_bg.png') repeat-x;
 }
 
-nav ul li a{
-	color: #000;
-	display: block;
-    text-decoration: none;
 
-}
 
+<<<<<<< HEAD
 #content{
 	background-color: #f4f4f4;
 }
@@ -96,13 +94,12 @@ nav ul li a{
 	color: #fff;
 	height: 100px;
 }
+=======
 
-#logo{
-	float: left;
-	margin-right: 10px;
-	width: 230px;
-}
+>>>>>>> html  update
 
+
+<<<<<<< HEAD
 .box{
 	background-color: #fff;
 	border: #000 solid 1px;
@@ -113,18 +110,47 @@ nav ul li a{
 	margin:0 auto;
 	width:950px;
 }
+=======
+>>>>>>> html  update
 
-.main_menu{
-	float: left;
-	margin-right: 10px;
-	width: 470px;
-}
 
-.main_search{
-	float: left;
-	margin-right: 0px;
-	width: 230px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
