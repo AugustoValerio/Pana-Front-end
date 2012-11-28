@@ -90,8 +90,25 @@ table {
 }
 /* === Style === */
 
-h3, h5{
+a{
+	color: #00a0c6;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
 	color: 111;
+}
+
+h1{
+	font-size:3em;
+	line-height:1;
+	margin-bottom:0.5em;
+}
+
+h2{
+	font-size:2em;
+	margin-bottom:0.75em;
 }
 
 h3{
@@ -99,6 +116,12 @@ h3{
 	line-height:1;
 	font-weight: normal;
 	margin-bottom:1em;
+}
+
+h4{
+	font-size:1.2em;
+	line-height:1.25;
+	margin-bottom:1.25em;
 }
 
 h5{
@@ -314,6 +337,17 @@ h5{
 	margin-top: 17px;
 	text-align: center;
 }
+
+#moreproducts{
+	margin-top: 20px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.link{
+	margin: 30px;
+}
+
 
 
 
