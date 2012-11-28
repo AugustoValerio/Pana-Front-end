@@ -64,30 +64,42 @@ table {
 	display: block;
 	clear: both;
 }
-.row .block-2 {
+.row .block2 {
 	float: left;
 	margin: 17px 6.5% 17px 0;
 	width: 45%;
 }
-.row .block-2:last-child {
+.row .block2:last-child {
 	margin-right: 0;
 }
-.row .block-3 {
+.row .block3 {
 	float: left;
-	margin: 17px 4% 17px;
-	width: 24%;
+	margin: 17px 1% 17px;
+	width: 31%;
 }
-.row .block-3:first-child {
-	margin-left: 64px;
+.row .block3:first-child {
+	/*margin-left: 64px;*/
 }
-.row .block-4{
+.row .block4{
 	float: left;
 	margin: 17px 6.5% 17px 0;
 	width: 20%;
 }
-.row .block-4:last-child {
+.row .block4:last-child {
 	margin-right: 0;
 }
+
+.row .block3_out{
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 5px 0 0 0;
+	width: 33%;
+}
+.row .block3_out img{
+	margin-bottom: 10px;
+}
+
+
 /* === Style === */
 
 a{
@@ -175,7 +187,7 @@ h5{
 #bustype a:first-child {
 	border-right: 1px solid #767676;
 }
-#searchform-head {
+#searchformhead {
 	clear: right;
 	float: right;
 	width: 130px;
@@ -184,10 +196,10 @@ h5{
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
 }
-#searchform-head label {
+#searchformhead label {
 	display: none;
 }
-#searchform-head input[type=text] {
+#searchformhead input[type=text] {
 	background: transparent;
 	border: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -198,7 +210,7 @@ h5{
 	padding: 4px 0 3px 5px;
 	margin: 0;
 }
-#searchform-head input[type=submit] {
+#searchformhead input[type=submit] {
 	background: url('../images/btn-nav-global-search.png') no-repeat left top;
 	border: 0;
 	width: 27px;
@@ -239,6 +251,20 @@ h5{
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
 	background: #00a0c6;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 7px 14px;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 12px;
+}
+.blackbot {
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	background: #000;
 	display: inline-block;
 	text-transform: uppercase;
 	padding: 7px 14px;
@@ -336,18 +362,19 @@ h5{
 }
 
 #popularproducts{
+
 	margin-top: 17px;
 	text-align: center;
 }
 
 #moreproducts{
 	margin-top: 20px;
-	margin-left: 10px;
 	text-align: center;
 }
 
 .link{
 	margin: 30px;
+	text-align: center;
 }
 
 
