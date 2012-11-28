@@ -136,7 +136,7 @@ h5{
 }
 #header {
 	background: url('../images/header_bg.png') repeat-x;
-	height:115px;
+	height:70px;
 }
 #logo {
 	float: left;
@@ -210,6 +210,8 @@ h5{
 }
 #breadcrumbs {
 	clear: both;
+	background: #000;
+	height:45px;
 }
 #brand {
 	font-family: 'Open Sans Condensed', sans-serif;
