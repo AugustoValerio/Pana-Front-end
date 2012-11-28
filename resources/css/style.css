@@ -67,7 +67,7 @@ table {
 .block-3 {
 	float: left;
 	margin: 17px 1% 17px 0;
-	width: 33%;
+	width: 32%;
 }
 .block-4{
 	float: left;
@@ -77,13 +77,23 @@ table {
 
 /* === Style === */
 
+h3, h5{
+	color: 111;
+}
+
 h3{
 	font-size:1.5em;
 	line-height:1;
-	margin-bottom:1em;
 	font-weight: normal;
-	color: 111;
+	margin-bottom:1em;
 }
+
+h5{
+	font-size:1em;
+	font-weight:bold;
+	margin-bottom:1.5em;
+}
+
 #content p {
 	font-size: 13px;
 	line-height: 1.5em;
@@ -285,6 +295,11 @@ h3{
 
 #featured{
 	margin-top: 35px;
+}
+
+#popularproducts{
+	margin-top: 17px;
+	text-align: center;
 }
 
 
