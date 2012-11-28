@@ -59,28 +59,20 @@ table {
 	width: 960px;
 	margin: 0 auto;
 }
-
 .block-2{
-	font-size: 13px;
-	float:left;
-	line-height: 1.5em;
-	margin-top: 35px;
-	padding-left: 5px;
-	padding-right: 40px;
-	width: 400px;
-}
-
-.block-4{
-	font-size: 13px;
 	float: left;
-	line-height: 1.5em;
-	margin-top: 35px;
-	padding-left: 5px;
-	width: 217px;
+	margin: 17px 1% 17px 0;
+	width: 48%;
 }
-
-.clear{
-	clear: both;
+.block-3 {
+	float: left;
+	margin: 17px 1% 17px 0;
+	width: 33%;
+}
+.block-4{
+	float: left;
+	margin: 17px 1% 17px 0;
+	width: 24%;
 }
 
 /* === Style === */
@@ -92,7 +84,10 @@ h3{
 	font-weight: normal;
 	color: 111;
 }
-
+#content p {
+	font-size: 13px;
+	line-height: 1.5em;
+}
 #header {
 	background: url('../images/header_bg.png') repeat-x;
 	height:115px;
@@ -241,6 +236,14 @@ h3{
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.haschild {
+	padding-right: 13px;
+	background: url('../images/icn-footer-arrow-down.gif') no-repeat right center;
+}
+#langswitch {
+	padding-left: 30px;
+	background: url('../images/img-flag-us.gif') no-repeat left center;
 }
 #box{
 	background-color: #fff;
