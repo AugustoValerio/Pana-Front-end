@@ -1,4 +1,4 @@
-/* reset */
+/* === Reset === */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -355,6 +355,7 @@ h5{
 	-webkit-box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     padding: 35px;
+    margin-top: 60px;
 }
 
 #featured{
@@ -376,6 +377,30 @@ h5{
 	margin: 30px;
 	text-align: center;
 }
+
+#paginator{
+	border: #dfdfdf solid 1px;
+	height: 105px;
+	float: right;
+	-webkit-box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-top: -70px;
+    margin-right: -35px;
+    margin-bottom: 30px;
+}
+
+#paginator .arrow{
+	background: url('../images/paginator_bg.jpg');
+	float: left;
+	height: 85px;
+	padding: 10px;
+	width: 200px;
+}
+
+#pagleft{
+	border-right: #dfdfdf solid 1px;
+}
+
 
 
 
