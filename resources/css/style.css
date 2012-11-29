@@ -275,6 +275,24 @@ h5{
 	text-decoration: none;
 	line-height: 12px;
 }
+
+.whitebot {
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	background: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 7px 14px;
+	color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 12px;
+	border: #bbbbbb solid 1px;
+}
+
+
 #content {
 	background-color: #f4f4f4;
 	padding-top: 30px;
@@ -397,8 +415,29 @@ h5{
 	width: 200px;
 }
 
+#paginator .arrow a{
+	display: block;
+}
+
+#paginator .arrow img {
+	margin-bottom: 5px;
+}
+
 #pagleft{
 	border-right: #dfdfdf solid 1px;
+}
+
+#pagright img{
+	margin-left: 160px;
+}
+
+#article_title{
+	float: left;
+	width: 400px;
+}
+
+#article_title a{
+	margin-bottom: 10px;
 }
 
 
