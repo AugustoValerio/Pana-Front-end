@@ -1,0 +1,33 @@
+#spotlight_content{
+	background: url('../images/product/banner_bg3.jpg') repeat-x;
+	height: 460px;
+}
+
+#spotlight{
+	/*background: url('../images/product/img_main.jpg') no-repeat ;*/
+	height: 460px;
+}
+
+#spotlight_image{
+	background: url('../images/product/img_main3.jpg') no-repeat ;
+	text-align: center;
+}
+
+.spotlight_text{
+	color: #fff;
+	text-align: left;
+
+}
+
+#spotlight_title{
+	font-size: 30px;
+	width: 220px;
+	margin-bottom: 20px;
+	padding-top: 80px;
+}
+
+#spotlight_text{
+	font-size: 15px;
+	width: 220px;
+	margin-bottom: 20px;
+}
