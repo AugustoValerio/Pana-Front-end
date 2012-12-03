@@ -511,6 +511,73 @@ h5{
 	width: 115px;
 }
 
+/* == pinnig nav == */
+
+#pining_nav{
+	background-color: #1f1f1f;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.nav-container nav{
+	background-color: #1f1f1f;
+	height: 40px;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 500;
+	height: 40px;
+	width: 960px;
+}
+ 
+.nav-container nav li {
+	display: inline;
+	list-style: none;
+	margin-left: -5px;
+}
+
+.nav-container nav li a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 25px;
+	width: 6em; 
+	text-align: center;
+	padding: .5em 1em;
+	height: 25px;
+}
+
+.nav-container nav li a:hover,
+.nav-container nav li a.selected {
+	color: #fff;
+	background: #00a0c6;
+}
+
+.sticky {
+	position: fixed;
+	top: 15px;
+	background-color: #1f1f1f;
+	height: 40px;
+	width: 100%;
+	
+	animation:thedrop 1s 1;
+	-moz-animation:thedrop 1s 1;
+	-webkit-animation:thedrop 1s 1;
+}
+
+.sticky .nav-above {
+	position: absolute;
+	top:-15px;
+	left:1em;
+	right:1em;
+	height:15px;
+}
+
+
+
+    
+
 
 
 
