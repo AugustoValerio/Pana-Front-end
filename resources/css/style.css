@@ -393,7 +393,7 @@ h5{
 }
 
 #featured{
-	margin-top: 35px;
+	/*margin-top: 35px;*/
 }
 
 #popularproducts{
@@ -544,6 +544,10 @@ h5{
 	display: inline;
 	list-style: none;
 	margin-left: -5px;
+}
+
+.nav-container nav ul {
+	/*height: 24px;*/
 }
 
 .nav-container nav li a {
