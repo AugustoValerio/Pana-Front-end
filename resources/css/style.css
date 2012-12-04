@@ -56,7 +56,7 @@ table {
 /* === Structure === */
 
 .container {
-	max-width: 960px;
+	width: 960px;
 	margin: 0 auto;
 }
 .row:after{
@@ -606,6 +606,9 @@ h5{
 	img {
 		max-width: 100%;
 		height: auto;
+	}
+	.container {
+		width: auto;
 	}
 	.main_search {
   		display: none;
