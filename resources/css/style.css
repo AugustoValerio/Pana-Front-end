@@ -32,6 +32,7 @@ body {
 	line-height: 1;
 	color:#222;
 	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+	min-width: 960px;
 }
 
 ol, ul {
@@ -147,8 +148,12 @@ h5{
 	line-height: 1.5em;
 }
 #header {
-	background: url('../images/header_bg.png') repeat-x;
-	height:70px;
+	background: #474747 url('../images/header_bg.png') repeat-x;
+}
+#header:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 #logo {
 	float: left;
@@ -168,6 +173,57 @@ h5{
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
+}
+.toggleMenu {
+    display:  none;
+}
+.nav {
+     *zoom: 1;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+	float: left;
+}
+.nav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
 }
 #bustype {
 	float: right;
@@ -673,6 +729,10 @@ h5{
 /** Media Queries **/
 
 @media screen and (max-width: 640px) {
+	body {
+		width: auto;
+		min-width: auto;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
@@ -680,10 +740,34 @@ h5{
 	.container {
 		width: auto;
 	}
+	.toggleMenu {
+		float: right;
+		line-height: 0;
+	}
+	.active {
+	     display: block;
+	 }
+	 .nav > li {
+	     float: none;
+	 }
+	 .nav > li > .parent {
+	     background-position: 95% 50%;
+	 }
+	 .nav li li .parent {
+	     background-image: url("images/downArrow.png");
+	     background-repeat: no-repeat;
+	     background-position: 95% 50%;
+	 }
+	 .nav ul {
+	     display: block;
+	     width: 100%;
+	 }
+	.nav > li.hover > ul , .nav li li.hover ul {
+	     position: static;
+	 }
 	.main_search {
   		display: none;
 	}
-
 /*	.feature_block {
 		margin-top: 20px;
 		width: 100%;
@@ -692,9 +776,66 @@ h5{
 	.feature_slide{
 		height: 1000px;
 	}
-
+	#browsebar {
+		padding-right: 2%;
+	}
+	#brand {
+		margin: 0 2%;
+	}
+	#footnav {
+		float: none;
+		text-align: center;
+		margin: 0 5%
+	}
+	#footnav li {
+	margin: 30px 3% 25px;
+	font-size: 10px;
+	float: none;
+	display: inline-block;
+	}
+	li#foothelp {
+		float: left;
+		clear: left;
+		display: block;
+	}
+	li#langswitch {
+		float: right;
+		clear: right;
+		display: block;
+	}
+	#fotlogo {
+		clear: left;
+	}
+	#socialsink {
+		clear: none;
+		float: right;
+	}
+	#socialsink li {
+		margin: 17px 5px;
+	}
+	#footlinks li {
+	display: block;
+	margin:0;
+	padding: 11px 0;
+	}
+	#busi {
+		float: left;
+		margin-left: 15px !important;
+	}
+	#indu {
+		float: right;
+		margin-right: 15px !important;
+	}
 }
-
+@media screen and (max-width: 320px) {
+	#logo {
+		width: 50%;
+	}
+	.toggleMenu img {
+		width: 81%;
+		float: right;
+	}
+}
 
 
     

@@ -31,14 +31,41 @@
      <header id="header">
          <div class="container">
           <img id="logo" src="resources/images/lgo-nav-global-panasonic.png" alt="Panasonic">
-          <a class="toggleMenu" href="#">Menu</a>
-          <ul class="nav">
+          <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
            <nav class="main_menu">
-             <ul>
-               <li><a href="#">Products</a></li>
-               <li><a href="#">Apps</a></li>
-               <li><a href="#">Support</a></li>
-               <li><a href="#">Store</a></li>
+             <ul class="nav">
+               <li><a href="#">Products</a>
+               		 <ul>
+	               		 <li><a href="#">Products</a></li>
+	               		 <li><a href="#">Apps</a></li>
+	               		 <li><a href="#">Support</a></li>
+	               		 <li><a href="#">Store</a></li>
+	                </ul>
+               </li>
+               <li><a href="#">Apps</a>
+               		<ul>
+	               		 <li><a href="#">Products</a></li>
+	               		 <li><a href="#">Apps</a></li>
+	               		 <li><a href="#">Support</a></li>
+	               		 <li><a href="#">Store</a></li>
+	                </ul>
+               </li>
+               <li><a href="#">Support</a>
+               		<ul>
+	               		 <li><a href="#">Products</a></li>
+	               		 <li><a href="#">Apps</a></li>
+	               		 <li><a href="#">Support</a></li>
+	               		 <li><a href="#">Store</a></li>
+	                </ul>
+               </li>
+               <li><a href="#">Store</a>
+               		<ul>
+	               		 <li><a href="#">Products</a></li>
+	               		 <li><a href="#">Apps</a></li>
+	               		 <li><a href="#">Support</a></li>
+	               		 <li><a href="#">Store</a></li>
+	                </ul>
+               </li>
              </ul>
            </nav>
        <div class="main_search">
@@ -201,17 +228,20 @@
      
      <footer id="footer">
 		<div class="container">
-        	<img id="fotlogo" src="resources/images/lgo-footer-panasonic.png" alt="panasonic" />
+        	
         	
         	<nav id="footnav">
         		<ul>
         			<li><a href="#">About Panasonic</a></li>
         			<li><a href="#">Club Panasonic</a></li>
         			<li><a class="haschild" href="#">Site Map</a></li>
-        			<li><a class="haschild" href="#">Need Help</a></li>
+        			<li id="foothelp"><a class="haschild" href="#">Need Help</a></li>
         			<li id="langswitch"><a class="haschild" href="#">English</a></li>
         		</ul>
         	</nav>
+        	
+        	<img id="fotlogo" src="resources/images/lgo-footer-panasonic.png" alt="panasonic" />
+        	
         	<ul id="socialsink">
         		<li><a href="#"><img src="resources/images/icn-footer-facebook.gif" alt="facebook"/></a></li>
         		<li><a href="#"><img src="resources/images/icn-footer-youtube.gif" alt="youtube"/></a></li>
@@ -224,8 +254,8 @@
 			<li><a href="#">Panasonic direct store policies</a></li>
 			<li><a href="#">Privacy Policy</a></li>
 			<li><a href="#">Terms of Service</a></li>
-			<li><a href="#">business website</a></li>
-			<li><a href="#">industrial website</a></li>
+			<li id="busi"><a href="#">business website</a></li>
+			<li id="indu"><a href="#">industrial website</a></li>
 		</ul>
 		<div class="clearfix"></div>
      </footer><!--footer-->
@@ -239,7 +269,7 @@
       $("#featured").orbit();
     });
     </script> 
-
+	<script type="text/javascript" src="resources/js/script.js"></script>
 </body>
 
 </html>
