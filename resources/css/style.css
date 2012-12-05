@@ -725,6 +725,24 @@ h5{
 	text-decoration: none;
 }
 
+#contentInspirations{
+	text-align: center;
+}
+
+#inspirations h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.inspiration_slide p{
+	font-size: 14px;
+	float: left;
+	text-align: left;
+	margin-left: 40px;
+	width: 45%;
+	
+}
+
 
 /** Media Queries **/
 
@@ -768,13 +786,9 @@ h5{
 	.main_search {
   		display: none;
 	}
-/*	.feature_block {
-		margin-top: 20px;
-		width: 100%;
-	}*/
 
-	.feature_slide{
-		height: 1000px;
+	#inspirations{
+		width: 100%;
 	}
 	#browsebar {
 		padding-right: 2%;

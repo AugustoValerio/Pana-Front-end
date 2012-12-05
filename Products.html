@@ -107,7 +107,7 @@
             <li><a href="#overview" class="selected">Overview</a></li>
             <li><a href="#feature">Features</a></li>
             <li><a href="#specifications">Specifications</a></li>
-            <li><a href="#chapter-4">Chapter IV</a></li>
+            <li><a href="#inspirations">Inspirations</a></li>
             <li><a href="#chapter-5">Chapter V</a></li>
          
           </ul>
@@ -209,31 +209,33 @@
         </section>
       </div>
 
-      <section id="chapter-2" class="container">
-    
-      <img src="resources/images/dino.jpg" alt="http://christinewisnieski.com/Brody-Charlie" /><!--http://christinewisnieski.com/Brody-Charlie-->
+      <div id="section_inspirations">
+        <section id="inspirations" class="container">
+          <h2>See how people are already using it</h2>
+          <div id="contentInspirations">
 
-      <div class="column left">
-        <h1>Chapter II</h1>
-        <p>I got into my old rags and my sugar-hogshead again, and was free and satisfied.  But Tom Sawyer he hunted me up and said he was going to start a band of robbers, and I might join if I would go back to the widow and be respectable.  So I went back.</p>
+            <div class="inspiration_slide">
+              <img src="resources/images/product/photo_1.png">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
 
-        <p>The widow she cried over me, and called me a poor lost lamb, and she called me a lot of other names, too, but she never meant no harm by it. She put me in them new clothes again, and I couldn't do nothing but sweat and sweat, and feel all cramped up.  Well, then, the old thing commenced again.  The widow rung a bell for supper, and you had to come to time. </p>
-        
-          
-      </div><!--end column-->
+            <div class="inspiration_slide">
+              <img src="resources/images/product/photo_1.png">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
 
-      <div class="column right">
+            <div class="inspiration_slide">
+              <img src="resources/images/product/photo_1.png">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
       
-        <p>When you got to the table you couldn't go right to eating, but you had to wait for the widow to tuck down her head and grumble a little over the victuals, though there warn't really anything the matter with them,—that is, nothing only everything was cooked by itself. In a barrel of odds and ends it is different; things get mixed up, and the juice kind of swaps around, and the things go better.</p>
-        
-        <p>After supper she got out her book and learned me about Moses and the Bulrushers, and I was in a sweat to find out all about him; but by and by she let it out that Moses had been dead a considerable long time; so then I didn't care no more about him, because I don't take no stock in dead people.</p>
-          
-      </div><!--end column-->
-      
-      <hr />
-      
-    </section>
-    
     <section id="chapter-3" class="container">
     
       <img src="resources/images/dino.jpg" alt="http://christinewisnieski.com/Brody-Charlie" /><!--http://christinewisnieski.com/Brody-Charlie-->
@@ -334,8 +336,14 @@
         timer: false,
         directionalNav: false,
         bullets: true
-        // stackOnSmall: true
       });
+
+       $('#contentInspirations').orbit({
+        fluid: '14x10',
+        timer: false,
+        bullets: true,
+        directionalNav: false
+       });
    });
 </script>
 
