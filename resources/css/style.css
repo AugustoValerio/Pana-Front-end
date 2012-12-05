@@ -740,7 +740,34 @@ h5{
 	text-align: left;
 	margin-left: 40px;
 	width: 45%;
-	
+}
+
+#reviewsContent{
+
+}
+
+#reviewsContent nav{
+	background: url('../images/product/review_title_bg2.png') center no-repeat;
+	height: 39px;
+	width: 736px;
+	background-color: #ebebeb;
+	margin-bottom: 50px;
+}
+
+#reviewsContent nav ul {
+
+	padding-left: 13%;
+}
+
+#reviewsContent li{
+	float: left;
+	margin: 12px 0 0 40px;
+}
+
+#reviewsContent li a {
+	text-decoration: none;
+	color: #9f9f9f;
+	font-size: 16px;
 }
 
 
