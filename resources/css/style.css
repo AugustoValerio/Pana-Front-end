@@ -597,11 +597,16 @@ h5{
 }
 
 #section_bg{
-	background-color: #e1e1e1;
+	background: #e1e1e1 url('../images/product_background.jpg') no-repeat scroll;
+	/*background-position: center;*/
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 #section_feature {
-	background: #e1e1e1 url('../images/product/product_features_bg.jpg') repeat-x;
+	/*background: #e1e1e1 url('../images/product/product_features_bg.jpg') repeat-x;*/
 }
 
 .feature_slide{
@@ -609,7 +614,6 @@ h5{
 }
 
 .feature_block {
-	
 	width: 240px;
 	float: left;
 	
@@ -622,6 +626,47 @@ h5{
 .feature_block p{
 	width: 200px;
 	font-size: 14px;
+}
+
+#specificationsContent{
+	/*background: #ebebeb;*/
+	margin-bottom: 50px;
+}
+
+#specification_img{
+	float: left;
+	width: 600px;
+}
+
+#specification_block{
+	float: left;
+	text-align: center;
+	margin-top: 10%;
+	width: 350px;
+}
+
+#specification_block p{
+	color: #656565;
+	margin: -15px 0 15px 0;
+}
+
+#specification_block img{
+	margin-bottom: 20px;
+}
+
+#specificationbot{
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: url('../images/product/specifications_bottom.png') no-repeat;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 48px;
+	margin-left: 45px;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 
