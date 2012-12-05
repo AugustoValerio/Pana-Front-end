@@ -12,24 +12,17 @@
   <title>Product</title>
   
   <!-- Included CSS Files -->
-  <link rel="stylesheet" type="text/css" href="resources/css/orbit-1.2.3.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/orbit.css">
   <link rel="stylesheet" href="resources/css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
   <!-- Include JS Files -->
   <script type="text/javascript" src="resources/js/jquery.js" ></script>
-  <script type="text/javascript" src="resources/js/jquery.orbit-1.2.3.js" ></script>
+  
 
 <!--[if lt IE 9]>
           <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-  <script type="text/javascript">
-      $(window).load(function() {
-        $('#featured').orbit({
-          timer: false
-        });
-      });
-  </script>
 
 </head>
 <body>
@@ -45,7 +38,7 @@
                <li><a href="#">Store</a></li>
              </ul>
            </nav>
-            <div class="main_search">
+       <div class="main_search">
              <span id="bustype"><a href="#">Business</a><a href="#">Industrial</a></span>
              <form role="search" method="get" id="searchformhead" action="#">
              	<label for="s" class="assistivetext">Search Here</label>
@@ -55,11 +48,11 @@
            </div>
        </div>
      </header><!--header-->
-     <div id="breadcrumbs">
-     	<div class="container clearfix">
-     		<p id="brand"><span>Lumix</span><sup>®</sup><span>TS4</span><a class="barshare" href="#">Share</a></p>
-     		<p id="globnav"><span>$369.</span><sup>99</sup> <a href="#"  class="blubot">Shop</a></p>
-     	</div>
+     <div id="browsebar">
+      <div class="container clearfix">
+        <p id="brand"><span>Lumix</span><sup>®</sup>  cameras</p>
+        <p id="browsebot"><a href="#"  class="blubot">Browse all cameras</a></p>
+      </div>
      </div>  
      
      <div id="spotlight_content">
@@ -80,7 +73,7 @@
         <nav class="container">
           <ul>
          
-            <li><a href="#chapter-1" class="selected" chapter="1">Chapter I</a></li>
+            <li><a href="#feature" class="selected" chapter="1">Features</a></li>
             <li><a href="#chapter-2" chapter="2">Chapter II</a></li>
             <li><a href="#chapter-3" chapter="3">Chapter III</a></li>
             <li><a href="#chapter-4" chapter="4">Chapter IV</a></li>
@@ -93,27 +86,95 @@
      </div>
      
     <!-- sections -->
+
+    <div id="section_bg">
+
+      <div id="section_feature">
+        <section id="feature" class="container">
+      
+          <div id="featuredContent">
+
+            <div class="feature_slide">
+              <div class="feature_block">
+                <img src="resources/images/product/feature_1.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_2.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_3.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_4.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+            </div>
+
+            <div class="feature_slide">
+              <div class="feature_block">
+                <img src="resources/images/product/feature_1.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_2.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_3.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_4.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+            </div>
+
+            <div class="feature_slide">
+              <div class="feature_block">
+                <img src="resources/images/product/feature_1.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_2.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_3.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+              <div class="feature_block">
+                <img src="resources/images/product/feature_4.png">
+                <h3>Waterproof</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              </div>
+            </div>
+
+          </div>
+        
+        </section>
+      </div>
+
+      <div id="section_test">his</div>
+
+    </div>
+
+
     <div class="container">
-      <section id="chapter-1">
-    
-      <img src="resources/images/dino.jpg" alt="http://christinewisnieski.com/Brody-Charlie" /><!--http://christinewisnieski.com/Brody-Charlie-->
-
-      <div class="column left">
-          
-        <h1>Chapter I</h1>
-        <p>You don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly. There was things which he stretched, but mainly he told the truth. That is nothing. I never seen anybody but lied one time or another, without it was Aunt Polly, or the widow, or maybe Mary. Aunt Polly&mdash;Tom's Aunt Polly, she is&mdash;and Mary, and the Widow Douglas is all told about in that book, which is mostly a true book, with some stretchers, as I said before.</p>
-          
-      </div><!--end column-->
-
-      <div class="column right">
       
-        <p>Now the way that the book winds up is this:  Tom and me found the money that the robbers hid in the cave, and it made us rich.  We got six thousand dollars apiece—all gold.  It was an awful sight of money when it was piled up.  Well, Judge Thatcher he took it and put it out at interest, and it fetched us a dollar a day apiece all the year round—more than a body could tell what to do with.  The Widow Douglas she took me for her son, and allowed she would sivilize me; but it was rough living in the house all the time, considering how dismal regular and decent the widow was in all her ways; and so when I couldn't stand it no longer I lit out.</p>
-          
-      </div><!--end column-->
-      
-      <hr />
-      
-    </section>
     
     <section id="chapter-2">
     
@@ -228,6 +289,18 @@
 <script src="resources/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
 <script src="resources/js/waypoints.min.js" type="text/javascript"></script>
 <script src="resources/js/navbar.js" type="text/javascript"></script>
+<script src="resources/js/orbit.js" type="text/javascript"></script>
+<script type='text/javascript'>
+   $(window).load(function() {
+       $('#featuredContent').orbit({ 
+        fluid: '16x9',
+        timer: false,
+        directionalNav: false,
+        bullets: true
+        // stackOnSmall: true
+      });
+   });
+</script>
 
 </body>
 
