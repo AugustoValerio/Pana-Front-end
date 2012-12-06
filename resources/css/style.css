@@ -668,11 +668,16 @@ h5{
 .feature_slide{
 	padding-top: 30px; 
 }
-
+.feature_block:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .feature_block {
 	width: 193px !important;
 	float: left;
 	margin-left: 40px;
+	min-height: 400px;
 }
 .feature_block img{
 	margin-bottom: 10px;
