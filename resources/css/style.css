@@ -736,6 +736,7 @@ h5{
 
 .inspiration_slide{
 	text-align: center;
+	height: 600px;
 }
 
 .inspiration_slide img {
@@ -782,6 +783,7 @@ h5{
 
         margin: 0 0 30px 60px;
         width: 360px;
+        z-index: 200px;
       }
       .list_carousel ul {
         margin: 0;
