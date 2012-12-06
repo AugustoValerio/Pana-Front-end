@@ -734,11 +734,19 @@ h5{
 	margin-bottom: 40px;
 }
 
+.inspiration_slide{
+	text-align: center;
+}
+
+.inspiration_slide img {
+	margin: 10px 0 0 0;
+}
+
 .inspiration_slide p{
 	font-size: 14px;
 	float: left;
 	text-align: left;
-	margin-left: 40px;
+	margin: 0 0 20px 40px;
 	width: 45%;
 }
 
