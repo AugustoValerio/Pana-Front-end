@@ -666,11 +666,11 @@ h5{
 }
 
 .feature_slide{
-	margin-top: 70px;
+	padding-top: 30px; 
 }
 
 .feature_block {
-	width: 193px;
+	width: 193px !important;
 	float: left;
 	margin-left: 40px;
 }
@@ -837,12 +837,15 @@ h5{
 	.main_search {
   		display: none;
 	}
-
+	.caroufredsel_wrapper {
+		margin: 0 0 0 3% !important;
+	}
+	.feature_slide {
+		width: 70% !important;
+		margin: 0 15% !important;
+	}
 	.feature_block {
-    	margin-right: 1%;
-    	max-width: 250px;
-    	min-width: 193px;
-    	width: 100% !important;
+		margin: 0 1em;
 	}
 	#inspirations{
 		width: 100%;

@@ -149,7 +149,7 @@
               </div>
 
           </div>
-        
+        <ul class="pagi "></ul>
         </section>
       </div>
 
@@ -318,11 +318,11 @@
 
         });
         $('.feature_slide').carouFredSel({
-          scroll: 1,
+          scroll: { items: 1, easing: "linear" },
           width: '100%',
-          height: 'auto',
           responsive: true,
-          items: {visible: { min: 1, max: 4 } }
+          items: { visible: { min: 1, max: 4 } },
+          pagination: { container: ".pagi", keys: true }
         });
 
       });
