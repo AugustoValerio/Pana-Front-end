@@ -14,13 +14,15 @@
   <!-- Included CSS Files -->
   <link rel="stylesheet" type="text/css" href="resources/css/orbit.css">
   <link rel="stylesheet" href="resources/css/style.css">
+  <link type="text/css" rel="stylesheet" href="resources/css/raty.css"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
   <!-- Include JS Files -->
   <script type="text/javascript" src="resources/js/jquery.js" ></script>
+  <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
 
   <!--[if lt IE 9]>
-            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
 
 </head>
@@ -33,45 +35,45 @@
            <nav class="main_menu">
              <ul class="nav">
                <li><a href="#">Products</a>
-               		 <ul>
-	               		 <li><a href="#">Products</a></li>
-	               		 <li><a href="#">Apps</a></li>
-	               		 <li><a href="#">Support</a></li>
-	               		 <li><a href="#">Store</a></li>
-	                </ul>
+                   <ul>
+                     <li><a href="#">Products</a></li>
+                     <li><a href="#">Apps</a></li>
+                     <li><a href="#">Support</a></li>
+                     <li><a href="#">Store</a></li>
+                  </ul>
                </li>
                <li><a href="#">Apps</a>
-               		<ul>
-	               		 <li><a href="#">Products</a></li>
-	               		 <li><a href="#">Apps</a></li>
-	               		 <li><a href="#">Support</a></li>
-	               		 <li><a href="#">Store</a></li>
-	                </ul>
+                  <ul>
+                     <li><a href="#">Products</a></li>
+                     <li><a href="#">Apps</a></li>
+                     <li><a href="#">Support</a></li>
+                     <li><a href="#">Store</a></li>
+                  </ul>
                </li>
                <li><a href="#">Support</a>
-               		<ul>
-	               		 <li><a href="#">Products</a></li>
-	               		 <li><a href="#">Apps</a></li>
-	               		 <li><a href="#">Support</a></li>
-	               		 <li><a href="#">Store</a></li>
-	                </ul>
+                  <ul>
+                     <li><a href="#">Products</a></li>
+                     <li><a href="#">Apps</a></li>
+                     <li><a href="#">Support</a></li>
+                     <li><a href="#">Store</a></li>
+                  </ul>
                </li>
                <li><a href="#">Store</a>
-               		<ul>
-	               		 <li><a href="#">Products</a></li>
-	               		 <li><a href="#">Apps</a></li>
-	               		 <li><a href="#">Support</a></li>
-	               		 <li><a href="#">Store</a></li>
-	                </ul>
+                  <ul>
+                     <li><a href="#">Products</a></li>
+                     <li><a href="#">Apps</a></li>
+                     <li><a href="#">Support</a></li>
+                     <li><a href="#">Store</a></li>
+                  </ul>
                </li>
              </ul>
            </nav>
        <div class="main_search">
              <span id="bustype"><a href="#">Business</a><a href="#">Industrial</a></span>
              <form role="search" method="get" id="searchformhead" action="#">
-             	<label for="s" class="assistivetext">Search Here</label>
-             	<input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
-             	<input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+              <label for="s" class="assistivetext">Search Here</label>
+              <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
+              <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
              </form>
            </div>
        </div>
@@ -193,10 +195,9 @@
               </li>
             </ul>
             <div class="clearfix"></div>
+          </div>
         </section>
-      </div>
 
-      <div id="section_reviews">
         <section id="reviews" class="container">
           <div id="reviewsContent">
             <h2>What people think about it</h2>
@@ -207,10 +208,12 @@
                 <li><a href="#">WRITE A REVIEW</a></li>
               </ul>
             </nav>
+            <div id="score" data-rating="3"></div>
           </div>
         </section>
+
       </div>
-      
+
     <section id="chapter-3" class="container">
     
       <img src="resources/images/dino.jpg" alt="http://christinewisnieski.com/Brody-Charlie" /><!--http://christinewisnieski.com/Brody-Charlie-->
@@ -265,37 +268,37 @@
      <div class="container clearfix backtop">back to top</div>
      
      <footer id="footer">
-		<div class="container">
-        	
-        	
-        	<nav id="footnav">
-        		<ul>
-        			<li><a href="#">About Panasonic</a></li>
-        			<li><a href="#">Club Panasonic</a></li>
-        			<li><a class="haschild" href="#">Site Map</a></li>
-        			<li id="foothelp"><a class="haschild" href="#">Need Help</a></li>
-        			<li id="langswitch"><a class="haschild" href="#">English</a></li>
-        		</ul>
-        	</nav>
-        	
-        	<img id="fotlogo" src="resources/images/lgo-footer-panasonic.png" alt="panasonic" />
-        	
-        	<ul id="socialsink">
-        		<li><a href="#"><img src="resources/images/icn-footer-facebook.gif" alt="facebook"/></a></li>
-        		<li><a href="#"><img src="resources/images/icn-footer-youtube.gif" alt="youtube"/></a></li>
-        		<li><a href="#"><img src="resources/images/icn-footer-twitter.gif" alt="twitter"/></a></li>
-        		<li><a href="#"><img src="resources/images/icn-footer-rss.gif" alt="rss"/></a></li>
-        	</ul>
-		</div>
-		<p id="copyright" class="clearfix">Copyright © 2012 Panasonic Corporation of North America. All rights reserved.</p>
-		<ul id="footlinks">
-			<li><a href="#">Panasonic direct store policies</a></li>
-			<li><a href="#">Privacy Policy</a></li>
-			<li><a href="#">Terms of Service</a></li>
-			<li id="busi"><a href="#">business website</a></li>
-			<li id="indu"><a href="#">industrial website</a></li>
-		</ul>
-		<div class="clearfix"></div>
+    <div class="container">
+          
+          
+          <nav id="footnav">
+            <ul>
+              <li><a href="#">About Panasonic</a></li>
+              <li><a href="#">Club Panasonic</a></li>
+              <li><a class="haschild" href="#">Site Map</a></li>
+              <li id="foothelp"><a class="haschild" href="#">Need Help</a></li>
+              <li id="langswitch"><a class="haschild" href="#">English</a></li>
+            </ul>
+          </nav>
+          
+          <img id="fotlogo" src="resources/images/lgo-footer-panasonic.png" alt="panasonic" />
+          
+          <ul id="socialsink">
+            <li><a href="#"><img src="resources/images/icn-footer-facebook.gif" alt="facebook"/></a></li>
+            <li><a href="#"><img src="resources/images/icn-footer-youtube.gif" alt="youtube"/></a></li>
+            <li><a href="#"><img src="resources/images/icn-footer-twitter.gif" alt="twitter"/></a></li>
+            <li><a href="#"><img src="resources/images/icn-footer-rss.gif" alt="rss"/></a></li>
+          </ul>
+    </div>
+    <p id="copyright" class="clearfix">Copyright © 2012 Panasonic Corporation of North America. All rights reserved.</p>
+    <ul id="footlinks">
+      <li><a href="#">Panasonic direct store policies</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li id="busi"><a href="#">business website</a></li>
+      <li id="indu"><a href="#">industrial website</a></li>
+    </ul>
+    <div class="clearfix"></div>
      </footer><!--footer-->
 
 </div><!-- page -->
@@ -326,6 +329,14 @@
         });
 
       });
+
+    $('#score').raty({
+      score: function() {
+        return $(this).attr('data-rating');
+      },
+      path: 'resources/images/raty/img/'
+    });
+
   </script>
 
 <script type="text/javascript" src="resources/js/script.js"></script>
