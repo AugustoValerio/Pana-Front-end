@@ -682,21 +682,16 @@ h5{
 	font-size: 14px;
 }
 
-#specificationsContent{
-	/*background: #ebebeb;*/
-	margin-bottom: 50px;
-}
-
 #specification_img{
 	float: left;
-	width: 600px;
+	width: 62.5%;
 }
 
 #specification_block{
 	float: left;
 	text-align: center;
 	margin-top: 10%;
-	width: 350px;
+	width: 36.84210%;
 }
 
 #specification_block p{
@@ -734,7 +729,6 @@ h5{
 
 .inspiration_slide{
 	text-align: center;
-	height: 600px;
 }
 
 .inspiration_slide img {
@@ -745,7 +739,7 @@ h5{
 	font-size: 14px;
 	float: left;
 	text-align: left;
-	margin: 0 0 20px 40px;
+	margin: 0 0 1.25em 4.16666%;
 	width: 45%;
 }
 
@@ -778,28 +772,27 @@ h5{
 }
 
 .list_carousel {
-
-        margin: 0 0 30px 60px;
-        width: 360px;
-        z-index: 200px;
-      }
-      .list_carousel ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: block;
-   
-      }
-      .list_carousel li {
-        padding: 0;
-        margin: 6px;
-        display: block;
-        float: left;
-      }
-      .list_carousel.responsive {
-        width: auto;
-        margin-left: 0;
-      }
+    margin: 0 0 30px 60px;
+    width: 360px;
+    z-index: 200px;
+}
+.list_carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.list_carousel li {
+    padding: 0;
+    margin: 6px;
+    display: block;
+    float: left;
+    height: 650px;
+}
+.list_carousel.responsive {
+    width: auto;
+    margin-left: 0;
+}
 
 
 /** Media Queries **/
@@ -844,6 +837,7 @@ h5{
 	.main_search {
   		display: none;
 	}
+
 	.feature_block {
     	margin-right: 1%;
     	max-width: 250px;
@@ -852,6 +846,21 @@ h5{
 	}
 	#inspirations{
 		width: 100%;
+	}
+	.inspiration_slide{
+		height: auto;
+	}
+	#specifications{
+		/*background-color: #003471;*/
+	}
+	#specification_block{
+		float: none;
+	}
+	#specification_img{
+		float: none;
+	}
+	.list_carousel li {
+
 	}
 	#browsebar {
 		padding-right: 2%;
