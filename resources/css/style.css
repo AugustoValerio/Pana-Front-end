@@ -670,17 +670,15 @@ h5{
 }
 
 .feature_block {
-	width: 240px;
+	width: 193px;
 	float: left;
-	
+	margin-left: 40px;
 }
-
 .feature_block img{
 	margin-bottom: 10px;
 }
 
 .feature_block p{
-	width: 200px;
 	font-size: 14px;
 }
 
@@ -846,7 +844,12 @@ h5{
 	.main_search {
   		display: none;
 	}
-
+	.feature_block {
+    	margin-right: 1%;
+    	max-width: 250px;
+    	min-width: 193px;
+    	width: 100% !important;
+	}
 	#inspirations{
 		width: 100%;
 	}

@@ -121,10 +121,7 @@
 
       <div id="section_feature">
         <section id="feature" class="container">
-      
-          <div id="featuredContent">
-
-            <div class="feature_slide">
+            <div class="feature_slide row">
               <div class="feature_block">
                 <img src="resources/images/product/feature_1.png">
                 <h3>Waterproof</h3>
@@ -145,43 +142,11 @@
                 <h3>Waterproof</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-            </div>
-
-            <div class="feature_slide">
-              <div class="feature_block">
-                <img src="resources/images/product/feature_1.png">
-                <h3>Waterproof</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              </div>
-              <div class="feature_block">
-                <img src="resources/images/product/feature_2.png">
-                <h3>Waterproof</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              </div>
-              <div class="feature_block">
-                <img src="resources/images/product/feature_3.png">
-                <h3>Waterproof</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              </div>
               <div class="feature_block">
                 <img src="resources/images/product/feature_4.png">
                 <h3>Waterproof</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-            </div>
-
-            <div class="feature_slide">
-              <div class="feature_block">
-                <img src="resources/images/product/feature_1.png">
-                <h3>Waterproof</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              </div>
-              <div class="feature_block">
-                <img src="resources/images/product/feature_2.png">
-                <h3>Waterproof</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-              </div>
-            </div>
 
           </div>
         
@@ -390,6 +355,13 @@
               max: 2
             }
 
+        });
+        $('.feature_slide').carouFredSel({
+          scroll: 1,
+          width: '100%',
+          height: 'auto',
+          responsive: true,
+          items: {visible: { min: 1, max: 4 } }
         });
 
       });
