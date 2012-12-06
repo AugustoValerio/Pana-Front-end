@@ -770,6 +770,29 @@ h5{
 	font-size: 16px;
 }
 
+.list_carousel {
+
+        margin: 0 0 30px 60px;
+        width: 360px;
+      }
+      .list_carousel ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+   
+      }
+      .list_carousel li {
+        padding: 0;
+        margin: 6px;
+        display: block;
+        float: left;
+      }
+      .list_carousel.responsive {
+        width: auto;
+        margin-left: 0;
+      }
+
 
 /** Media Queries **/
 
