@@ -148,6 +148,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
               
+              
 
           </div>
         <div class="pagi nator"></div>
@@ -192,12 +193,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
-
-            <div class="pagi2 nator"></div>
-            <div class="clearfix"></div>
+            
 
           </div>
-
+<div class="pagi2 nator"></div>
           <div class="clearfix"></div>
 
         </section>
@@ -252,6 +251,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
                   <h4>John245 on Sept 15, 2012</h4>
                 </div>
+                
             </div>
             <div class="pagi3 nator"></div>
             <div class="clearfix"></div>
@@ -311,12 +311,10 @@
 
         //  Fuild layout, centering the items
         $('.inspiration_slide').carouFredSel({
-          scroll: 1,
+           scroll: { items: 1, easing: "linear" },
+          width: '100%',
           responsive: true,
-          visible: {
-              min: 1,
-              max: 2
-            },
+          items: { visible: { min: 1, max: 1 } },
           pagination: { container: ".pagi2", keys: true }
 
         });

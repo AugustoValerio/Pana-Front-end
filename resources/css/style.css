@@ -678,7 +678,7 @@ h5{
 }
 .feature_block {
 	width: 193px !important;
-	float: left;
+	display: inline-block;
 	margin-left: 40px;
 	min-height: 440px;
 }
@@ -741,18 +741,22 @@ h5{
 
 .inspiration_block {
 	float: left;
-	display: block;
 	text-align: center;
 	margin: 0 10px 0 10px;
+	min-height: 650px;
 }
 
 .inspiration_slide {
 	width: 100%;
 }
-
+.inspiration_block:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 .inspiration_block p{
 	font-size: 14px;
-	float: left;
+	display: inline-block;
 	text-align: left;
 	margin: 0 0 1.25em 4.16666%;
 	width: 45%;
@@ -801,6 +805,8 @@ h5{
 }
 .nator {
 	text-align: center;
+	width: 80%;
+	margin: 0 auto;
 }
 .nator a {
 	height: 5px;
@@ -811,6 +817,9 @@ h5{
 	background: #c1c1c1;
 	text-indent: -99999px;
 	border-right: 1px solid #fff;
+}
+.nator a:last-child{
+	border:0;
 }
 .nator .selected {
 	background: #2e2c2c;
@@ -825,8 +834,7 @@ h5{
 	width: 300px;
 	min-height: 250px;
 	padding: 0;
-	float: left;
-	display: block;
+	display: inline-block;
 	margin: 10px 0 10px 15px;
 }
 
@@ -908,11 +916,12 @@ h5{
   		display: none;
 	}
 	.caroufredsel_wrapper {
-		margin: 0 0 0 3% !important;
+		margin: 0!important;
 	}
 	.feature_slide {
 		width: 70% !important;
 		margin: 0 15% !important;
+		text-align: center !important;
 	}
 	.feature_block {
 		margin: 0 1em;
@@ -920,6 +929,7 @@ h5{
 	.review_slide {
 		width: 70% !important;
 		margin: 0 15% !important;
+		text-align: center !important;
 	}
 
 	#inspirations {
@@ -930,6 +940,9 @@ h5{
 	.inspiration_slide{
 		/*margin-left: -30px;*/
 
+	}
+	.inspiration_block {
+		min-height: 500px;
 	}
 	#specifications{
 		padding: 10% 2% 10% 2%;
