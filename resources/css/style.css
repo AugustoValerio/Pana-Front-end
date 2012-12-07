@@ -800,7 +800,7 @@ h5{
 }
 
 .review_block {
-	width: 300px !important;
+	width: 300px;
 	min-height: 250px;
 	padding: 0;
 	float: left;
@@ -894,6 +894,10 @@ h5{
 	}
 	.feature_block {
 		margin: 0 1em;
+	}
+	.review_slide {
+		width: 70% !important;
+		margin: 0 15% !important;
 	}
 	#inspirations{
 		width: 100%;
