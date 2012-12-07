@@ -229,6 +229,10 @@ h5{
 	float: right;
 	display: block;
 }
+#bustype li {
+	display: inline-block;
+	margin: 10px 0px;
+}
 #bustype a{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 12px;
@@ -237,10 +241,9 @@ h5{
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
-	margin: 10px 0px;
 	padding: 0 7px;
 }
-#bustype a:first-child {
+#bustype li:first-child {
 	border-right: 1px solid #767676;
 }
 #searchformhead {
@@ -677,7 +680,7 @@ h5{
 	width: 193px !important;
 	float: left;
 	margin-left: 40px;
-	min-height: 400px;
+	min-height: 440px;
 }
 .feature_block img{
 	margin-bottom: 10px;
