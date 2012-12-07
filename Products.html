@@ -170,30 +170,31 @@
         </section>
 
         <section id="inspirations" class="container">
+
           <h2>See how people are already using it</h2>
-          <div class="list_carousel responsive">
 
-            <ul id="contentInspirations">
-              <li class="inspiration_slide">
+          <div class="inspiration_slide">
+              <div class="inspiration_block">
                 <img src="resources/images/product/photo_1.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </li>
+              </div>
 
-              <li class="inspiration_slide">
+              <div class="inspiration_block">
                 <img src="resources/images/product/photo_1.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </li>
+              </div>
 
-              <li class="inspiration_slide">
+              <div class="inspiration_block">
                 <img src="resources/images/product/photo_1.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
+              </div>
           </div>
+
+          <div class="clearfix"></div>
+
         </section>
 
         <section id="reviews" class="container">
@@ -303,7 +304,7 @@
     $(function() {
 
         //  Fuild layout, centering the items
-        $('#contentInspirations').carouFredSel({
+        $('.inspiration_slide').carouFredSel({
           scroll: 1,
           responsive: true,
           visible: {

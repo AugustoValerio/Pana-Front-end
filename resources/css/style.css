@@ -730,24 +730,22 @@ h5{
 	text-decoration: none;
 }
 
-#contentInspirations{
-	text-align: center;
+#inspirations {
+	margin-bottom: 40px;
 }
 
 #inspirations h2 {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-.inspiration_slide{
+.inspiration_block {
+	float: left;
+	display: block;
 	text-align: center;
 }
 
-.inspiration_slide img {
-	margin: 10px 0 0 0;
-}
-
-.inspiration_slide p{
+.inspiration_block p{
 	font-size: 14px;
 	float: left;
 	text-align: left;
