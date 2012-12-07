@@ -121,7 +121,6 @@
 
     <div id="section_bg">
 
-      <div id="section_feature">
         <section id="feature" class="container">
             <div class="feature_slide row">
               <div class="feature_block">
@@ -153,7 +152,7 @@
           </div>
         <ul class="pagi "></ul>
         </section>
-      </div>
+
 
         <section id="specifications" class="container">
             <div id="specification_img"><img src="resources/images/product/lumix-1200.png"></div>
@@ -199,7 +198,7 @@
         </section>
 
         <section id="reviews" class="container">
-          <div id="reviewsContent">
+          <div id="reviewsContent" class="responsive_slide">
             <h2>What people think about it</h2>
             <nav>
               <ul>
@@ -208,7 +207,49 @@
                 <li><a href="#">WRITE A REVIEW</a></li>
               </ul>
             </nav>
-            <div id="score" data-rating="3"></div>
+            <h2>OVERAL</h2>
+            <div id="score" data-rating="3" class="score"></div>
+
+            <div class="review_slide">
+                <div class="review_block">
+                  <div data-rating="3" class="score"></div>
+                  <h3>"Lorem Ipsum"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+                <div class="review_block">
+                  <div class="score" data-rating="5"></div>
+                  <h3>"Lorem Ipsum Dolor Sit"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+                <div class="review_block">
+                  <div class="score" data-rating="3"></div>
+                  <h3>"Lorem Ipsum Dolor"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+                <div class="review_block">
+                  <div class="score" data-rating="2"></div>
+                  <h3>"Lorem Ipsum"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+                <div class="review_block">
+                  <div class="score" data-rating="1"></div>
+                  <h3>"Lorem Ipsum Dolor Sit"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+                <div class="review_block">
+                  <div class="score" data-rating="4"></div>
+                  <h3>"Lorem Ipsum Dolor"</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Elit, sed diam nonummy nibh euismod tincidunt.</p>
+                  <h4>John245 on Sept 15, 2012</h4>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
           </div>
         </section>
 
@@ -328,9 +369,17 @@
           pagination: { container: ".pagi", keys: true }
         });
 
+        $('.review_slide').carouFredSel({
+          scroll: { items: 3, easing: "linear" },
+          width: '100%',
+          responsive: true,
+          items: { visible: { min: 1, max: 3 } },
+          pagination: { container: ".pagi", keys: true }
+        });
+
       });
 
-    $('#score').raty({
+    $('.score').raty({
       score: function() {
         return $(this).attr('data-rating');
       },

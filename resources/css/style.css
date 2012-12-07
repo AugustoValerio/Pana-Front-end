@@ -613,10 +613,10 @@ h5{
 	font-weight: bold;
 	display: inline-block;
 	line-height: 25px;
-	width: 6em; 
+	width: 7em; 
 	text-align: center;
 	padding: .5em 1em;
-	height: 25px;
+	height: 27px;
 }
 
 .nav-container nav li a:hover,
@@ -757,7 +757,6 @@ h5{
 
 #reviewsContent{
 	width: 100%;
-	/*background-color: #003471;*/
 }
 
 #reviewsContent nav{
@@ -792,6 +791,30 @@ h5{
 
 #reviewsContent li a:hover {
 	color: #000;
+}
+
+.review_slide{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.review_block {
+	width: 300px !important;
+	min-height: 250px;
+	padding: 0;
+	float: left;
+	display: block;
+	margin: 10px 0 10px 15px;
+}
+
+.score{
+	margin: 10px 0 10px 0;
+}
+
+.responsive_slide {
+	width: auto;
+    margin-left: 0;
 }
 
 .list_carousel {
