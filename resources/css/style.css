@@ -743,6 +743,11 @@ h5{
 	float: left;
 	display: block;
 	text-align: center;
+	margin: 0 10px 0 10px;
+}
+
+.inspiration_slide {
+	width: 100%;
 }
 
 .inspiration_block p{
@@ -751,6 +756,10 @@ h5{
 	text-align: left;
 	margin: 0 0 1.25em 4.16666%;
 	width: 45%;
+}
+
+.inspiration_block img {
+	width: 100%;
 }
 
 #reviewsContent{
@@ -912,11 +921,15 @@ h5{
 		width: 70% !important;
 		margin: 0 15% !important;
 	}
-	#inspirations{
-		width: 100%;
+
+	#inspirations {
+		/*padding-left: -10px;
+		margin-left: -20px;*/
 	}
+	
 	.inspiration_slide{
-		height: auto;
+		/*margin-left: -30px;*/
+
 	}
 	#specifications{
 		padding: 10% 2% 10% 2%;
