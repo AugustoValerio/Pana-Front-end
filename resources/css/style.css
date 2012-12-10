@@ -883,17 +883,13 @@ section {
 	text-align: left;
 }
 
-/*#relatedContent div:first-child{
+#others {
 	text-align: center;
 }
 
-#relatedContent div:last-child h3, p{
-	text-align: left;
+.others_block p{
+	text-align: center;
 }
-
-.related_morebot.block2{
-	text-align: left;
-}*/
 
 .nator {
 	text-align: center;
