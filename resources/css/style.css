@@ -593,30 +593,29 @@ h5{
 	position: relative;
 	z-index: 500;
 	height: 40px;
-	width: 960px;
+	width: 100%;
 }
  
 .nav-container nav li {
 	display: inline;
 	list-style: none;
-	margin-left: -5px;
+	/*margin-left: -5px;*/
+	margin-left: -0.3em;
 }
 
 .nav-container nav ul {
-	/*height: 24px;*/
 }
 
 .nav-container nav li a {
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #fff;
 	font-weight: bold;
 	display: inline-block;
-	line-height: 25px;
 	width: 7em; 
 	text-align: center;
-	padding: .5em 1em;
-	height: 26px;
+	padding: 1em 1em;
+	height: 1.05em;
 }
 
 .nav-container nav li a:hover,
@@ -657,15 +656,15 @@ h5{
 
 #section_bg{
 	background: #e1e1e1 url('../images/product_background.jpg') no-repeat scroll;
-	/*background-position: center;*/
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
 
-#section_feature {
-	/*background: #e1e1e1 url('../images/product/product_features_bg.jpg') repeat-x;*/
+section {
+	background-color: #ebebeb;
+	border-bottom: #000 solid 2px;
 }
 
 .feature_slide{
@@ -688,10 +687,6 @@ h5{
 
 .feature_block p{
 	font-size: 14px;
-}
-
-#specifications {
-	padding: 5% 0 5% 0;
 }
 
 #specification_img{
@@ -728,10 +723,6 @@ h5{
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-#inspirations {
-	margin-bottom: 40px;
 }
 
 #inspirations h2 {
@@ -774,7 +765,6 @@ h5{
 	background: url('../images/product/review_title_bg2.png') center no-repeat;
 	height: 39px;
 	width: 76.66666%;
-	/*background-color: #ebebeb;*/
 	margin-bottom: 50px;
 	margin-left: 12%
 }
@@ -803,6 +793,108 @@ h5{
 #reviewsContent li a:hover {
 	color: #000;
 }
+
+.review_slide{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.review_block {
+	width: 300px;
+	min-height: 250px;
+	padding: 0;
+	display: inline-block;
+	margin: 10px 0 10px 15px;
+	text-align: left;
+}
+
+#demos h2, p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.demos_block {
+	float: left;
+	text-align: center;
+	margin: 0 10px 0 10px;
+	min-height: 650px;
+}
+
+.demos_slide {
+	width: 100%;
+}
+.demos_block:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.demos_block p{
+	font-size: 14px;
+	display: inline-block;
+	text-align: left;
+	margin: 0 0 1.25em 4.16666%;
+	width: 45%;
+}
+
+.demos_block img {
+	width: 100%;
+}
+
+#related nav{
+	background: url('../images/product/review_title_bg2.png') center no-repeat;
+	height: 39px;
+	width: 76.66666%;
+	margin-bottom: 50px;
+	margin-left: 12%
+}
+
+#related h2{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+#related nav ul {
+
+	padding-left: 12%;
+}
+
+#related nav ul li{
+	float: left;
+	/*margin: 12px 0 0 40px;*/
+	margin: 12px 0 0 5.43478%;
+}
+
+#related nav ul li a {
+	text-decoration: none;
+	color: #9f9f9f;
+	font-size: 16px;
+}
+
+#related nav ul li a:hover {
+	color: #000;
+}
+
+#related_img {
+	text-align: center;
+}
+
+#related_more h3, p{
+	text-align: left;
+}
+
+/*#relatedContent div:first-child{
+	text-align: center;
+}
+
+#relatedContent div:last-child h3, p{
+	text-align: left;
+}
+
+.related_morebot.block2{
+	text-align: left;
+}*/
+
 .nator {
 	text-align: center;
 	width: 80%;
@@ -824,54 +916,11 @@ h5{
 .nator .selected {
 	background: #2e2c2c;
 }
-.review_slide{
-	display: block;
-	margin: 0;
-	padding: 0;
-}
 
-.review_block {
-	width: 300px;
-	min-height: 250px;
-	padding: 0;
-	display: inline-block;
-	margin: 10px 0 10px 15px;
-}
 
 .score{
 	margin: 10px 0 10px 0;
 }
-
-.responsive_slide {
-	width: auto;
-    margin-left: 0;
-}
-
-.list_carousel {
-    margin: 0 0 30px 60px;
-    width: 360px;
-    z-index: 200;
-}
-.list_carousel ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: block;
-}
-.list_carousel li {
-    padding: 0;
-    margin: 6px;
-    display: block;
-    float: left;
-    height: 650px;
-}
-.list_carousel.responsive {
-    width: auto;
-    margin-left: 0;
-}
-
-
-
 
 /** Media Queries **/
 
@@ -915,6 +964,9 @@ h5{
 	.main_search {
   		display: none;
 	}
+	#pining_nav{
+		display: none;
+	}
 	.caroufredsel_wrapper {
 		margin: 0!important;
 	}
@@ -955,6 +1007,14 @@ h5{
 	#reviewsContent li a {
 		font-size: 1em;
 	}
+
+	#related nav li a{
+		font-size: 1em;
+	}
+
+	#related nav ul li a {
+	font-size: 1em;
+}
 
 	#browsebar {
 		padding-right: 2%;
