@@ -702,6 +702,7 @@ section {
 }
 
 #specification_block p{
+	text-align: center;
 	color: #656565;
 	margin: -15px 0 15px 0;
 }
@@ -768,15 +769,15 @@ section {
 	margin-bottom: 50px;
 	margin-left: 12%
 }
-
+/*
 #data_score h2{
 	text-align: center;
 	margin-bottom: 20px;
-}
+}*/
 
-#score {
+/*#score {
 	margin: 0 auto;
-}
+}*/
 
 #reviewsContent nav ul {
 
