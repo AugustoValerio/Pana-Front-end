@@ -125,10 +125,11 @@ h2{
 }
 
 h3{
-	font-size:1.5em;
-	line-height:1;
-	font-weight: normal;
+	font-size:20px;
+	line-height:24px;
 	margin-bottom:1em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 
 h4{
@@ -143,9 +144,10 @@ h5{
 	margin-bottom:1.5em;
 }
 
-#content p {
-	font-size: 13px;
-	line-height: 1.5em;
+.content p {
+	font-size: 12px;
+	line-height: 17px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 #header {
 	background: #474747 url('../images/header_bg.png') repeat-x;
@@ -569,6 +571,9 @@ h5{
 	height: 41px;
 	width: 115px;
 }
+#demos h3 {
+	text-align: center;
+}
 
 /* == pinnig nav == */
 
@@ -684,9 +689,8 @@ section {
 .feature_block img{
 	margin-bottom: 10px;
 }
-
-.feature_block p{
-	font-size: 14px;
+#specifications {
+	padding: 5% 0 5% 0;
 }
 
 #specification_img{
@@ -725,10 +729,13 @@ section {
 	font-weight: bold;
 	text-decoration: none;
 }
+#inspirations {
+	margin-bottom: 117px;
+}
 
-#inspirations h2 {
+#inspirations h3 {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 }
 
 .inspiration_block {
@@ -747,7 +754,6 @@ section {
 	clear: both;
 }
 .inspiration_block p{
-	font-size: 14px;
 	display: inline-block;
 	text-align: left;
 	margin: 0 0 1.25em 4.16666%;
@@ -765,35 +771,35 @@ section {
 #reviewsContent nav{
 	background: url('../images/product/review_title_bg2.png') center no-repeat;
 	height: 39px;
-	width: 76.66666%;
 	margin-bottom: 50px;
-	margin-left: 12%
 }
-/*
-#data_score h2{
+#reviewsContent h3 {
 	text-align: center;
-	margin-bottom: 20px;
-}*/
-
-/*#score {
-	margin: 0 auto;
-}*/
-
+	margin-bottom: 60px;
+}
+#reviewsContent h4 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #858585;
+	font-size: 11px;
+	margin: 0;
+}
+>>>>>>> CSS tweaks
 #reviewsContent nav ul {
-
-	padding-left: 13%;
+	text-align: center;
 }
 
 #reviewsContent li{
-	float: left;
-	/*margin: 12px 0 0 40px;*/
-	margin: 12px 0 0 5.43478%;
+	display: inline-block;
+	margin: 15px;
 }
 
 #reviewsContent li a {
 	text-decoration: none;
-	color: #9f9f9f;
-	font-size: 16px;
+	color: #a8a8a8;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
 }
 
 #reviewsContent li a:hover {
@@ -924,8 +930,8 @@ section {
 }
 
 
-.score{
-	margin: 10px 0 10px 0;
+#score{
+	margin: 0 auto 80px;
 }
 
 /** Media Queries **/
