@@ -769,8 +769,13 @@ section {
 	margin-left: 12%
 }
 
-#reviewsContent h2 {
+#data_score h2{
 	text-align: center;
+	margin-bottom: 20px;
+}
+
+#score {
+	margin: 0 auto;
 }
 
 #reviewsContent nav ul {
@@ -889,6 +894,10 @@ section {
 
 .others_block p{
 	text-align: center;
+}
+
+.others_block h3 {
+	margin: 20px 0 20px 0;
 }
 
 .nator {
