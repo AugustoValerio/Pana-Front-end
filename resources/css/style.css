@@ -907,6 +907,19 @@ section {
 	margin: 20px 0 20px 0;
 }
 
+#support_downloads p{
+	margin: 20px 0 0 0;
+}
+
+#support_downloads h3 {
+	margin-top: 20px;
+}
+
+#everylumix a{
+	line-height: 30px;
+}
+
+
 .nator {
 	text-align: center;
 	width: 80%;
