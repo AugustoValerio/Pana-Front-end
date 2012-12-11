@@ -27,8 +27,9 @@
 </head>
 <body>
 <div id="page">
-     <header id="header">
-         <div class="container">
+    <header id="header">
+
+        <div class="container">
           <img id="logo" src="resources/images/lgo-nav-global-panasonic.png" alt="Panasonic">
           <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
            <nav class="main_menu">
@@ -67,36 +68,40 @@
                </li>
              </ul>
            </nav>
-       <div class="main_search">
-             <ul id="bustype"><li><a href="#">Business</a></li><li><a href="#">Industrial</a></li></ul>
-             <form role="search" method="get" id="searchformhead" action="#">
-              <label for="s" class="assistivetext">Search Here</label>
-              <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
-              <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
-             </form>
-           </div>
-       </div>
-     </header><!--header-->
-     <div id="browsebar">
+
+           <div class="main_search">
+              <ul id="bustype"><li><a href="#">Business</a></li><li><a href="#">Industrial</a></li></ul>
+                <form role="search" method="get" id="searchformhead" action="#">
+                  <label for="s" class="assistivetext">Search Here</label>
+                  <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
+                  <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+                </form>
+          </div>
+
+        </div>
+
+    </header><!--header-->
+
+    <div id="browsebar">
       <div class="container clearfix">
         <p id="brand"><span>Lumix</span><sup>®</sup>  cameras</p>
         <p id="browsebot"><a href="#"  class="blubot">Browse all cameras</a></p>
       </div>
-     </div>  
-  <div class="content">     
-     <section id="#overview">
-        <div id="spotlight_content">
-          <div id="spotlight_image">
-            <div class="container spotlight_text" id="spotlight">
-              <div>
-                <div id="spotlight_title">Go Where The Action Is.</div>
-                <div id="spotlight_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, the LUMIX® TS4 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-                <a href="#" id="spotlightbot">Explore</a>
-              </div>
+    </div>
+
+  <div class="content">  
+
+    <div id="overview_bg">
+      <section id="overview" class="container">
+            <div id="overview_block">
+              <h3>Go Where The Action Is.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, the LUMIX® TS4 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <a href="#" id="spotlightbot">Explore</a>
             </div>
-          </div>
-         </div>
-     </section>
+            <div id="overview_img"><img src="resources/images/product/overview_img.jpg"></div>
+            <div class="clearfix"></div>
+      </section>
+    </div>
      
      <!-- pining nav -->
      <div id="pining_nav" class="nav-container">
@@ -347,8 +352,8 @@
             </div>
           </div>
           <div id="support_contact">
-            <div class="support_number">Contact Us <br><h2>1-800-405-0652</h2></div>
-            <div class="support_links">
+            <div id="support_number">Contact Us <br><h2>1-800-405-0652</h2></div>
+            <div id="support_links">
               <a href="#">Live Chat</a><br>
               <a href="#">Email</a><br>
               <a href="#">Facebook</a><br>
