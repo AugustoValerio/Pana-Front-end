@@ -757,11 +757,32 @@ section {
 	width: 100%;
 }
 
-#reviewsContent nav{
+.transparent_menu {
+	width: 100%;
 	background: url('../images/product/review_title_bg2.png') center no-repeat;
-	height: 39px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
+
+.transparent_menu li {
+	display: inline-block;
+	margin: 1em 1.6666% 1em 1.6666%;
+}
+
+.transparent_menu ul {
+	text-align: center;
+}
+
+.transparent_menu li a {
+	text-decoration: none;
+	color: #a8a8a8;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.transparent_menu li a:hover {
+	color: #000;
+}
+
 #reviewsContent h3 {
 	text-align: center;
 	margin-bottom: 60px;
@@ -772,27 +793,6 @@ section {
 	color: #858585;
 	font-size: 11px;
 	margin: 0;
-}
->>>>>>> CSS tweaks
-#reviewsContent nav ul {
-	text-align: center;
-}
-
-#reviewsContent li{
-	display: inline-block;
-	margin: 15px;
-}
-
-#reviewsContent li a {
-	text-decoration: none;
-	color: #a8a8a8;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 13px;
-	font-weight: bold;
-}
-
-#reviewsContent li a:hover {
-	color: #000;
 }
 
 .review_slide{
@@ -842,38 +842,9 @@ section {
 	width: 100%;
 }
 
-#related nav{
-	background: url('../images/product/review_title_bg2.png') center no-repeat;
-	height: 39px;
-	width: 76.66666%;
-	margin-bottom: 50px;
-	margin-left: 12%
-}
-
 #related h2{
 	text-align: center;
 	margin-bottom: 5%;
-}
-
-#related nav ul {
-
-	padding-left: 12%;
-}
-
-#related nav ul li{
-	float: left;
-	/*margin: 12px 0 0 40px;*/
-	margin: 12px 0 0 5.43478%;
-}
-
-#related nav ul li a {
-	text-decoration: none;
-	color: #9f9f9f;
-	font-size: 16px;
-}
-
-#related nav ul li a:hover {
-	color: #000;
 }
 
 #related_img {
