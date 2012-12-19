@@ -15,15 +15,41 @@
   <link rel="stylesheet" type="text/css" href="resources/css/orbit.css">
   <link rel="stylesheet" href="resources/css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="resources/css/liquid-slider-1.0.css">
 
   <!-- Include JS Files -->
   <script type="text/javascript" src="resources/js/jquery.js" ></script>
   <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.liquid-slider-1.0.min.js"></script>
 
   <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
+<script type="text/javascript"> 
+$(document).ready(function(){
 
+	$(".btn-slide").click(function(){
+	  $("#navmenucat .hide").slideToggle("slow");
+	  $(this).toggleClass("active");
+	});
+	
+});
+</script>
+ <script>
+    $(function(){
+          $('#slider-id').liquidSlider({
+            autoSlide:false,
+            autoHeight:false,
+            crossLinks: true,
+            dynamicTabs: false,
+            dynamicArrows: false,
+            slideEaseDuration: 0,
+            preloader: true,
+            preloaderFadeOutDuration: 250
+          });
+
+    });
+    </script> 
 </head>
 <body>
 <div id="page">
@@ -34,38 +60,10 @@
           <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
            <nav class="main_menu">
              <ul class="nav">
-               <li><a href="#">Products</a>
-                   <ul>
-                     <li><a href="#">Products</a></li>
-                     <li><a href="#">Apps</a></li>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Store</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Apps</a>
-                  <ul>
-                     <li><a href="#">Products</a></li>
-                     <li><a href="#">Apps</a></li>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Store</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Support</a>
-                  <ul>
-                     <li><a href="#">Products</a></li>
-                     <li><a href="#">Apps</a></li>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Store</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Store</a>
-                  <ul>
-                     <li><a href="#">Products</a></li>
-                     <li><a href="#">Apps</a></li>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Store</a></li>
-                  </ul>
-               </li>
+               <li class="btn-slide"><a href="javascript:void(0)">Products</a></li>
+               <li><a href="#">Apps</a></li>
+               <li><a href="#">Support</a></li>
+               <li><a href="#">Store</a></li>
              </ul>
            </nav>
 
@@ -88,6 +86,32 @@
         <p id="browsebot"><a href="#"  class="blubot">Browse all cameras</a></p>
       </div>
     </div>
+
+    <div id="navmenucat">
+	    <div class="container">
+	     <div class="hide">
+	     	<div class="liquid-slider" id="slider-id">
+	     		<div>
+	     			<a href="#2" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#3" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     		</div>
+	     		<div>
+	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     			sub cat 1
+	     		</div>
+	     		<div>
+	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     			sub cat 2
+	     		</div>
+	     	</div>
+	     </div>
+	    </div>
+    </div>
+
 
   <div class="content">  
 
@@ -490,10 +514,12 @@
       },
       path: 'resources/images/raty/img/'
     });
+    
+   
 
   </script>
-
-<script type="text/javascript" src="resources/js/script.js"></script>
+  
+  
 </body>
 
 </html>

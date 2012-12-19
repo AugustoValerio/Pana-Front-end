@@ -760,6 +760,7 @@ section {
 	width: 100%;
 }
 
+
 .transparent_menu {
 	width: 100%;
 	background: url('../images/product/review_title_bg2.png') center no-repeat;
@@ -767,6 +768,7 @@ section {
 }
 
 .transparent_menu li {
+
 	display: inline-block;
 	margin: 1em 1.6666% 1em 1.6666%;
 }
@@ -966,7 +968,17 @@ section {
 #score{
 	margin: 0 auto 80px;
 }
-
+#navmenucat {
+	background: url(../images/Loose_Graphics/img-nav-expanded-fpo.jpg) no-repeat center top gray;
+}
+#navmenucat .hide {
+	height: 275px;
+	display: none;
+}
+#slider-id {
+	height: 270px !important;
+	width: 960px !important;
+}
 /** Media Queries **/
 
 @media screen and (max-width: 640px) {
