@@ -1,0 +1,215 @@
+<!doctype html>
+
+<!--  [if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]   -->
+<!--  [if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]      -->
+<!--  [if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]      -->
+<!--  [if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]      -->
+<!--  [if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]       -->
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Product</title>
+   <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" type="text/css" href="resources/css/orbit.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="resources/css/liquid-slider-1.0.css">
+
+  <!-- Include JS Files -->
+  <script type="text/javascript" src="resources/js/jquery.js" ></script>
+  <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.liquid-slider-1.0.min.js"></script>
+
+  <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+	  $("#navmenucat .hide").slideToggle("slow");
+	  $(this).toggleClass("active");
+	});
+	
+});
+</script>
+ <script>
+    $(function(){
+          $('#slider-id').liquidSlider({
+            autoSlide:false,
+            autoHeight:false,
+            crossLinks: true,
+            dynamicTabs: false,
+            dynamicArrows: false,
+            slideEaseDuration: 0,
+            preloader: true,
+            preloaderFadeOutDuration: 250
+          });
+
+    });
+    </script> 
+</head>
+<body>
+<div id="page">
+    <header id="header">
+
+        <div class="container">
+          <img id="logo" src="resources/images/lgo-nav-global-panasonic.png" alt="Panasonic">
+          <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
+           <nav class="main_menu">
+             <ul class="nav">
+               <li class="btn-slide"><a href="javascript:void(0)">Products</a></li>
+               <li><a href="#">Apps</a></li>
+               <li><a href="#">Support</a></li>
+               <li><a href="#">Store</a></li>
+             </ul>
+           </nav>
+
+           <div class="main_search">
+              <ul id="bustype"><li><a href="#">Business</a></li><li><a href="#">Industrial</a></li></ul>
+                <form role="search" method="get" id="searchformhead" action="#">
+                  <label for="s" class="assistivetext">Search Here</label>
+                  <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
+                  <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+                </form>
+          </div>
+
+        </div>
+
+    </header><!--header-->
+
+    <div id="browsebar">
+      <div class="container clearfix">
+        <p id="brand"><span>Lumix</span><sup>®</sup>  cameras</p>
+        <p id="browsebot"><a href="#"  class="blubot">Browse all cameras</a></p>
+      </div>
+    </div>
+
+    <div id="navmenucat">
+	    <div class="container">
+	     <div class="hide">
+	     	<div class="liquid-slider" id="slider-id">
+	     		<div>
+	     			<a href="#2" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#3" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     		</div>
+	     		<div>
+	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     			sub cat 1
+	     		</div>
+	     		<div>
+	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
+	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
+	     			sub cat 2
+	     		</div>
+	     	</div>
+	     </div>
+	    </div>
+    </div>
+
+    <!-- content -->
+
+</div>
+    <!-- footer     -->
+     
+  <footer>
+    <div class="container">
+
+      <div id="foo_nav">
+        <div id="foo_print"><a href="#" class="">Print</a></div>
+        <div id="foo_btop"><a href="#">Back to top</a></div>
+        <nav>
+          <ul>
+            <li><a href="#" >Site map<span class="haschild"></span></a></li>
+            <li><a href="#">Need help<span class="haschild"></span></a></li>
+            <li><a href="#">English<span class="haschild"></span></a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </div>
+
+      <div id="foo_terms">
+        <p>Copyright 2012 Panasonic Corporation of North America.</p>
+        <ul>
+          <li><a href="#">Panasonic direct store policies</a></li>
+          <li><a href="#"> - Privacy policiy</a></li>
+          <li><a href="#"> - Terms of service</a></li>
+        </ul>
+      </div>
+
+      <div id="foo_socialmedia">
+        <a href="#"><img src="resources/images/Loose_Graphics/icn-footer-facebook.gif"></a>
+        <a href="#"><img src="resources/images/Loose_Graphics/icn-footer-twitter.gif"></a>
+        <a href="#"><img src="resources/images/Loose_Graphics/icn-footer-google-plus.gif"></a>
+      </div>
+
+    </div>
+
+  </footer><!--footer-->
+
+</div><!-- page -->
+
+<script src="resources/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="resources/js/waypoints.min.js" type="text/javascript"></script>
+<script src="resources/js/navbar.js" type="text/javascript"></script>
+<script src="resources/js/jquery.carouFredSel-6.1.0-packed.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function() {
+
+        //  Fuild layout, centering the items
+        $('.inspiration_slide').carouFredSel({
+           scroll: { items: 1, easing: "linear" },
+          width: '100%',
+          responsive: true,
+          items: { visible: { min: 1, max: 1 } },
+          pagination: { container: ".pagi2", keys: true }
+
+        });
+        $('.feature_slide').carouFredSel({
+          scroll: { items: 1, easing: "linear" },
+          width: '100%',
+          responsive: true,
+          items: { visible: { min: 1, max: 4 } },
+          pagination: { container: ".pagi", keys: true }
+        });
+
+        $('.review_slide').carouFredSel({
+          scroll: { items: 1, easing: "linear" },
+          width: '100%',
+          responsive: true,
+          items: { visible: { min: 1, max: 3 } },
+          pagination: { container: ".pagi3", keys: true }
+        });
+
+        $('.demos_slide').carouFredSel({
+          scroll: 1,
+          responsive: true,
+          visible: {
+              min: 1,
+              max: 2
+            },
+          pagination: { container: ".pagi4", keys: true }
+        });
+
+      });
+
+    $('.score').raty({
+      score: function() {
+        return $(this).attr('data-rating');
+      },
+      path: 'resources/images/raty/img/'
+    });
+    
+   
+
+  </script>
+  
+  
+</body>
+
+</html>
