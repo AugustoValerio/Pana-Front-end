@@ -125,7 +125,6 @@
 * need to use the settings below as this will not apply.
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider .panel-wrapper {  
-  padding: 20px;
   /* Do not edit below this line */
   position:relative;
 }
@@ -303,7 +302,7 @@
   margin: 0;
 }
 .liquid-responsive .liquid-slider .panel .panel-wrapper {
-  padding: 10px;
+  
 }
 .liquid-responsive .liquid-nav-left {
   /* Left non-graphical arrows */
@@ -378,7 +377,7 @@
     */
   }
   .liquid-responsive .liquid-slider .panel .panel-wrapper {
-    padding: 20px 35px;
+   
   }
 }
 

@@ -30,14 +30,15 @@ $(document).ready(function(){
 
 	$(".btn-slide").click(function(){
 	  $("#navmenucat .hide").slideToggle("slow");
-	  $(this).toggleClass("active");
+	  $(".btn-slide").toggleClass("active");
+	  $("#browsebar").toggleClass("hidden");
 	});
 	
 });
 </script>
  <script>
     $(function(){
-          $('#slider-id').liquidSlider({
+          $('#navmenucats').liquidSlider({
             autoSlide:false,
             autoHeight:false,
             crossLinks: true,
@@ -56,7 +57,7 @@ $(document).ready(function(){
     <header id="header">
 
         <div class="container">
-          <img id="logo" src="resources/images/lgo-nav-global-panasonic.png" alt="Panasonic">
+         <h1 id="logo"><a href="#">Panasonic</a></h1>
           <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
            <nav class="main_menu">
              <ul class="nav">
@@ -80,6 +81,52 @@ $(document).ready(function(){
 
     </header><!--header-->
 
+ <div id="navmenucat">
+	    <div class="container">
+	     <div class="hide">
+	     	<div class="liquid-slider" id="navmenucats">
+	     		<div class="inpannel">
+	     			<div class="panhead">
+		     			<p class="inbread"><span>Products  ></span></p>
+		     			<a class="btn-slide closeit" href="javascript:void(0)">X</a>
+	     			</div>
+	     			<ul class="parrays">
+	     				<li><a href="#2" data-liquidslider-ref="navmenucats"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a></li>
+	     				<li><a href="#3" data-liquidslider-ref="navmenucats"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a></li>
+	     			</ul>
+	     			
+	     		</div>
+	     		<div class="inpannel">
+	     			<div class="panhead">
+		     			<p class="inbread"><span>Products  ></span> Cameras</p>
+		     			<a class="btn-slide closeit" href="javascript:void(0)">X</a></li>
+	     			</div>
+	     		
+	     			<ul class="parrays">
+	     				<li><a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a></li>
+	     				<li><a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a></li>
+	     			</ul>
+	     		</div>
+	     		<div class="inpannel">
+	     			<div class="panhead">
+		     			<p class="inbread"><span>Products  ></span> Cameras</p>
+		     			<a class="btn-slide closeit" href="javascript:void(0)">X</a></li>
+	     			</div>
+	     		<!--<a href="#1" data-liquidslider-ref="navmenucats">back</a>-->
+	     			<ul class="parrays">
+	     				<li><a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a></li>
+	     				<li><a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a></li>
+	     			</ul>
+	     		</div>
+	     	</div>
+	     	<div id="panfoot">
+	     				<p id="rcnt">Recently view: <span class="rcnttm"></span><p>
+	     				<p id="viewall"><a href="#">Browse all Products</a></p>
+	     	</div>
+	     </div>
+	    </div>
+    </div>
+
     <div id="browsebar">
       <div class="container clearfix">
         <p id="brand"><span>Lumix</span><sup>®</sup>  cameras</p>
@@ -87,33 +134,10 @@ $(document).ready(function(){
       </div>
     </div>
 
-    <div id="navmenucat">
-	    <div class="container">
-	     <div class="hide">
-	     	<div class="liquid-slider" id="slider-id">
-	     		<div>
-	     			<a href="#2" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
-	     			<a href="#3" data-liquidslider-ref="slider-id"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
-	     		</div>
-	     		<div>
-	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
-	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
-	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
-	     			sub cat 1
-	     		</div>
-	     		<div>
-	     		<a href="#1" data-liquidslider-ref="slider-id">back</a>
-	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">home entertaiment</a>
-	     			<a href="#"><img src="resources/images/Loose_Graphics/img-nav-expanded-products-fpo.png" alt="img-nav-expanded-products-fpo" width="105" height="98">cameras and shit</a>
-	     			sub cat 2
-	     		</div>
-	     	</div>
-	     </div>
-	    </div>
-    </div>
+   
 
 
-  <div class="content">  
+  <div class="content clearfix">  
 
     <div id="overview_bg">
       <section id="overview" class="container">
