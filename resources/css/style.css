@@ -199,6 +199,7 @@ h5{
 	color: #fff;
 	text-shadow: none;
 } 
+
 .toggleMenu {
     display:  none;
 }
@@ -437,11 +438,15 @@ h5{
 footer {
 	background-color: #434343;
 	color: #c5c5c5;
-	height: 200px;
+	/*height: 200px;*/
 }
 
 footer a {
 	color: #fff;
+}
+
+.foo_bbottom {
+	border-bottom: #fff solid 1px;
 }
 
 #foo_nav {
@@ -490,6 +495,47 @@ footer a {
 	background-position : -151px -167px ;
 	background-repeat : no-repeat ;	
 	padding-left: 10px;
+}
+
+#foo_navmenu .hide {
+	/*display: none;*/
+	border-top: #c5c5c5 solid 1px;
+	border-bottom: #c5c5c5 solid 1px;
+	margin-bottom: 30px;
+}
+
+#othersites {
+	width: 478px;
+	float: left;
+	margin-top: 30px;
+}
+
+#othersites p:first-child {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#othersitesform {
+	width: 498px;
+	float: left;
+	text-align: right;
+	margin: 25px 0 40px 0;
+}
+
+.country_form {
+	float: right;
+}
+
+.country_form div:first-child {
+	text-align: left;
+	/*margin-bottom: 10px;*/
+	margin: 0 0 10px 20px;
+}
+
+.country_form div:last-child {
+	/*margin-left: 20px;*/
+	margin: 0 0 0 20px;
 }
 
 #foo_terms {
