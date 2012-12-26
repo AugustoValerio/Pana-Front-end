@@ -21,6 +21,8 @@
   <script type="text/javascript" src="resources/js/jquery.js" ></script>
   <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
   <script type="text/javascript" src="resources/js/jquery.liquid-slider-1.0.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.atooltip.min.js"></script>
+  
 
   <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -35,6 +37,11 @@ $(document).ready(function(){
 	});
 	
 });
+$(function(){  
+	$('.rcnttm a').aToolTip({  
+        fixed: true  
+    });
+}); 
 </script>
  <script>
     $(function(){
@@ -120,7 +127,7 @@ $(document).ready(function(){
 	     		</div>
 	     	</div>
 	     	<div id="panfoot">
-	     				<p id="rcnt">Recently view: <span class="rcnttm"></span><p>
+	     				<p id="rcnt"><span class="vcent">Recently view: </span></p><p class="rcnttm"><a href="#" title="Lumix DCM SDF"><img src="resources/images/Loose_Graphics/img-nav-expanded-recently-fpo.png" alt="img-nav-expanded-recently-fpo" width="49" height="40"></a><a href="#" title="Lumix DCM SDF"><img src="resources/images/Loose_Graphics/img-nav-expanded-recently-fpo.png" alt="img-nav-expanded-recently-fpo" width="49" height="40"></a></p>
 	     				<p id="viewall"><a href="#">Browse all Products</a></p>
 	     	</div>
 	     </div>

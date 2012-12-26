@@ -261,6 +261,92 @@ h5{
 	font-weight: bold;
 	line-height: 17px;
 }
+#rcnt {
+	float: left;
+	height: 40px;
+	margin-right: 20px;
+}
+#rcnt .vcent {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+}
+.rcnttm {
+	float: left;
+}
+/* 
+	Required Styles
+*/
+#aToolTip {
+	position: absolute;
+	display: none;
+	z-index: 50000;
+}
+
+#aToolTip .aToolTipContent {
+	position:relative;
+	margin:0;
+	padding:0;
+	}
+/* 
+	END: Required Styles
+*/
+/**
+	Default Theme
+*/
+.defaultTheme {
+	background:url(../images/Loose_Graphics/img-tooltip-1px.png) repeat-x;
+	color:#fff;
+	height: 31px;
+	margin: 10px 0 0 10px;
+}
+.defaultTheme:before {
+	content: "";
+	display: block;
+	background: url(../images/Loose_Graphics/spr-global-nav.png) no-repeat;
+	width : 18px ;
+	height : 31px ;
+	background-position : -77px -116px ;
+	background-repeat : no-repeat ;
+	float: left;
+	margin-left: -18px;
+}
+.defaultTheme:after {
+	background: url(../images/Loose_Graphics/spr-global-nav.png);
+	width : 13px ;
+	height : 31px ;
+	background-position : -101px -116px ;
+	background-repeat : no-repeat ;
+	float: right;
+	content: "";
+	display: block;
+	margin-right: -13px;
+}
+.defaultTheme p {
+	display: inline-block;
+	line-height: 31px;
+}
+#viewall {
+	float: right;	
+	margin-top: 15px;
+}
+#viewall a {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 17px;
+}
+#viewall a:before {
+	content: "";
+	display: inline-block;
+	background: url(../images/Loose_Graphics/spr-global-nav.png);
+	width : 11px ;
+	height : 11px ;
+	background-position : -66px -167px ;
+	background-repeat : no-repeat ;
+	margin-right: 10px;
+}
 #bustype {
 	float: right;
 	display: block;
