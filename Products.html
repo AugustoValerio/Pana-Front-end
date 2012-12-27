@@ -35,6 +35,11 @@ $(document).ready(function(){
 	  $(".btn-slide").toggleClass("active");
 	  $("#browsebar").toggleClass("hidden");
 	});
+
+  $(".btn-fooslide").click(function(){
+    $("#foo_navmenu .hide").slideToggle("slow");
+    $(this).toggleClass("active");
+  });
 	
 });
 $(function(){  
@@ -457,6 +462,8 @@ $(function(){
     </div>
 </div>
 
+  <!-- footer     -->
+     
   <footer>
     <div class="container">
 
@@ -465,12 +472,57 @@ $(function(){
         <div id="foo_btop"><a href="#">Back to top</a></div>
         <nav>
           <ul>
-            <li><a href="#" >Site map<span class="haschild"></span></a></li>
+            <li><a href="#">Site map<span class="haschild"></span></a></li>
             <li><a href="#">Need help<span class="haschild"></span></a></li>
-            <li><a href="#">English<span class="haschild"></span></a></li>
+            <li class="btn-fooslide"><a href="javascript:void(0)">English<span class="haschild"></span></a></li>
           </ul>
         </nav>
         <div class="clearfix"></div>
+      </div>
+
+      <div id="foo_navmenu">
+        <div class="hide">
+          <div id="othersites">
+            <p>Country/Language</p>
+            <p>View Panasonic sites worlwide</p>
+          </div>
+
+          <div id="othersitesform">
+            <form>
+
+                <div class="country_form">
+                  <div>&nbsp;</div>
+                  <div><input type="submit" value="GO"></div>
+                </div>
+
+                <div class="country_form">
+                  <div><label for="language">Language</label></div>
+                  <div>
+                    <select name="language" id="language">
+                      <option value="es">Spanish</option>
+                      <option value="en">English</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="country_form">
+                  <div><label for="country">Country</label></div>
+                  <div>
+                    <select name="country" id="country">
+                      <option value="ca">Canada</option>
+                      <option value="cr">Costa Rica</option>
+                      <option value="usa">USA</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+            </form>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>  
       </div>
 
       <div id="foo_terms">

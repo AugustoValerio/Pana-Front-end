@@ -166,7 +166,6 @@ h5{
 	height : 70px ;
 	background-position : left top ;
 	background-repeat : no-repeat ;
-	text-indent: -9999px;
 	font-size: 1px;
 }
 #logo a {
@@ -195,7 +194,7 @@ h5{
 	color: #fff;
 	text-shadow: none;
 }
-.main_menu li.active a {
+.main_menu li a:active {
 	color: #fff;
 	text-shadow: none;
 } 
