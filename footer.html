@@ -157,10 +157,11 @@ $(document).ready(function(){
                 <div class="country_form">
                   <div><label for="language">Language</label></div>
                   <div>
-                    <!-- <select name="language" id="language"> -->
-                    <select name="country_dropdown" class="country_dropdown">
+                    <select name="countrydp" class="countrydp">
                       <option value="es">Spanish</option>      
                       <option value="en">English</option>
+                      <option value="en">French</option>
+                      <option value="es">Spanish</option> 
                     </select>
                   </div>
                 </div>
@@ -168,10 +169,11 @@ $(document).ready(function(){
                 <div class="country_form">
                   <div><label for="country">Country</label></div>
                   <div>
-                    <select name="country" id="country">
+                    <select name="countryldp" class="countryldp">
                       <option value="ca">Canada</option>
                       <option value="cr">Costa Rica</option>
                       <option value="usa">USA</option>
+                      <option value="ca">Canada</option>
                     </select>
                   </div>
                 </div>
@@ -249,7 +251,8 @@ $(document).ready(function(){
           pagination: { container: ".pagi4", keys: true }
         });
 
-        $('.country_dropdown').dropkick();
+        $('.countrydp').dropkick();
+        $('.countryldp').dropkick();
 
       });
 
