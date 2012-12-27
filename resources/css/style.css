@@ -523,7 +523,8 @@ h5{
 footer {
 	background-color: #434343;
 	color: #c5c5c5;
-	/*height: 200px;*/
+	border-top: #616161 solid 1px;
+	padding-bottom: 10em;
 }
 
 footer a {
@@ -542,6 +543,21 @@ footer a {
 #foo_print {
 	float: left;
 	width: 31.96721%;
+}
+
+#foo_print:before {
+	background: url('../images/Loose_Graphics/spr-global-nav.png');
+	width : 15px ;
+	height : 13px ;
+	background-position : -45px -167px ;
+	background-repeat : no-repeat ;
+	content: "";
+	float: left;
+	margin-right: 5px;
+}
+
+#foo_print a {
+	display: block;
 }
 
 .icn_print {
@@ -571,15 +587,6 @@ footer a {
 
 #foo_nav nav li span {
 	margin-left: 5px;
-}
-
-.haschild {
-	background: url('../images/Loose_Graphics/spr-global-nav.png');
-	width : 9px ;
-	height : 5px ;
-	background-position : -151px -167px ;
-	background-repeat : no-repeat ;	
-	padding-left: 10px;
 }
 
 #foo_navmenu .hide {
