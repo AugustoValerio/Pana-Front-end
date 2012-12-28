@@ -752,7 +752,7 @@ footer a {
 	background: url('../images/product/banner_bg3.jpg') repeat-x;
 }
 /* product page */
-#backcat:before {
+#backcat:before, .overviewbut {
 	background: url('../images/product-sprite.png') no-repeat;
 }
 #backcat:before {
@@ -770,44 +770,46 @@ footer a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
+#overviewbg {
+	background: url(../images/overview-bg.jpg) repeat-x center top;
+}
 #overview {
 	height: 460px;
 }
 
-#overview_block {
+#overviewblock {
 	color: #fff;
-	min-height: 460px;
 	float: left;
-	width: 36.458333%;
-	margin-left: 1.04166667%;
-
+	clear: both;
+	width: 215px;
 }
 
-#overview_block h3 {
-	margin-top: 100px;
+#overviewblock h3 {
+	margin-top: 85px;
+	font-size: 28px;
+	line-height: 36px;
 }
-
-#overview_img {
+#overviewblock p {
+	margin-bottom: 20px;
+}
+#overviewimg {
 	float: left;
 	width: 62.5%;
 }
-
-.overview_but{
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	background: url('../images/product/spotlight_bottom.png') no-repeat;
+.overviewbut{
 	display: inline-block;
+	background-position:-140px -26px;
 	text-transform: uppercase;
-	padding-left: 20px;
+	padding-left: 33px;
 	color: #000;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
-	line-height: 40px;
-	height: 41px;
-	width: 95px;
+	line-height: 44px;
+	height: 43px;
+	width: 93px;
 }
 #demos h3 {
 	text-align: center;
