@@ -32,7 +32,6 @@ body {
 	line-height: 1;
 	color:#222;
 	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
-	min-width: 976px;
 }
 
 ol, ul {
@@ -59,6 +58,7 @@ table {
 .container {
 	max-width: 976px;
 	margin: 0 auto;
+	padding: 0 2px 0 2px;
 }
 .row:after{
 	content: '';
