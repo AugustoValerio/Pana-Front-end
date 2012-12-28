@@ -195,7 +195,7 @@ h5{
 	color: #fff;
 	text-shadow: none;
 }
-.main_menu li a:active {
+.main_menu li.active a {
 	color: #fff;
 	text-shadow: none;
 } 
