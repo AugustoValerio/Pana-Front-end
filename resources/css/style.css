@@ -167,6 +167,7 @@ h5{
 	background-position : left top ;
 	background-repeat : no-repeat ;
 	font-size: 1px;
+	margin-left: -12px;
 }
 #logo a {
 	display: block;
@@ -422,7 +423,7 @@ h5{
 	height: 0;
 }
 #brand {
-	margin: 0 35px;
+	margin: 0 35px 0 0;
 	padding: 12px 0;
 	line-height: 1px;
 	float: left;
@@ -750,7 +751,25 @@ footer a {
 #overview_bg {
 	background: url('../images/product/banner_bg3.jpg') repeat-x;
 }
-
+/* product page */
+#backcat:before {
+	background: url('../images/product-sprite.png') no-repeat;
+}
+#backcat:before {
+	content: "";
+	display: inline-block;
+	height: 8px;
+    width: 14px;
+}
+#backcat {
+	float: left;
+	margin: 10px 0 0 0;
+}
+#backcat a {
+	color: #b6b6b6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
 #overview {
 	height: 460px;
 }
