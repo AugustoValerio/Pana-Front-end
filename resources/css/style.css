@@ -536,7 +536,7 @@ h5{
 	border: #e1e1e1 solid 1px;
 }
 
-.pan_menu nav li:hover {
+.pan_menu nav li:hover, .pan_menu nav li.ui-state-active {
 	background-image: url("../images/features/nav_bg_hover.jpg");
 }
 
@@ -898,7 +898,7 @@ footer a {
 	background: url('../images/product/banner_bg3.jpg') repeat-x;
 }
 /* product page */
-#backcat:before, .overviewbut {
+#backcat:before, .overviewbut, #specsbut {
 	background: url('../images/product-sprite.png') no-repeat;
 }
 #backcat:before {
@@ -956,6 +956,41 @@ footer a {
 	line-height: 44px;
 	height: 43px;
 	width: 93px;
+}
+#techspecs {
+	padding: 176px 0 211px;
+}
+#specsbar {
+	float: left;
+	width: 225px;
+}
+#specsbar h3 {
+	margin-bottom: 0;
+}
+#specsbar p {
+	font-size: 13px;
+	font-weight: 400;
+}
+#specsbut {
+	display: block;
+	padding: 15px 10px 15px 55px;
+	color: #fff;
+	background-position: -295px -27px;
+	width: 76px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+#dimimg {
+	float: right;
+}
+#specsbar li {
+	padding-bottom: 13px;
+	margin-bottom: 13px;
+	border-bottom: #dddddd 1px solid;
+}
+#specsbar li:last-child {
+	border-bottom: 0px;
 }
 #demos h3 {
 	text-align: center;
