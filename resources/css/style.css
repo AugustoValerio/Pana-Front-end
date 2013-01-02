@@ -412,10 +412,10 @@ h5{
 	color: #fff;
 	font-weight: bold;
 	-webkit-transition: height 500ms ease-out;
-		-moz-transition: height 500ms ease-out;
+	   -moz-transition: height 500ms ease-out;
         -ms-transition: height 500ms ease-out;
-        -o-transition: height 500ms ease-out;
-		transition: height 500ms ease-out;
+         -o-transition: height 500ms ease-out;
+		    transition: height 500ms ease-out;
 	border-top: 1px solid #362f2f;
 	overflow: hidden;
 }
