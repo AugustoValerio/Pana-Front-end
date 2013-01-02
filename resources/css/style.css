@@ -521,6 +521,13 @@ h5{
 	margin: 15px auto;
 }
 
+/************************** class * *****************************/
+
+.border-bottom {
+	border-bottom: #d6d6d6 solid 1px;
+	margin: 50px 0 50px 0;
+}
+
 /************************** pan menu *****************************/
 
 .pan_menu nav {
@@ -663,6 +670,25 @@ h5{
 
 #fpaginator {
 	width: 64.344262295082%; /*628px*/
+}
+
+
+
+/************************** demo  *****************************/
+
+#demo_preview {
+	float: left;
+	width: 60%;
+}
+#demo_preview img {
+	width: 90%;
+}
+
+#demo_info {
+	float: left;
+	width: 35%;
+	margin-left: 2%;
+	font-size: 14px;
 }
 
 /************************** footer start *****************************/
