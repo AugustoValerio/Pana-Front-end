@@ -559,23 +559,67 @@ h5{
 	font-weight: bold;
 }
 
+/************************** arrows slider *****************************/
+
+.prev {
+	background: url("../images/product-sprite.png") no-repeat scroll -5px -26px;
+	width: 34px;
+	height: 45px;
+}
+
+.next {
+	background: url("../images/product-sprite.png") no-repeat scroll -71px -26px;
+	width: 34px;
+	height: 45px;
+}
+
+/************************** paginator slider *****************************/
+
+.paginator {
+	text-align: center;
+	height: 20px;
+	margin: 0 auto;
+	float: left;
+}
+
+.paginator a {
+	background: url("../images/product-sprite.png")no-repeat scroll -50px -4px;
+	width: 3px;
+	height: 3px;
+	display: inline-block;
+	text-indent: -99999px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.paginator a:last-child{
+	border:0;
+}
+
+.paginator .selected {
+	background: url("../images/product-sprite.png") no-repeat scroll -27px -1px;
+	width: 10px;
+	height: 10px;
+	padding-top: 3px;
+}
+
 /************************** features *****************************/
 
 #features {
 	margin-top: 70px;
 }
 
-#features_slide_block {
+.features_slide_block {
 	margin-top: 70px;
+	float: left;
 }
 
-#features_slide_block img {
+.features_slide_block img {
 	width: 52%;
 	float: left;
-	margin-bottom: 70px;
 }
 
-#features_slide_block div:last-child {
+.features_slide_block div:last-child {
 	width: 38%;
 	float: left;
 	margin-left: 5%;
@@ -583,10 +627,42 @@ h5{
 	padding-left: 5%;
 }
 
-#features_slide_block p{
+.features_slide_block p{
 	font-size: 14px;
 	font-family: arial;
 	margin: 20px 10% 20px 0;
+}
+
+#features_paginator {
+	float: left;
+	margin-top: 40px;
+	width: 100%;
+}
+
+#features_paginator b:first-child {
+	float: left;
+	width: 10.245901639344%; /*100px*/
+	text-align: right;
+	margin: 10px 2.049180327869% 0 2.049180327869%;
+}
+
+#features_paginator b:last-child {
+	float: left;
+	width: 10.245901639344%; /*100px*/
+	text-align: left;
+	margin: 10px 2.049180327869% 0 2.049180327869%; /*20px*/
+}
+
+#prev_features {
+	float: left;
+}
+
+#next_features {
+	float: left;
+}
+
+#fpaginator {
+	width: 64.344262295082%; /*628px*/
 }
 
 /************************** footer start *****************************/

@@ -193,29 +193,66 @@ $(function(){
 
       <section id="features">
 
-        <div class="pan_menu">
-          <nav>
-            <ul>
-              <li><a href="#">Picture Quality</a></li>
-              <li><a href="#">Performance</a></li>
-              <li><a href="#">Mobility</a></li>
-              <li><a href="#">Toughness</a></li>
-              <li><a href="#">Extensibility</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="pan_menu">
+        <nav>
+          <ul>
+            <li><a href="#">Picture Quality</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Mobility</a></li>
+            <li><a href="#">Toughness</a></li>
+            <li><a href="#">Extensibility</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <div id="features_slide">
-          <div id="features_slide_block">
-            <img src="resources/images/features/slide_1.jpg">
-            <div>
-              <h3>High quality image, high speed processing</h3>
-              <p>The ‘Venus Engine” combined with the high-speed operation 4CPU advanced image processing them, to achieve high-quality images with a sense of three-dimensional in both still images and video. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <a href="#">Learn more about the Venus Engine</a>
-            </div>
+      <div class="features_slide">
+
+        <div class="features_slide_block">
+          <img src="resources/images/features/slide_1.jpg">
+          <div>
+            <h3>High quality image, high speed processing</h3>
+            <p>The ‘Venus Engine” combined with the high-speed operation 4CPU advanced image processing them, to achieve high-quality images with a sense of three-dimensional in both still images and video. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">Learn more about the Venus Engine</a>
           </div>
         </div>
-      </section>
+
+        <div class="features_slide_block">
+          <img src="resources/images/features/slide_1.jpg">
+          <div>
+            <h3>High quality image, high speed processing</h3>
+            <p>The ‘Venus Engine” combined with the high-speed operation 4CPU advanced image processing them, to achieve high-quality images with a sense of three-dimensional in both still images and video. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">Learn more about the Venus Engine</a>
+          </div>
+        </div>
+
+        <div class="features_slide_block">
+          <img src="resources/images/features/slide_1.jpg">
+          <div>
+            <h3>High quality image, high speed processing</h3>
+            <p>The ‘Venus Engine” combined with the high-speed operation 4CPU advanced image processing them, to achieve high-quality images with a sense of three-dimensional in both still images and video. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">Learn more about the Venus Engine</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div id="features_paginator">
+
+        <div>
+          <a id="prev_features" class="prev" href="#" style="display: block;"></a>
+          <b>16.05 million pixel Live MOS senso</b>
+        </div>
+        <div class="paginator" id="fpaginator"></div>
+        <div>
+          <b>Automatic shooting intervals</b>
+          <a id="next_features" class="next" href="#" style="display: block;"></a>
+        </div>
+
+      </div>
+
+    </section>
 
       <div class="clearfix"></div>
 
@@ -339,39 +376,16 @@ $(function(){
   <script type="text/javascript">
     $(function() {
 
-        //  Fuild layout, centering the items
-        $('.inspiration_slide').carouFredSel({
-           scroll: { items: 1, easing: "linear" },
+        $('.features_slide').carouFredSel({
+          scroll: { items: 1, easing: "linear" },
           width: '100%',
           responsive: true,
           items: { visible: { min: 1, max: 1 } },
-          pagination: { container: ".pagi2", keys: true }
+          pagination: { container: ".paginator", keys: true },
+          prev: '#prev_features',
+          next: '#next_features',
+          auto: false
 
-        });
-        $('.feature_slide').carouFredSel({
-          scroll: { items: 1, easing: "linear" },
-          width: '100%',
-          responsive: true,
-          items: { visible: { min: 1, max: 4 } },
-          pagination: { container: ".pagi", keys: true }
-        });
-
-        $('.review_slide').carouFredSel({
-          scroll: { items: 1, easing: "linear" },
-          width: '100%',
-          responsive: true,
-          items: { visible: { min: 1, max: 3 } },
-          pagination: { container: ".pagi3", keys: true }
-        });
-
-        $('.demos_slide').carouFredSel({
-          scroll: 1,
-          responsive: true,
-          visible: {
-              min: 1,
-              max: 2
-            },
-          pagination: { container: ".pagi4", keys: true }
         });
 
         $('.countrydp').dropkick();
