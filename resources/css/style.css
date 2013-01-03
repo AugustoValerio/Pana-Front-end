@@ -543,7 +543,7 @@ h5{
 	border: #e1e1e1 solid 1px;
 }
 
-.pan_menu nav li:hover, .pan_menu nav li.ui-state-active {
+.pan_menu nav li:hover {
 	background-image: url("../images/features/nav_bg_hover.jpg");
 }
 
@@ -597,6 +597,10 @@ h5{
 	text-indent: -99999px;
 	margin-left: 10px;
 	margin-top: 20px;
+}
+
+.paginator a:first-child {
+	margin-left: 0;
 }
 
 .paginator a:last-child{
@@ -689,6 +693,53 @@ h5{
 	width: 35%;
 	margin-left: 2%;
 	font-size: 14px;
+}
+
+/************************** reviews  *****************************/
+
+.reviews_slide {
+	float: left;
+	/*width: 93.032786885246%;*/ /*908px*/
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.reviews_slide_block {
+	/*margin: 10px 25.614754098361% 10px 25.614754098361%;*/ /*250px*/
+	float: left;
+	text-align: center;
+}
+
+#pr_img {
+	width: 35%;
+}
+
+#cr_img {
+	margin: 10px 0 10px 0;
+}
+
+.reviews_slide_block p {
+	font-size: 20px;
+	margin: 10px 25.614754098361% 10px 25.614754098361%;
+	font-weight: bold;
+}
+
+.reviews_slide_block span {
+	font-weight: bold;
+}
+
+.review_arrow {
+	float: left;
+	margin-top: 200px;
+}
+
+#score {
+	margin: 0 auto;
+}
+
+#rpaginator {
+	width: 100%;
 }
 
 /************************** footer start *****************************/
@@ -1067,6 +1118,7 @@ footer a {
 }
 
 .nav-container nav ul {
+	
 }
 
 .nav-container nav li a {
@@ -1086,9 +1138,6 @@ footer a {
 	color: #fff;
 	background: #00a0c6;
 }
-
-
-
 
 .nator {
 	text-align: center;

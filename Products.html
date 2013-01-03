@@ -357,7 +357,58 @@ $(function() {
 
     <div class="border-bottom"></div>
 
-    <section id="reviews" class="container">reviews</section>
+    <section id="reviews" class="container">
+      <div class="pan_menu">
+        <nav>
+          <ul>
+            <li><a href="#">Expert Review</a></li>
+            <li><a href="#">User Reviews</a></li>
+            <li><a href="#">Write a Review</a></li>
+          </ul> 
+        </nav>
+      </div>
+
+      <div class="review_arrow">
+        <a id="prev_reviews" class="prev" href="#" style="display: block;"></a>
+      </div>
+
+      <div class="reviews_slide">
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div id="score" data-rating="3" class="score"></div>
+          <p>“The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.”</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div id="score" data-rating="3" class="score"></div>
+          <p>“The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.”</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div id="score" data-rating="3" class="score"></div>
+          <p>“The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.”</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+
+      </div>
+
+      <div class="review_arrow">
+        <a id="next_reviews" class="next" href="#" style="display: block;"></a>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="paginator" id="rpaginator"></div>
+
+    </section>
 
     <div class="border-bottom"></div>
 
@@ -473,6 +524,18 @@ $(function() {
           pagination: { container: ".paginator", keys: true },
           prev: '#prev_features',
           next: '#next_features',
+          auto: false
+
+        });
+
+        $('.reviews_slide').carouFredSel({
+          scroll: { items: 1, easing: "linear" },
+          width: '93.032786885246%',
+          responsive: true,
+          items: { visible: { min: 1, max: 1 } },
+          pagination: { container: ".paginator", keys: true },
+          prev: '#prev_reviews',
+          next: '#next_reviews',
           auto: false
 
         });
