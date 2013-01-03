@@ -1112,6 +1112,15 @@ footer a {
 	height: 43px;
 	width: 93px;
 }
+.footnote {
+	color: #b6b6b6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	line-height: 12px;
+	margin-top: -32px;
+	float: right;
+}
 #techspecs {
 	padding: 176px 0 211px;
 }
@@ -1161,7 +1170,17 @@ footer a {
 #demos h3 {
 	text-align: center;
 }
-
+#samp1 .caroufredsel_wrapper {
+	float: left !important;
+}
+#sampleslide .slide {
+	float: left;
+	text-align: center;
+}
+.samples_arrow {
+	float: left;
+	margin-top: 200px;
+}
 /* == pinnig nav == */
 
 #pining_nav{
