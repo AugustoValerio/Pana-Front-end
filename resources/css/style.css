@@ -416,7 +416,7 @@ h5{
         -ms-transition: height 500ms ease-out;
          -o-transition: height 500ms ease-out;
 		    transition: height 500ms ease-out;
-	border-top: 1px solid #362f2f;
+	border-top: 1px solid #1f1f1f;
 	overflow: hidden;
 }
 #browsebar.hidden {
@@ -424,14 +424,21 @@ h5{
 }
 #brand {
 	margin: 0 35px 0 0;
-	padding: 12px 0;
+	padding: 7px 0;
 	line-height: 1px;
 	float: left;
 }
-#brand span, #globnav span{
+#brand span {
+	display: inline-block;
+	padding-top: 3px;
+}
+#brand span, #browsebot span{
 	text-transform: uppercase;
 }
-#brand sup, #globnav sup {
+#brand .barshare {
+	text-transform: none;
+}
+#brand sup, #browsebot sup {
 	vertical-align:super;
 	font-size: 11px;
 	font-weight: normal;	
@@ -439,25 +446,23 @@ h5{
 #browsebot {
 	float: right;
 	margin-top: 6px;
-	
 }
 #browsebot a {
 	font-size: 13px !important;
+	margin-left: 15px;
 }
 .barshare {
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
 	display: inline-block;
-	text-transform: uppercase;
 	line-height: 11px;
     padding: 3px 6px;
-	color: #aeaeae;
-	font-family: 'Open Sans Condensed', sans-serif;
+	color: #dedede;
+	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	font-weight: bold;
 	text-decoration: none;
 	line-height: 12px;
-	border: #aeaeae solid 1px;
+	border: #7c7c7c solid 1px;
 	margin-left: 15px;
 }
 .blubot {
