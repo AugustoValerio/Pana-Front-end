@@ -459,14 +459,20 @@ h5{
 }
 
 /************************** generic class *****************************/
-
+#sections {
+	overflow: hidden;
+}
 #sections section:after {
 	content: '';
 	display: block;
 	border-bottom: #d6d6d6 solid 1px;
 	margin: 50px 0 50px 0;
+	width: 99999px;
+	margin-left: -999px;
 }
-
+#support_bg:after, #accessories:after {
+	display: none !important;
+}
 /************************** pan menu *****************************/
 
 .pan_menu nav {
