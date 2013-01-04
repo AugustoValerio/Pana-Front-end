@@ -102,7 +102,9 @@ table {
 
 
 /* === Style === */
-
+body {
+	background: #f7f7f7;
+}
 a{
 	color: #00a0c6;
 	font-weight: normal;
@@ -548,7 +550,7 @@ h5{
 	border: #e1e1e1 solid 1px;
 }
 
-.pan_menu nav li:hover {
+.pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active{
 	background-image: url("../images/features/nav_bg_hover.jpg");
 }
 
@@ -1180,6 +1182,31 @@ footer a {
 .samples_arrow {
 	float: left;
 	margin-top: 200px;
+}
+.acceslider {
+	width: 100%;
+}
+.acceslider .slide {
+	width: 180px;
+	float: left;
+	margin: 35px 6px 10px;
+	padding: 0 25px;
+	background: #fcfcfc;
+	border: #f0f0f0 1px solid;
+	height: 340px;
+	text-align: center;
+}
+.acceslider .slide img {
+	margin: 25px 0 15px;
+}
+.acceso.arrow a{
+	float: left;
+}
+.acceso.arrow a:last-child {
+	float: right;
+}
+#apaginator {
+	float: none;
 }
 /* == pinnig nav == */
 
