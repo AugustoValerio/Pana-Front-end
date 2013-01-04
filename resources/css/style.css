@@ -79,11 +79,15 @@ h1{
 	font-size:3em;
 	line-height:1;
 	margin-bottom:0.5em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 
 h2{
 	font-size:2em;
 	margin-bottom:0.75em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 
 h3{
@@ -1096,6 +1100,11 @@ footer a {
 	height: 340px;
 	text-align: center;
 }
+
+.acceslider .slide:first-child {
+	margin-left: 0px;
+}
+
 .acceslider .slide img {
 	margin: 25px 0 15px;
 }
@@ -1109,7 +1118,44 @@ footer a {
 	float: none;
 }
 
-/* == pinnig nav == */
+#access_more {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#access_more h1 {
+	margin-top: 40px;
+}
+
+#access_more_slide {
+	margin: 40px 0 80px 0;
+	float: left;
+	width: 100%;
+}
+
+.access_more_slide_block {
+	width: 30.225409836066%; /*295px*/
+	float: left;
+	border: #f0f0f0 solid 1px;
+	background-color: #fcfcfc;
+	height: 50px;
+	margin: 0 0 0 1.280737704918%; /*12.5px*/
+	padding: 20px 0 0 2.049180327869%; /*20px*/
+	text-align: left;
+	font-size: 13px;
+}
+
+.access_more_slide_block a {
+	color: #000;
+	font-weight: bold;
+}
+
+.access_more_slide_block:first-child {
+	margin-left: 0;
+}
+
+/************************** pining_nav *****************************/
+
 .sticky {
   position: fixed;
   top: 0;
