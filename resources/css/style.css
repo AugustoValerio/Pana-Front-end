@@ -821,6 +821,41 @@ h5{
 	font-weight: bold;
 }
 
+/************************** other products *****************************/
+
+#others_products_bg {
+	background-color: #434343;
+}
+
+#others_products h3 {
+	text-align: center;
+	color: #fff;
+	padding: 40px 0 0 0;
+}
+
+.others_products_slide { 
+	float: left;
+	width: 69.672131147541%; /*680px*/
+	margin: 0px 15.16393442623% 20px 15.16393442623%; /*148px*/
+}
+
+.others_products_block {
+	float: left;
+	width: 29.411764705882%; /*200px*/
+	text-align: center;
+	margin: 20px 0px 20px 20px; /*20px*/
+}
+
+.others_products_block img {
+	width: 71%;
+	margin-bottom: 10px;
+}
+
+.others_products_block p {
+	color: #fff;
+	font-weight: bold;
+}
+
 
 /************************** footer start *****************************/
 
