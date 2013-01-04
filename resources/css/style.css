@@ -1104,9 +1104,33 @@ footer a {
 #apaginator {
 	float: none;
 }
+<<<<<<< HEAD
 
 /************************** pining_nav *****************************/
 
+=======
+/* == pinnig nav == */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+#browsebar.sticky {
+	height: 35px !important;
+}
+#browsebar.sticky, #pining_nav.sticky {
+	width: 100%;
+}
+#pining_nav.sticky {
+	margin-top: 35px;
+}
+.placeholder.anav {
+	height: 40px;
+}
+.placeholderb.on {
+	height: 35px;
+}
+>>>>>>> sticky nav 1
 #pining_nav{
 	/*background-color: #1f1f1f;*/
 	background: #00a0c6; /* Old browsers */
