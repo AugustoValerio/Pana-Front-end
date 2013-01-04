@@ -1104,11 +1104,7 @@ footer a {
 #apaginator {
 	float: none;
 }
-<<<<<<< HEAD
 
-/************************** pining_nav *****************************/
-
-=======
 /* == pinnig nav == */
 .sticky {
   position: fixed;
@@ -1130,7 +1126,7 @@ footer a {
 .placeholderb.on {
 	height: 35px;
 }
->>>>>>> sticky nav 1
+
 #pining_nav{
 	/*background-color: #1f1f1f;*/
 	background: #00a0c6; /* Old browsers */
