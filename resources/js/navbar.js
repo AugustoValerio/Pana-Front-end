@@ -20,6 +20,7 @@ $(function() {
 			var active_link = $('nav.pinnav a[href="#' + active_section.attr("id") + '"]');
 			navigation_links.removeClass("selected");
 			active_link.addClass("selected");
+			
 
 		},
 		offset: '25%'

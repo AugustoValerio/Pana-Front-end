@@ -1031,7 +1031,7 @@ footer a {
 /************************** techspecs *****************************/
 
 #techspecs {
-	padding: 176px 0 211px;
+	padding: 75px 0 211px;
 }
 #specsbar {
 	float: left;
@@ -1052,14 +1052,15 @@ footer a {
 	width: 76px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 13px;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	margin-top: 15px;
 }
 #dimimg {
 	float: right;
 }
 #specsbar li {
-	padding-bottom: 13px;
-	margin-bottom: 13px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 	border-bottom: #dddddd 1px solid;
 }
 #specsbar li:last-child {
@@ -1232,6 +1233,8 @@ footer a {
 	text-align: center;
 	padding: 1em 1em;
 	height: 1.05em;
+	position: relative;
+	z-index: 100;
 }
 
 .nav-container nav li a:hover,
@@ -1239,7 +1242,14 @@ footer a {
 	color: #fff;
 	background: #00a0c6;
 }
-
+.nav-container nav li a.selected:before {
+	content: "";
+	display: block;
+	position: relative;
+	background: #00a0c6;
+	padding-left: 99999px;
+	
+}
 /************************** media querys *****************************/
 
 
