@@ -542,6 +542,7 @@ h5{
 	text-indent: -99999px;
 	margin-left: 10px;
 	margin-top: 20px;
+	-webkit-padding-before: 7px;
 }
 
 .paginator a:first-child {
@@ -556,7 +557,9 @@ h5{
 	background: url("../images/product-sprite.png") no-repeat scroll -27px -1px;
 	width: 10px;
 	height: 10px;
-	padding-top: 3px;
+	padding-top: 4px;
+	
+
 }
 
 /************************** features *****************************/
@@ -647,13 +650,14 @@ h5{
 	/*width: 93.032786885246%;*/ /*908px*/
 	text-align: center;
 	margin-top: 50px;
+	height: 400px;
 
 }
 
 .reviews_slide_block {
-	/*margin: 10px 25.614754098361% 10px 25.614754098361%;*/ /*250px*/
 	float: left;
 	text-align: center;
+	height: 350px;
 }
 
 #pr_img {
