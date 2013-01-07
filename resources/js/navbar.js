@@ -18,8 +18,8 @@ $(function() {
 			if (direction === "up") active_section = active_section.prev();
 
 			var active_link = $('nav.pinnav a[href="#' + active_section.attr("id") + '"]');
-			navigation_links.removeClass("selected");
-			active_link.addClass("selected");
+			
+			active_link.toggleClass("selected");
 			
 
 		},
