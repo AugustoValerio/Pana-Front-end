@@ -515,13 +515,13 @@ h5{
 
 .prev {
 	background: url("../images/product-sprite.png") no-repeat scroll -5px -26px;
-	width: 34px;
+	width: 34px; /*3.483606557377%*/
 	height: 45px;
 }
 
 .next {
 	background: url("../images/product-sprite.png") no-repeat scroll -71px -26px;
-	width: 34px;
+	width: 34px; /*3.483606557377%*/
 	height: 45px;
 }
 
@@ -558,8 +558,6 @@ h5{
 	width: 10px;
 	height: 10px;
 	padding-top: 4px;
-	
-
 }
 
 /************************** features *****************************/
@@ -992,6 +990,7 @@ footer a {
 	margin-top: 85px;
 	font-size: 28px;
 	line-height: 36px;
+	color: #FFF;
 }
 #overviewblock p {
 	margin-bottom: 20px;
@@ -1253,7 +1252,7 @@ footer a {
 /************************** media querys *****************************/
 
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 640px) {
 	body {
 		width: auto;
 		min-width: auto;
@@ -1323,15 +1322,6 @@ footer a {
 		text-align: center !important;
 	}
 
-	#inspirations {
-		/*padding-left: -10px;
-		margin-left: -20px;*/
-	}
-	
-	.inspiration_slide{
-		/*margin-left: -30px;*/
-
-	}
 	.inspiration_block {
 		min-height: 500px;
 	}
@@ -1414,7 +1404,7 @@ footer a {
 		width: 81%;
 		float: right;
 	}
-}
+}*/
 
 
     
