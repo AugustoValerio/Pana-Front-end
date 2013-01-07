@@ -1199,27 +1199,24 @@ footer a {
 	background: -ms-linear-gradient(left,  #00a0c6 0%,#00a0c6 50%,#1f1f1f 51%,#1f1f1f 100%); /* IE10+ */
 	background: linear-gradient(to right,  #00a0c6 0%,#00a0c6 50%,#1f1f1f 51%,#1f1f1f 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0c6', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-8 */
-	height: 40px;
+	height: 34px;
 }
 
 .nav-container nav{
-	background-color: #1f1f1f;
-	height: 40px;
-	position: relative;
-	z-index: 500;
-	height: 40px;
-	width: 100%;
+	background-color: #434343;
+	background-repeat: no-repeat;
+	height: 34px;
+	width: 976px;
+	margin: 0 auto;
 }
  
 .nav-container nav li {
 	display: inline;
 	list-style: none;
-	/*margin-left: -5px;*/
-	margin-left: -0.3em;
 }
 
 .nav-container nav ul {
-	
+	 
 }
 
 .nav-container nav li a {
@@ -1230,25 +1227,16 @@ footer a {
 	display: inline-block;
 	width: 7em; 
 	text-align: center;
-	padding: 1em 1em;
-	height: 1.05em;
-	position: relative;
-	z-index: 100;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 12px;
 }
 
-.nav-container nav li a:hover,
-.nav-container nav li a.selected {
+.nav-container nav li a:hover {
 	color: #fff;
 	background: #00a0c6;
 }
-.nav-container nav li a.selected:before {
-	content: "";
-	display: block;
-	position: relative;
-	background: #00a0c6;
-	padding-left: 99999px;
-	
-}
+
 /************************** media querys *****************************/
 
 
