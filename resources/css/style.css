@@ -740,6 +740,7 @@ h5{
 #support_slide {
 	float: left;
 	margin-top: 40px;
+	width: 100%;
 }
 
 .support_block {
