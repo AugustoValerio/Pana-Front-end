@@ -462,7 +462,7 @@ h5{
 #sections {
 	overflow: hidden;
 }
-#sections section:after {
+#sections .pagesection:after {
 	content: '';
 	display: block;
 	border-bottom: #d6d6d6 solid 1px;
