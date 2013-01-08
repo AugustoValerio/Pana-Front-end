@@ -17,6 +17,7 @@ $(function() {
   nav_container.waypoint({
     handler: function(event, direction) {
        nav_container.toggleClass('sticky', direction=='down');
+       $("#browsebar").toggleClass('sticky', direction=='down');
     }
   });
   var sections = $("#sections section");
