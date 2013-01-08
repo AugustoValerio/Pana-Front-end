@@ -54,15 +54,15 @@ var bar = $('#pinnav'),
     docHeight = $(document).height(),
     baseX = $window.height() / docHeight * 130;
 
-bar.css('background', '-webkit-linear-gradient(45deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
-bar.css('background', '-moz-linear-gradient(45deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
-bar.css('background', '-ms-linear-gradient(45deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
-bar.css('background', 'linear-gradient(45deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
+bar.css('background', '-webkit-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
+bar.css('background', '-moz-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
+bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
+bar.css('background', 'linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 
 $window.scroll(function(e) {      
-    var x = $window.scrollTop() / docHeight * 160 + baseX;
-    bar.css('background', '-webkit-linear-gradient(45deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
-    bar.css('background', '-moz-linear-gradient(45deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
-    bar.css('background', '-ms-linear-gradient(45deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
-    bar.css('background', 'linear-gradient(45deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
+    var x = $window.scrollTop() / docHeight * 165 + baseX;
+    bar.css('background', '-webkit-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
+    bar.css('background', '-moz-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
+    bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
+    bar.css('background', 'linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
 });

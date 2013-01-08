@@ -1236,7 +1236,9 @@ footer a {
 	color: #fff;
 	background: #00a0c6;
 }
-
+.nav-container nav li a.selected, .nav-container nav li:first-child a {
+	background: url('../images/pin-nav-bg.png') no-repeat top right;
+}
 /************************** media querys *****************************/
 
 
