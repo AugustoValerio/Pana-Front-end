@@ -1,17 +1,20 @@
+$(document).ready(function() {
+	$('#browsebar').waypoint('sticky');
+	$('.nav-container').waypoint('sticky'); });
 $(function() {
-  // Do our DOM lookups beforehand
-  var nav = $("#browsebar");
+ 
+  /*var nav = $("#browsebar");
   var placeh = $(".placeholderb");
   nav.waypoint({
     handler: function(event, direction) {
        nav.toggleClass('sticky', direction=='down');
        placeh.toggleClass('on', direction=='down')
        
-    }
+    },offset: -35
   });
 });
 $(function() {
-  // Do our DOM lookups beforehand
+  
   var nav_container = $(".nav-container");
   
   nav_container.waypoint({
@@ -19,9 +22,9 @@ $(function() {
        nav_container.toggleClass('sticky', direction=='down');
        $("#browsebar").toggleClass('sticky', direction=='down');
     }
-  });
-  var sections = $("#sections section");
-	var navigation_links = $("nav.pinnav a");
+  });*/
+  var sections = $("#sections .pagesection");
+	var navigation_links = $(".pinnav a");
 	
 	sections.waypoint({
 		handler: function(event, direction) {
@@ -57,14 +60,14 @@ var bar = $('#pinnav'),
     docHeight = $(document).height(),
     baseX = $window.height() / docHeight * 130;
 
-bar.css('background', '-webkit-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
+bar.css('background', '-webkit-linear-gradient(30deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 bar.css('background', '-moz-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 bar.css('background', 'linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 
 $window.scroll(function(e) {      
     var x = $window.scrollTop() / docHeight * 165 + baseX;
-    bar.css('background', '-webkit-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
+    bar.css('background', '-webkit-linear-gradient(30deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
     bar.css('background', '-moz-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
     bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
     bar.css('background', 'linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');

@@ -424,6 +424,7 @@ h5{
 #browsebot {
 	float: right;
 	margin-top: 6px;
+	position: relative;
 }
 #browsebot a {
 	font-size: 13px !important;
@@ -442,6 +443,7 @@ h5{
 	line-height: 12px;
 	border: #7c7c7c solid 1px;
 	margin-left: 15px;
+	position: relative;
 }
 .blubot {
 	-webkit-border-radius: 4px;
@@ -1167,18 +1169,18 @@ footer a {
 
 /************************** pining_nav *****************************/
 
-.sticky {
+.stuck {
   position: fixed;
   top: 0;
   z-index: 999999;
 }
-#browsebar.sticky {
+#browsebar.stuck {
 	height: 35px !important;
 }
-#browsebar.sticky, #pining_nav.sticky {
+#browsebar.stuck, #pining_nav.stuck {
 	width: 100%;
 }
-#pining_nav.sticky {
+#pining_nav.stuck {
 	margin-top: 35px;
 }
 .placeholder.anav {
