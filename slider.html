@@ -1,0 +1,122 @@
+<!doctype html>
+
+<!--  [if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]   -->
+<!--  [if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]      -->
+<!--  [if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]      -->
+<!--  [if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]      -->
+<!--  [if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]       -->
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Product</title>
+   <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="resources/css/style_slider.css">
+<!--[if lt IE 9]>
+<script src="resources/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+  <!-- Include JS Files -->
+  <script type="text/javascript" src="resources/js/jquery.js" ></script>
+</head>
+
+<body>
+
+  <div id="page">
+    <header class="container">header</header>
+
+    <section id="reviews" class="container">
+      <div class="pan_menu">
+        <nav>
+          <ul>
+            <li><a href="#">Expert Review</a></li>
+            <li><a href="#">User Reviews</a></li>
+            <li><a href="#">Write a Review</a></li>
+          </ul> 
+        </nav>
+      </div>
+
+      <div class="review_arrow">
+        <a id="prev_reviews" class="prev" href="#"></a>
+      </div>
+
+      <div class="reviews_slide">
+        <div class="slider03">
+          <div class="reviews_slide_block">
+            <img src="resources/images/reviews/review_1.png" id="pr_img">
+            <div data-rating="3" class="score"></div>
+            <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+            <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+            <img src="resources/images/reviews/cnet.png" id="cr_img">
+          </div>
+
+          <div class="reviews_slide_block">
+            <img src="resources/images/reviews/review_1.png" id="pr_img">
+            <div data-rating="3" class="score"></div>
+            <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+            <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+            <img src="resources/images/reviews/cnet.png" id="cr_img">
+          </div>
+
+          <div class="reviews_slide_block">
+            <img src="resources/images/reviews/review_1.png" id="pr_img">
+            <div data-rating="3" class="score"></div>
+            <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+            <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+            <img src="resources/images/reviews/cnet.png" id="cr_img">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="review_arrow">
+        <a id="next_reviews" class="next" href="#"></a>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="paginator" id="rpaginator"></div>
+
+    </section>
+
+
+
+
+  </div>
+</body>
+<script src="resources/js/jquery.carouFredSel-6.1.0-packed.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+
+        $(".slider03").carouFredSel({
+          width: '800px',
+          responsive  : true,
+          scroll    : {
+            fx      : "uncover-fade"
+          },
+          items   : {
+            visible   : 1,
+            width   : 870,
+            height    : "46%"
+          }
+        });
+
+        $(".slider033").carouFredSel({
+          responsive  : true,
+          scroll    : {
+            fx      : "uncover-fade"
+          },
+          items   : {
+            visible   : 1,
+            width:   907 ,
+            height    : "auto"
+          },
+          pagination: { container: "#rpaginator", keys: true },
+          prev: '#prev_reviews',
+          next: '#next_reviews'
+        });
+
+      });
+
+  </script>
+</html>

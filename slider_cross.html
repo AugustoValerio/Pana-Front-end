@@ -1,0 +1,255 @@
+<!doctype html>
+
+<!--  [if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]   -->
+<!--  [if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]      -->
+<!--  [if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]      -->
+<!--  [if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]      -->
+<!--  [if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]       -->
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Product</title>
+   <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" type="text/css" href="resources/css/orbit.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/dropkick.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="resources/css/liquid-slider-1.0.css">
+<!--[if lt IE 9]>
+<script src="resources/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+  <!-- Include JS Files -->
+  <script type="text/javascript" src="resources/js/jquery.js" ></script>
+  <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.liquid-slider-1.0.min.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.atooltip.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+  <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+	$(".btn-slide").click(function(){
+	  $("#navmenucat .hide").slideToggle("slow");
+	  $(".btn-slide").toggleClass("active");
+	  $("#browsebar").toggleClass("hidden");
+	});
+
+  $(".btn-fooslide").click(function(){
+    $("#foo_navmenu .hide").slideToggle("slow");
+    $(this).toggleClass("active");
+  });
+	
+});
+$(function(){  
+	$('.rcnttm a').aToolTip({  
+        fixed: true  
+    });
+}); 
+$(function() {
+        $( ".tabs" ).tabs();
+    });
+</script>
+ <script>
+    $(function(){
+          $('#navmenucats').liquidSlider({
+            autoSlide:false,
+            autoHeight:false,
+            crossLinks: true,
+            dynamicTabs: false,
+            dynamicArrows: false,
+            slideEaseDuration: 0,
+            preloader: true,
+            preloaderFadeOutDuration: 250
+          });
+
+    });
+    </script> 
+</head>
+<body>
+<div id="page">
+    <header id="header">
+
+        <div class="container">
+         <h1 id="logo"><a href="#">Panasonic</a></h1>
+          <a class="toggleMenu" href="#"><img src="resources/images/mob-menu-icon.png" alt="mob-menu-icon" width="70" height="70"></a>
+           <nav class="main_menu">
+             <ul class="nav">
+               <li class="btn-slide"><a href="javascript:void(0)">Products</a></li>
+               <li><a href="#">Apps</a></li>
+               <li><a href="#">Support</a></li>
+               <li><a href="#">Store</a></li>
+             </ul>
+           </nav>
+
+           <div class="main_search">
+              <ul id="bustype"><li><a href="#">Business</a></li><li><a href="#">Industrial</a></li></ul>
+                <form role="search" method="get" id="searchformhead" action="#">
+                  <label for="s" class="assistivetext">Search Here</label>
+                  <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Search Here"  />
+                  <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+                </form>
+          </div>
+
+        </div>
+
+    </header><!--header-->
+
+
+<div id="sections">
+
+    <section id="reviews" class="container">
+      <div class="pan_menu">
+        <nav>
+          <ul>
+            <li><a href="#">Expert Review</a></li>
+            <li><a href="#">User Reviews</a></li>
+            <li><a href="#">Write a Review</a></li>
+          </ul> 
+        </nav>
+      </div>
+
+      <div class="review_arrow">
+        <a id="prev_reviews" class="prev" href="#"></a>
+      </div>
+
+      <div class="reviews_slide">
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div data-rating="3" class="score"></div>
+          <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div data-rating="3" class="score"></div>
+          <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+
+        <div class="reviews_slide_block">
+          <img src="resources/images/reviews/review_1.png" id="pr_img">
+          <div data-rating="3" class="score"></div>
+          <p>The GH3 doesn't only look like a DSLR, it behaves like one too. It could well be the most viable compact-system camera challenger to a DSLR.</p>
+          <div><span>Nik Rawlinson</span> on 10 October 2012</div>
+          <img src="resources/images/reviews/cnet.png" id="cr_img">
+        </div>
+      </div>
+
+
+      <div class="review_arrow">
+        <a id="next_reviews" class="next" href="#"></a>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="paginator" id="rpaginator"></div>
+
+    </section>
+
+    <section class="container">
+    <div class="html_carousel">
+      <div id="foo2">
+        <div class="slide">
+          <img src="http://caroufredsel.dev7studios.com/examples/images/large/carousel_1.jpg" alt="carousel 1" width="870" height="400" />
+          <div>
+            <h4>Infinity</h4>
+            <p>A concept that in many fields refers to a quantity without bound or end.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="http://caroufredsel.dev7studios.com/examples/images/large/carousel_2.jpg" alt="carousel 2" width="870" height="400" />
+          <div>
+            <h4>Circular journey</h4>
+            <p>An excursion in which the final destination is the same as the starting point.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="http://caroufredsel.dev7studios.com/examples/images/large/carousel_3.jpg" alt="carousel 3" width="870" height="400" />
+          <div>
+            <h4>jQuery</h4>
+            <p>jQuery is a JavaScript library designed to simplify the client-side scripting.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="http://caroufredsel.dev7studios.com/examples/images/large/carousel_4.jpg" alt="carousel 4" width="870" height="400" />
+          <div>
+            <h4>Carousel</h4>
+            <p>A carousel is an amusement ride consisting of a rotating circular platform with seats.</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    </section>
+
+ 
+ 
+</div>
+
+</div><!-- page -->
+
+<script src="resources/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="resources/js/waypoints.min.js" type="text/javascript"></script>
+
+<script src="resources/js/jquery.carouFredSel-6.1.0-packed.js" type="text/javascript"></script>
+<script src="resources/js/dropkick.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function() {
+
+
+        $(".reviews_slide").carouFredSel({
+          responsive  : true,
+          scroll: { items: 1, fx: "uncover-fade" },
+          items: { visible: { min: 1, max: 1 }, width: "100%", },
+          pagination: { container: "#rpaginator", keys: true },
+          prev: '#prev_reviews',
+          next: '#next_reviews'
+        });
+
+        $("#foo2").carouFredSel({
+          responsive  : true,
+          scroll    : {
+            fx      : "crossfade"
+          },
+          items   : {
+            visible   : 1,
+            width   : 870,
+            height    : "46%"
+          }
+        });
+
+        
+        $('.countrydp').dropkick();
+        $('.countryldp').dropkick();
+
+      });
+
+    $('.score').raty({
+      score: function() {
+        return $(this).attr('data-rating');
+      },
+      path: 'resources/images/raty/img/'
+    });
+    
+   
+
+  </script>
+  
+  <script src="resources/js/navbar.js" type="text/javascript"></script>
+</body>
+
+</html>
