@@ -717,45 +717,28 @@ $(function() {
     $(function() {
 
          $(".slider01").carouFredSel({
-            responsive  : true,
-            scroll    : {
-              fx      : "uncover-fade"
-            },
-            items   : {
-              visible   : 1,
-              width:   976 ,
-              height    : "auto"
-            },
+            responsive: true,
+            scroll: { fx: "uncover-fade"},
+            items: { visible: 1, width: 976, height: "auto" },
             pagination: { container: "#fpaginator", keys: true },
             prev: '#prev_features',
-            next: '#next_features'
+            next: '#next_features',
+            auto: false
           });
 
          $(".slider02").carouFredSel({
-            responsive  : true,
-            scroll    : {
-              fx      : "uncover-fade"
-            },
-            items   : {
-              visible   : 1,
-              width:   640 ,
-              height    : "auto"
-            },
+            responsive: true,
+            scroll: { fx: "uncover-fade" },
+            items: { visible: 1, width: 640, height: "auto" },
             prev: '#prev_samples',
             next: '#next_samples',
             auto: false
           });
 
          $(".slider03").carouFredSel({
-            responsive  : true,
-            scroll    : {
-              fx      : "uncover-fade"
-            },
-            items   : {
-              visible   : 1,
-              width:   807 ,
-              height    : "auto"
-            },
+            responsive: true,
+            scroll: { fx: "uncover-fade" },
+            items: { visible: 1, width: 807, height: "auto" },
             pagination: { container: "#rpaginator", keys: true },
             prev: '#prev_reviews',
             next: '#next_reviews',
@@ -763,16 +746,9 @@ $(function() {
           });
 
          $(".slider04").carouFredSel({
-            responsive  : true,
-            scroll    : {
-              items   : 1,
-              easing      : "linear"
-            },
-            items   : {
-              visible   : { min: 1, max: 4 },
-              width:   180 ,
-              height    : "auto"
-            },
+            responsive: true,
+            scroll: { items: 1, easing: "linear" },
+            items: { visible: { min: 1, max: 4 }, width: 180, height: "auto" },
             pagination: { container: "#apaginator", keys: true },
             prev: '#prev_acceso',
             next: '#next_acceso',
