@@ -482,7 +482,29 @@ h6 {
 	text-decoration: none;
 	line-height: 12px;
 }
-
+.sticky-wrapper2 {
+	height: 0 !important;
+	margin-top: -34px;
+}
+/************************** generic class *****************************/
+#sections {
+	overflow: hidden;
+}
+#sections .pagesection {
+	padding: 70px 0 0 0;
+}
+#sections .pagesection:after {
+	content: '';
+	display: block;
+	border-bottom: #d6d6d6 solid 1px;
+	margin: 0;
+	width: 99999px;
+	margin-left: -999px;
+	padding-top: 70px;
+}
+#support_bg:after, #accessories:after {
+	display: none !important;
+}
 /************************** pan menu *****************************/
 
 .pan_menu nav {
@@ -589,7 +611,6 @@ h6 {
 	width: 976px;
 	position: relative;
 }
-
 .features_slide_block {
 	margin-top: 70px;
 	margin-bottom: 50px;
@@ -721,6 +742,7 @@ h6 {
 
 #support_bg {
 	background-color: #d2d2d2;
+	padding-top: 2px;
 }
 
 #support {
@@ -1011,6 +1033,7 @@ footer a {
 }
 #overviewbg {
 	background: url("../images/overview-bg.jpg") repeat-x center top;
+	padding-bottom: 34px;
 }
 #overview {
 	height: 460px;
@@ -1065,9 +1088,7 @@ footer a {
 
 /************************** techspecs *****************************/
 
-#techspecs {
-	padding: 75px 0 0 0;
-}
+
 #specsbar {
 	float: left;
 	width: 225px;

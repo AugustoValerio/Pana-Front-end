@@ -1,29 +1,11 @@
 $(document).ready(function() {
 	$('#browsebar').waypoint('sticky');
-	$('.nav-container').waypoint('sticky'); });
+	$('.nav-container').waypoint('sticky',{wrapper: '<div class="sticky-wrapper2" />', offset: 34}	); });
+
+
 $(function() {
- 
-  /*var nav = $("#browsebar");
-  var placeh = $(".placeholderb");
-  nav.waypoint({
-    handler: function(event, direction) {
-       nav.toggleClass('sticky', direction=='down');
-       placeh.toggleClass('on', direction=='down')
-       
-    },offset: -35
-  });
-});
-$(function() {
-  
-  var nav_container = $(".nav-container");
-  
-  nav_container.waypoint({
-    handler: function(event, direction) {
-       nav_container.toggleClass('sticky', direction=='down');
-       $("#browsebar").toggleClass('sticky', direction=='down');
-    }
-  });*/
-  var sections = $("#sections .pagesection");
+
+  var sections = $(".pagesection");
 	var navigation_links = $(".pinnav a");
 	
 	sections.waypoint({
@@ -39,7 +21,7 @@ $(function() {
 			
 
 		},
-		offset: '25%'
+		offset: '7%'
 	})
 	
 	
@@ -49,7 +31,7 @@ $(function() {
 			$(this).attr("href"),
 			{
 				duration: 200,
-				offset: { 'left':0, 'top':-0.15*$(window).height() }
+				offset: { 'left':0, 'top':'7%' }
 			}
 		);
 	});
