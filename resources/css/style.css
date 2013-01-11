@@ -66,54 +66,17 @@ body {
 	background: #f7f7f7;
 }
 
-/*h1, h2, h3, h4, h5{
-	color: 111;
-}
-
-h1{
-	font-size:3em;
-	line-height:1;
-	margin-bottom:0.5em;
+h1, h2, h4, h5, h6 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
 }
-
-h2{
-	font-size:2em;
-	margin-bottom:0.75em;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
-}
-
-h3{
-	font-size:20px;
-	line-height:24px;
-	margin-bottom:1em;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: bold;
-}
-
-h4{
-	font-size:1.2em;
-	line-height:1.25;
-	margin-bottom:1.25em;
-}
-
-h5{
-	font-size:1em;
-	font-weight:bold;
-	margin-bottom:1.5em;
-}*/
 
 h1 {
-	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 30px;
 	color: #1f1f1f;
 	font-weight: bold;
 }
 
 h2 {
-	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
 	line-height: 24px;
 	color: #1f1f1f;
@@ -128,22 +91,19 @@ h3 {
 }
 
 h4 {
-	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
 	color: #1f1f1f;
 	font-weight: bold;
 }
 
 h5 {
-	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 13px;
 	color: #1f1f1f;
 	font-weight: bold;
 }
 
 h6 {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	color: #b9b9b9;
 	font-weight: bold;
 }
@@ -732,18 +692,15 @@ h6 {
 
 .reviews_slide_block {
 	text-align: center;
-	height: 400px;  /*chrome bug*/
+	height: 370px;  /*chrome bug*/
 }
 
 #cr_img {
 	margin: 10px 0 10px 0;
 }
 
-.reviews_slide_block p {
-	font-size: 20px;
-	margin: 10px 25.614754098361% 10px 25.614754098361%;
-	font-weight: bold;
-
+.reviews_slide_block h1 {
+	margin: 10px 200px 10px 200px;
 }
 
 .reviews_slide_block span {
@@ -775,9 +732,13 @@ h6 {
 	padding: 40px 0 40px 0;
 }
 
+#support h2 {
+	margin-top: 10px;
+}
+
 #supportsearch {
 	width: 45%;
-	margin: 0 auto;
+	margin: 40px auto;
 }
 
 #supportsearch label {
@@ -829,11 +790,12 @@ h6 {
 }
 
 .support_block h6 {
-	font-weight: bold;
+	font-family: arial;
+	color: #000;
 }
 
 .support_block a {
-	font-weight: bold;
+
 }
 
 /************************** other products *****************************/
@@ -842,10 +804,14 @@ h6 {
 	background-color: #434343;
 }
 
+#others_products {
+	padding-top: 40px;
+}
+
 #others_products h3 {
 	text-align: center;
 	color: #fff;
-	padding: 40px 0 0 0;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .others_products_slide { 
@@ -866,11 +832,6 @@ h6 {
 	margin-bottom: 10px;
 }
 
-.others_products_block p {
-	color: #fff;
-	font-weight: bold;
-}
-
 
 /************************** footer start *****************************/
 
@@ -883,6 +844,7 @@ footer {
 
 footer a {
 	color: #fff;
+	text-decoration: none;
 }
 
 .foo_bbottom {
@@ -892,6 +854,8 @@ footer a {
 #foo_nav {
 	margin-bottom: 30px;
 	padding-top: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
 }
 
 #foo_print {
@@ -999,6 +963,7 @@ footer a {
 
 #foo_terms {
 	margin-bottom: 35px;
+	font-size: 11px;
 }
 
 #foo_terms ul{
@@ -1061,14 +1026,13 @@ footer a {
 	width: 215px;
 }
 
-#overviewblock h3 {
+#overviewblock h1 {
 	margin-top: 85px;
-	font-size: 28px;
 	line-height: 36px;
 	color: #FFF;
 }
 #overviewblock p {
-	margin-bottom: 20px;
+	margin: 10px 0px 20px 0px;
 	line-height: 16px;
 }
 #overviewimg {
@@ -1091,9 +1055,9 @@ footer a {
 	width: 93px;
 }
 .footnote {
-	color: #b6b6b6;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	color: #6c6c6c;
+	font-family: Arial;
+	font-size: 11px;
 	text-align: right;
 	line-height: 12px;
 	margin-top: -32px;
@@ -1182,7 +1146,10 @@ footer a {
 
 #samples .tabs p {
 	width: 640px;
-	margin: 0 auto;
+	margin: 5px auto;
+	font-family: arial;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 /************************** acces *****************************/
@@ -1208,6 +1175,13 @@ footer a {
 .acceslider .slide img {
 	margin: 25px 0 15px;
 }
+
+.acceslider .slide p {
+	margin: 10px 0 10px 0;
+	font-family: arial;
+	font-size: 12px;
+}
+
 .acceso.arrow a{
 	float: left;
 }
@@ -1245,9 +1219,13 @@ footer a {
 	font-size: 13px;
 }
 
-.access_more_slide_block a {
+.access_more_slide_block .link {
 	color: #000;
-	font-weight: bold;
+}
+
+.access_more_slide_block p {
+	font-family: arial;
+	font-size: 12px;
 }
 
 .access_more_slide_block:first-child {
