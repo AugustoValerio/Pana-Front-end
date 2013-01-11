@@ -65,13 +65,8 @@ table {
 body {
 	background: #f7f7f7;
 }
-a{
-	color: #00a0c6;
-	font-weight: normal;
-	text-decoration: none;
-}
 
-h1, h2, h3, h4, h5{
+/*h1, h2, h3, h4, h5{
 	color: 111;
 }
 
@@ -108,7 +103,63 @@ h5{
 	font-size:1em;
 	font-weight:bold;
 	margin-bottom:1.5em;
+}*/
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	color: #1f1f1f;
+	font-weight: bold;
 }
+
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	color: #1f1f1f;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: arial;
+	font-size: 16px;
+	color: #1f1f1f;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	color: #1f1f1f;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	color: #1f1f1f;
+	font-weight: bold;
+}
+
+h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	color: #b9b9b9;
+	font-weight: bold;
+}
+
+.link {
+	font-family: arial;
+	font-size: 12px;
+	line-height: 17px;
+	color: #00a0c6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
 
 /************************** header *****************************/
 
@@ -492,6 +543,11 @@ h5{
 
 .pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active{
 	background-image: url("../images/features/nav_bg_hover.jpg");
+
+}
+
+.pan_menu li:hover a{
+	color: #b9b9b9;
 }
 
 .pan_menu nav li:first-child {
@@ -505,12 +561,13 @@ h5{
 }
 
 .pan_menu nav li a {
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-decoration: none;
 	color: #1f1f1f;
-	font-size: 14px;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: bold;
+	display: block;
 }
 
 /************************** arrows slider *****************************/
@@ -578,6 +635,7 @@ h5{
 
 .features_slide_block {
 	margin-top: 70px;
+	margin-bottom: 50px;
 	float: left;
 }
 
@@ -595,8 +653,9 @@ h5{
 }
 
 .features_slide_block p{
-	font-size: 14px;
+	font-size: 12px;
 	font-family: arial;
+	line-height: 18px;
 	margin: 20px 10% 20px 0;
 }
 
@@ -606,16 +665,22 @@ h5{
 	width: 100%;
 }
 
-#features_paginator b:first-child , .first-child b {
+#features_paginator p {
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12px;
+}
+
+#features_paginator p:first-child , .first-child p {
 	float: left;
-	width: 10.245901639344%; /*100px*/
+	width: 110px;  /*10.245901639344%*/
 	text-align: right;
 	margin: 10px 2.049180327869% 0 2.049180327869%;
 }
 
-#features_paginator b:last-child, .last-child b {
+#features_paginator p:last-child, .last-child p {
 	float: left;
-	width: 10.245901639344%; /*100px*/
+	width: 110px; /*10.245901639344%*/
 	text-align: left;
 	margin: 10px 2.049180327869% 0 2.049180327869%; /*20px*/
 }
@@ -630,14 +695,14 @@ h5{
 
 #fpaginator {
 	/*width: 64.344262295082%;*/ /*628px*/
-	width: 628px;
+	width: 608px;
 }
 
 
 
 /************************** demo  *****************************/
 
-#demo {
+/*#demo {
 	
 }
 
@@ -655,7 +720,7 @@ h5{
 	width: 35%;
 	margin-left: 2%;
 	font-size: 14px;
-}
+}*/
 
 /************************** reviews  *****************************/
 
@@ -1063,6 +1128,7 @@ footer a {
 	font-size: 13px;
 	margin-bottom: 35px;
 	margin-top: 15px;
+	text-decoration: none;
 }
 #dimimg {
 	float: right;
