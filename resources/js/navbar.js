@@ -22,15 +22,15 @@ $(function() {
 
 		},
 		offset: '10%'
-	})
+	});
 	
-	
-	navigation_links.click( function(event) {
+navigation_links.click( function(event) {
 
 		$.scrollTo(
 			$(this).attr("href"),
 			{
 				duration: 200,
+				easing: 'swing',
 				offset: { 'left':0, 'top':-0.10*$(window).height() }
 			}
 		);
