@@ -1,4 +1,4 @@
-/*$(function() {
+$("#specsbut").click(function() {
 
    var docHeight = $(document).height();
 
@@ -16,4 +16,4 @@
          'z-index': 5000
       });
 
-});*/
+});

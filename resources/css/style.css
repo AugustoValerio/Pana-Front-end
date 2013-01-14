@@ -420,8 +420,11 @@ h6 {
 	border-top: 1px solid #1f1f1f;
 	overflow: hidden;
 }
-#browsebar.hidden {
-	height: 0;
+.hidden {
+	height: 0 !important;
+}
+.sticky-wrapper {
+	background: black;
 }
 #brand {
 	margin: 0 35px 0 0;
