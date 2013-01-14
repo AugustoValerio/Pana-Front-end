@@ -874,11 +874,10 @@ footer a {
 }
 
 #foo_nav {
-	/*margin-bottom: 30px;*/
-	/*padding-top: 15px;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 13px;
-	/*background-color: #ebebeb;*/
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 #foo_print {
@@ -946,7 +945,6 @@ footer a {
 
 #foo_navmenu .hide {
 	display: none;
-	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
