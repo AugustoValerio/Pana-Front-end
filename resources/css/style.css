@@ -874,10 +874,11 @@ footer a {
 }
 
 #foo_nav {
-	margin-bottom: 30px;
-	padding-top: 15px;
+	/*margin-bottom: 30px;*/
+	/*padding-top: 15px;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 13px;
+	/*background-color: #ebebeb;*/
 }
 
 #foo_print {
@@ -894,10 +895,13 @@ footer a {
 	content: "";
 	float: left;
 	margin-right: 5px;
+	margin-top: 20px;
+	padding-top: 20px;
 }
 
 #foo_print a {
 	display: block;
+	padding-top: 20px;
 }
 
 .icn_print {
@@ -912,6 +916,11 @@ footer a {
 	float: left;
 	width: 36.06557%;
 	text-align: center;
+	padding-top: 3px;
+}
+
+#foo_btop img {
+	padding-bottom: 10px;
 }
 
 #foo_nav nav {
@@ -922,7 +931,13 @@ footer a {
 
 #foo_nav nav li {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: -3px;
+	padding: 20px 10px 20px 10px;
+}
+
+#foo_nav nav li:hover {
+	background-color: #616161;
+	cursor: pointer;
 }
 
 #foo_nav nav li span {
@@ -931,57 +946,93 @@ footer a {
 
 #foo_navmenu .hide {
 	display: none;
-	border-top: #c5c5c5 solid 1px;
-	border-bottom: #c5c5c5 solid 1px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-#othersites {
-	width: 478px;
-	float: left;
-	margin-top: 30px;
+.area_country_box {
+	border-bottom: 1px solid #616161;
+	border-top: 1px solid #616161;
+	padding: 65px 0px 10px 0px;
 }
 
-#othersites p:first-child {
-	margin-bottom: 10px;
-	font-size: 16px;
-	font-weight: bold;
+ /*area-country menu*/
+
+.area-country-menu nav {
+	text-align: center;
+	-webkit-box-shadow: 0px 5px 5px 1px #393939;
+	box-shadow: 0px 5px 5px 1px #393939;
+	margin-bottom: 40px;
+	background-color: transparent;
 }
 
-#othersitesform {
-	width: 498px;
-	float: left;
-	text-align: right;
-	margin: 25px 0 40px 0;
+.area-country-menu nav li{
+	list-style: none;
+	display: inline-block;
+	margin-left: -4px;
+	height: 24px;
+	padding-top: 10px;
+	width: 163px;
+	background-image: url("../images/footer/tab-footer-off-1px2.png");
+	border-top: #616161 solid 1px;
+	border-left: #616161 solid 1px;
 }
 
-.country_form {
-	float: right;
+.area-country-menu nav li:hover, .area-country-menu nav li.ui-tabs-active{
+	background-image: url("../images/footer/tab-footer-on-1px2.png");
+
 }
 
-.country_form input[type="submit"] {
-	background-color: #ebebeb;
-	display: block;
-	float: left;
-	font: normal 13px;
-	line-height: 16px;
-	height: 34px;
-	padding-left: 10px; 
-	padding-right: 10px;
+.area-country-menu li:hover a{
+	color: #b9b9b9;
+}
+
+.area-country-menu nav li:first-child {
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+	border-left: none;
+}
+
+.area-country-menu nav li:last-child {
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.area-country-menu nav li a {
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-decoration: none;
-	border: none;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
 }
 
-.country_form div:first-child {
-	text-align: left;
-	margin: 0 0 10px 20px;
+.area-country-list li {
+	width: 162px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	font-family: arial;
+	font-size: 12px;
+	margin-bottom: 25px;
 }
 
-.country_form div:last-child {
-	margin: 0 0 0 20px;
+.area-country-list li a:hover{
+	text-decoration: underline;
 }
+
+#global_site_link {
+	text-align: right;
+	padding: 70px 0px 20px 0px;
+	font-size: 13px;
+}
+
+#global_site_link a:hover{
+	text-decoration: underline;
+}
+
+ /*form terms*/
 
 #foo_terms {
 	margin-bottom: 35px;
@@ -1006,13 +1057,30 @@ footer a {
 	text-align: center;
 }
 
-#foo_socialmedia a {
-	margin-left: 15px;
+#foo_socialmedia li {
+	background: url('../images/footer/spr-footer-social.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
-#foo_socialmedia a:first-child{
-	margin-left: 0;
+#foo_socialmedia li:first-child, .first-child {
+	margin-left: 0px;
 }
+
+#foo_socialmedia li a {
+	width: 20px;
+    height: 20px;
+    display: block;
+}
+
+#foo_socialmedia li.twitter {background-position: left top;}
+#foo_socialmedia li.facebook {background-position: -26px top;}
+#foo_socialmedia li.googleplus {background-position: -52px top;}
+#foo_socialmedia li.pinterest {background-position: -78px top;}
+#foo_socialmedia li.youtube {background-position: -104px top;}
+
 
 /************************** overview *****************************/
 
