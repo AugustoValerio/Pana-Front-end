@@ -31,7 +31,7 @@ $(function() {
 			$(this).attr("href"),
 			{
 				duration: 200,
-				offset: { 'left':0, 'top':'7%' }
+				
 			}
 		);
 	});
