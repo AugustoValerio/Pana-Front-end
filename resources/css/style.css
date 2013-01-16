@@ -886,7 +886,21 @@ h6 {
 }
 
 .firmware_download {
-	text-align: right;
+	/*text-align: right;*/
+	/*display: inline-block;*/
+	width: 230px;
+	margin-left: 470px;
+	background-color: #ebebeb;
+	float: left;
+}
+
+.firmware_download form, a {
+	float: left;
+}
+
+.firmware_download form {
+	margin-top: 25px;
+	margin-right: 20px;
 }
 
 /************************** other products *****************************/
