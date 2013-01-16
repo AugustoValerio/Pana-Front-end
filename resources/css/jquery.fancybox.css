@@ -75,7 +75,7 @@
 	max-height: 100%;
 }
 
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+#fancybox-loading, .fancybox-prev span, .fancybox-next span {
 	background-image: url('../images/lightbox/fancybox_sprite.png');
 }
 
@@ -98,9 +98,10 @@
 }
 
 .fancybox-close {
+	background-image: url('../images/lightbox/close.png');
 	position: absolute;
-	top: -18px;
-	right: -18px;
+	top: 15px;
+	right: 15px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
