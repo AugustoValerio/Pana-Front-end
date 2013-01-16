@@ -9,9 +9,15 @@ $(document).ready(function(){
 
   $(".btn-fooslide").click(function(){
     $("#foo_navmenu .hide").slideToggle("slow");
-    $(this).toggleClass("active");
+    $(this).toggleClass("active foonavactive");
   });
-	
+
+  $('.fancybox').fancybox({
+    scrolling: 'no'
+  });
+
+  $('.firmware_procedures').jScrollbar();
+
 });
 $(function(){  
 	$('.rcnttm a').aToolTip({  

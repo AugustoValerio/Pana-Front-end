@@ -820,6 +820,33 @@ h6 {
 
 }
 
+ /* lightbox styles */
+
+.firmware_box {
+	max-width: 900px;
+	/*height: 400px;*/
+	padding: 0 20px 0 20px;
+}
+
+.firmware_box p {
+	line-height: 15px;
+	margin-bottom: 15px;
+}
+
+.firmware_box h2, h3, h5 {
+	margin-bottom: 15px;
+}
+
+.firmware_box h2, h3 {
+	text-align: center;
+}
+
+.firmware_procedures {
+	border-top: #1f1f1f solid 1px;
+	border-bottom: #1f1f1f solid 1px;
+	height: 200px;
+}
+
 /************************** other products *****************************/
 
 #others_products_bg {
@@ -937,6 +964,10 @@ footer a {
 #foo_nav nav li:hover {
 	background-color: #616161;
 	cursor: pointer;
+}
+
+.foonavactive {
+	background-color: #616161;
 }
 
 #foo_nav nav li span {
