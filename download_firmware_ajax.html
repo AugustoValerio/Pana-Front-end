@@ -1,15 +1,17 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.firmware_proc').jScrollbar();
+
+		$(".firmwarebut").click(function(){
+			if($('#firmaware_chkbox').is(':checked')){
+				return true;
+			}else{
+				return false;
+			}
+		});
 	});
 
-	$(".firmwarebut").click(function(){
-		if($('#firmaware_chkbox').is(':checked')){
-			return true;
-		}else{
-			return false;
-		}
-	});
+	
 
 </script>
 <div class="firmware_box">
