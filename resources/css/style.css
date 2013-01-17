@@ -603,6 +603,90 @@ h6 {
 	padding-top: 4px;
 }
 
+/************************** hero shuttle *************************/
+
+/*-sprite-*/ .videotour, .pgallery, .trisicsti, #closehero {
+	background-image: url(../images/hero-sprites.png);
+}
+#heroshuttle {
+	display: none;
+	position: absolute;
+	top:0;
+	height: 621px;
+	width: 1203px;
+	background:url(../images/hero-shuttler-bg.png) no-repeat left top;
+	z-index: 999999;
+	margin-right: -601px;
+	right:50%;
+	opacity: 0.25;
+}
+#heroshuttle h1 {
+	color: #FFFFFF;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 83px 0 -10px 113px;
+    float: left;
+}
+#heroshuttle h1 sup{
+	font-size: 11px;
+    font-weight: normal;
+    vertical-align: super;
+}
+#closehero {
+	display: block;
+	float: right;
+	width: 25px;
+	height: 25px;
+	background-position: -13px -9px;
+	text-indent: -9999px;
+	margin: 81px 110px -20px 0;
+}
+#herotabs {
+	margin: 75px auto 0;
+	text-align: center;
+	word-spacing: -.43em;
+	clear: both;
+}
+#herotabs li {
+	display: inline-block;
+	border-left: 1px solid #434343;
+	border-right: 1px solid #171717;
+	padding: 0 13px;
+}
+#herotabs li:first-child {
+	border-left: 0;
+}
+#herotabs li:last-child {
+	border-right: 0;
+}
+#herotabs li a {
+	display: block;
+	text-indent: -9999px;
+	width: 72px;
+	height: 20px;
+}
+.videotour{
+	background-position: -10px 113px;
+} 
+.pgallery {
+	background-position: -112px 113px;
+}
+.trisicsti {
+	background-position: -214px 112px;
+}
+.videotour:hover, .ui-tabs-active .videotour{
+	background-position: -10px 51px;
+} 
+.pgallery:hover, .ui-tabs-active .pgallery{
+	background-position: -112px 51px;
+}
+.trisicsti:hover, .ui-tabs-active .trisicsti{
+	background-position: -214px 51px;
+}
+
+
 /************************** features *****************************/
 
 #features {
