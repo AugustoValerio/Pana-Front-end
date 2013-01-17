@@ -602,65 +602,6 @@ h6 {
 	height: 10px;
 	padding-top: 4px;
 }
-/************************** hero shuttle *************************/
-
-/*-sprite-*/ .videotour, .pgallery, .trisicsti, #closehero {
-	background-image: url(../images/hero-sprites.png);
-}
-#heroshuttle {
-	display: none;
-	position: absolute;
-	top:0;
-	height: 621px;
-	width: 1203px;
-	background:url(../images/hero-shuttler-bg.png) no-repeat left top;
-	z-index: 999999;
-	margin-right: -601px;
-	right:50%;
-	opacity: 0.25;
-}
-#closehero {
-	display: block;
-	float: right;
-	width: 25px;
-	height: 25px;
-	background-position: -13px -9px;
-	text-indent: -9999px;
-	margin: 81px 110px 0 0;
-}
-#herotabs {
-	margin: 75px auto 0;
-	text-align: center;
-	clear: both;
-}
-#herotabs li {
-	display: inline-block;
-}
-#herotabs li a {
-	display: block;
-	text-indent: -9999px;
-	width: 72px;
-	height: 20px;
-	
-}
-.videotour{
-	background-position: -10px 113px;
-} 
-.pgallery {
-	background-position: -112px 113px;
-}
-.trisicsti {
-	background-position: -214px 112px;
-}
-.videotour:hover{
-	background-position: -10px 51px;
-} 
-.pgallery:hover{
-	background-position: -112px 51px;
-}
-.trisicsti:hover {
-	background-position: -214px 51px;
-}
 
 /************************** features *****************************/
 
@@ -879,8 +820,6 @@ h6 {
 
 }
 
-<<<<<<< HEAD
-=======
  /* lightbox styles */
 
 .firmware_box {
@@ -977,7 +916,6 @@ h6 {
 	float: left;
 }
 
->>>>>>> finished support
 /************************** other products *****************************/
 
 #others_products_bg {
@@ -1095,6 +1033,10 @@ footer a {
 #foo_nav nav li:hover {
 	background-color: #616161;
 	cursor: pointer;
+}
+
+.foonavactive {
+	background-color: #616161;
 }
 
 #foo_nav nav li span {
