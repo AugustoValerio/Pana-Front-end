@@ -1019,11 +1019,7 @@ h6 {
 	float: left;
 }
 
-.firmware_download form {
-	
-}
-
-#firmwarebut {
+.firmwarebut {
 	background: url("../images/support/download.png") no-repeat;
 	display: block;
 	padding: 15px 10px 15px 55px;
@@ -1042,9 +1038,10 @@ h6 {
 	width: 100px;
 }
 
-#firmwarebut {
+.firmwarebut {
 	float: left;
 }
+
 /************************** other products *****************************/
 
 #others_products_bg {
@@ -1311,7 +1308,7 @@ footer a {
 
 /************************** overview *****************************/
 
-#backcat:before, .overviewbut, #specsbut {
+#backcat:before, .overviewbut, .specsbut {
 	background: url('../images/product-sprite.png') no-repeat;
 }
 #backcat:before {
@@ -1398,7 +1395,7 @@ footer a {
 	font-size: 13px;
 	font-weight: 400;
 }
-#specsbut {
+.specsbut {
 	display: block;
 	padding: 15px 10px 15px 55px;
 	color: #fff;
