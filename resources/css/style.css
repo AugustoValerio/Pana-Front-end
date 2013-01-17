@@ -839,13 +839,14 @@ h6 {
 }
 
 .firmware_proc {
-	border-top: #1f1f1f solid 1px;
-	border-bottom: #1f1f1f solid 1px;
+	border-top: #ebebeb solid 1px;
+	border-bottom: #ebebeb solid 1px;
 	width: 700px;
 	height:209px;
 	overflow:hidden;
 	position:relative;
-	padding:10px
+	padding: 20px 0 20px 0;
+	margin-top: 30px;
 }
 
 .firmware_proc .jScrollbar_mask {
@@ -855,7 +856,6 @@ h6 {
 }
 
 .firmware_proc .jScrollbar_mask p {
-
 	line-height: 15px;
 	margin-bottom: 15px;
 }
@@ -869,10 +869,7 @@ h6 {
 	width:33px;
 	height:209px;
 	overflow:hidden;
-	/*background:none;*/
-	/*background-color:#ebebeb;*/
 	background: url('../images/support/scroll_bg.png') repeat-y;
-	/*border:1px solid #e0e0e0;*/
 	position:relative
 }
 
@@ -887,8 +884,8 @@ h6 {
 
 .firmware_download {
 	width: 230px;
+	height: 70px;
 	margin-left: 470px;
-	background-color: #ebebeb;
 	float: left;
 }
 
