@@ -719,6 +719,13 @@ h6 {
 .features_slide_block_3 h1 {
 	text-align: right;
 }
+
+.features_slide_block_4 {
+	width: 23%;
+	float: left;
+	margin-right: 2%;
+}
+
 /************************** demo  *****************************/
 
 /*#demo {
@@ -922,15 +929,14 @@ h6 {
 }
 
 .firmware_download {
-	width: 215px;
+	width: 225px;
 	height: 70px;
 	margin-left: 487px;
 	float: left;
 }
 
 .firmware_download form {
-	margin-top: 25px;
-	margin-right: 20px;
+	
 }
 
 #firmwarebut {
@@ -948,6 +954,8 @@ h6 {
 
 #firmaware_chk {
 	float: left;
+	margin-top: 25px;
+	width: 100px;
 }
 
 #firmwarebut {
