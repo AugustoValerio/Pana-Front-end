@@ -824,8 +824,6 @@ h6 {
 
 .firmware_box {
 	max-width: 900px;
-	/*height: 400px;*/
-/*padding: 0 20px 0 20px;*/
 }
 
 .firmware_box h2, h3 {
@@ -886,17 +884,15 @@ h6 {
 }
 
 .firmware_download {
-	/*text-align: right;*/
-	/*display: inline-block;*/
 	width: 230px;
 	margin-left: 470px;
 	background-color: #ebebeb;
 	float: left;
 }
 
-.firmware_download form, a {
+/*.firmware_download form, a {
 	float: left;
-}
+}*/
 
 .firmware_download form {
 	margin-top: 25px;
