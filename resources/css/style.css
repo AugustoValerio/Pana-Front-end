@@ -879,6 +879,105 @@ h6 {
 
 }
 
+<<<<<<< HEAD
+=======
+ /* lightbox styles */
+
+.firmware_box {
+	max-width: 900px;
+	background: #fff;
+}
+
+.firmware_box h2, h3 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.firmware_procedures {
+	border-top: #1f1f1f solid 1px;
+	border-bottom: #1f1f1f solid 1px;
+	height: 200px;
+}
+
+.firmware_proc {
+	border-top: #ebebeb solid 1px;
+	border-bottom: #ebebeb solid 1px;
+	width: 700px;
+	height:209px;
+	overflow:hidden;
+	position:relative;
+	padding: 20px 0 20px 0;
+	margin-top: 30px;
+}
+
+.firmware_proc .jScrollbar_mask {
+	width:650px;
+	position:relative;
+	top:0;
+	height: 300px;
+}
+
+.firmware_proc .jScrollbar_mask p {
+	line-height: 15px;
+	margin-bottom: 15px;
+}
+
+.firmware_proc .jScrollbar_mask h2, h3, h5 {
+	margin-bottom: 15px;
+}
+
+.firmware_proc .jScrollbar_draggable {
+	float:left;
+	width:33px;
+	height:209px;
+	overflow:hidden;
+	background: url('../images/support/scroll_bg.png') repeat-y;
+	position:relative
+}
+
+.firmware_proc .jScrollbar_draggable a.draggable {
+	position:relative;
+	background:transparent url('../images/support/scroll.png') no-repeat;
+	display:block;
+	height:95px;
+	width:33px;
+	cursor:s-resize;
+}
+
+.firmware_download {
+	width: 215px;
+	height: 70px;
+	margin-left: 487px;
+	float: left;
+}
+
+.firmware_download form {
+	margin-top: 25px;
+	margin-right: 20px;
+}
+
+#firmwarebut {
+	background: url("../images/support/download.png") no-repeat;
+	display: block;
+	padding: 15px 10px 15px 55px;
+	color: #fff;
+	width: 60px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	margin-bottom: 35px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+#firmaware_chk {
+	float: left;
+}
+
+#firmwarebut {
+	float: left;
+}
+
+>>>>>>> finished support
 /************************** other products *****************************/
 
 #others_products_bg {
