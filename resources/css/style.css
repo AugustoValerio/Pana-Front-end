@@ -697,8 +697,28 @@ h6 {
 	height: 100px;
 }
 
+.features_slide_block_3 {
+	width: 31%;
+	float: left;
+	margin-right: 3%;
+}
 
+.features_slide_block_3 img {
+	width: 100%;
+	margin-top: 20px;
+}
 
+.features_slide_block .features_slide_block_3:last-child {
+	margin-right: 0px;
+}
+
+.features_slide_block_3 h3 {
+	text-align: left;
+}
+
+.features_slide_block_3 h1 {
+	text-align: right;
+}
 /************************** demo  *****************************/
 
 /*#demo {
