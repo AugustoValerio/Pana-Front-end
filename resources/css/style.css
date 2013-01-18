@@ -605,7 +605,7 @@ h6 {
 
 /************************** hero shuttle *************************/
 
-/*-sprite-*/ .videotour, .pgallery, .trisicsti, #closehero {
+/*-sprite-*/ .videotour, .pgallery, .trisicsti, #closehero, #prev_heros, #next_heros, #hpaginator a {
 	background-image: url(../images/hero-sprites.png);
 }
 #heroshuttle {
@@ -685,8 +685,37 @@ h6 {
 .trisicsti:hover, .ui-tabs-active .trisicsti{
 	background-position: -214px 51px;
 }
-
-
+.heropanel {
+	width: 980px;
+	margin: 20px auto;
+}
+.heroslider {
+	margin: 0 auto;
+}
+.heroslider .slide {
+	width: 498px;
+	float: left;
+}
+#prev_heros {
+	float: left;
+	margin-top: -233px;
+	background-position: -118px -13px;
+}
+#next_heros {
+	float: right;
+	margin-top: -233px;
+	background-position: -158px -13px;
+}
+#hpaginator {
+	text-align: center;
+	float: none;
+}
+#hpaginator a {
+	background-position: -247px -48px;
+}
+#hpaginator a.selected {
+	background-position: -224px -45px;
+}
 /************************** features *****************************/
 
 #features {
