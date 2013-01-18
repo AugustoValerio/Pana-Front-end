@@ -83,6 +83,16 @@ $(function() {
             next: '#next_acceso',
             auto: false
           });
+          
+          $(".heroslider").carouFredSel({
+            responsive: false,
+            scroll: { items: 1, easing: "elastic", duration: 500 },
+            items: { visible: { min: 1, max: 1 }, width: 498, height: 378 },
+            pagination: { container: "#hpaginator", keys: true },
+            prev: '#prev_heros',
+            next: '#next_heros',
+            auto: false
+          });
 
         $('.countrydp').dropkick();
         $('.countryldp').dropkick();
