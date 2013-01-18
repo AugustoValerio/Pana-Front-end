@@ -89,6 +89,13 @@ $(function() {
 
       });
 
+$(function(){
+	$('.pagi li a img').click(function () {
+	 $('.pagi li a img').removeClass('slide-option-selected');	
+     $(this).addClass('slide-option-selected');
+    });
+});
+
     $('.score').raty({
       score: function() {
         return $(this).attr('data-rating');

@@ -1621,6 +1621,40 @@ footer a {
 .nav-container nav li a.selected, .nav-container nav li:first-child a {
 	background: url('../images/pin-nav-bg.png') no-repeat top right;
 }
+
+.slide .tabs .pagi li a img {
+	
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+
+.slide .tabs .pagi li a img:hover {
+	
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+.slide .tabs .pagi li .slide-option-selected{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+.slide .tabs .sample-info-link {
+	color: #00A0C6;
+    float: left;
+	font-weight: bold;
+	text-align: left;
+    text-decoration: none;
+    width: 640px;
+}
+.slide .tabs .sample-info {
+	height: 50px;
+	overflow: hidden;
+}
 /************************** media querys *****************************/
 
 
