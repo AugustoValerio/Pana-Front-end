@@ -43,15 +43,47 @@ $(function(){
 
     });
 
-$(function() {
+// jquery.fn.getslides = function(count_slides, current_slide){
+  
 
+// }
+$(function() {
+          var count_slides = $(".features_slide_block").size();
          $(".slider01").carouFredSel({
             responsive: true,
-            scroll: { fx: "uncover-fade"},
+            scroll: { fx: "uncover-fade",
+              onBefore: function(direction, nr){
+                var dir = direction.scroll.direction; 
+                // var indexSlide = $(this).triggerHandler("currentPosition");
+                var indexSlide = 1;
+                if(dir == 'next'){
+                  // console.log(dir + 'slide anterior: '+ (indexSlide-1) +' slide actual:'+ indexSlide +' slide nuevo: '+ (indexSlide + 1)); 
+                }else if(dir == 'prev'){
+                   // console.log(dir +' slide:'+ (indexSlide - 1));
+                }
+
+                console.log(count_slides);
+               
+
+
+                // var prevTitleValue = indexSlide;
+                // var nextTitleValue = indexSlide;
+
+                // if ( prevTitleValue < 0 ) { prevTitleValue = 4 } else { prevTitleValue - 1 };
+                // if ( nextTitleValue > 4 ) { nextTitleValue = 0 } else { nextTitleValue + 1 };
+
+                // var prevTitle = $(".features_slide_block").eq(prevTitleValue).children("div#title").text();
+                // var nextTitle = $(".features_slide_block").eq(nextTitleValue).children("div#title").text();
+                // $('#prev_feature_title').empty();
+                // $('#prev_feature_title').append(prevTitle);
+                // $('#next_feature_title').empty();
+                // $('#next_feature_title').append(nextTitle);
+              }
+            },
             items: { visible: 1, width: 976, height: "auto" },
             pagination: { container: "#fpaginator", keys: true },
-            prev: '#prev_features',
-            next: '#next_features',
+            prev: { button: "#prev_features" },
+            next: { button: "#next_features" },
             auto: false
           });
 
