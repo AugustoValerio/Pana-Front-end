@@ -41,7 +41,22 @@ $(function(){
             preloaderFadeOutDuration: 250
           });
 
-    });
+});
+
+$(document).ready(function(){
+
+	var specs_links = $("#dimimg a");
+	
+	$('#dimimg a').on({
+	    'click': function(){
+		    var active_img = $(this).attr("href");
+	        $('#dimimg img').attr('src', active_img);
+	        specs_links.removeClass("selected");
+			$(this).addClass("selected");
+	        return false;
+	    } 
+	});
+});
 
 // jquery.fn.getslides = function(count_slides, current_slide){
   

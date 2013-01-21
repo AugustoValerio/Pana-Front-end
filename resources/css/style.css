@@ -1439,6 +1439,52 @@ footer a {
 #dimimg {
 	float: right;
 }
+#dimimg span {
+	display: block;
+	padding: 30px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	clear: both;
+}
+#dimimg ul {
+	margin-left: 45px;
+	margin-top: -55px;
+}
+#dimimg ul li {
+	float: left;
+}
+#dimimg li a {
+	background-image: url(../images/specs-sprites.png);
+}
+#sizepicker li a {
+	display: block;
+	font-size: 20px;
+	display: block;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-position: -69px -60px;
+	padding: 11px 16px;
+	margin-right: 10px;
+}
+#sizepicker li a.selected {
+	background-position: -12px -60px;
+	color: #595959;
+}
+#colorpicker li a {
+	background-position: -45px -7px;
+	display: block;
+	text-indent: -9999px;
+	outline: none;
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+}
+#colorpicker li a.selected {
+	background-position: -6px -7px;
+}
 #specsbar li {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
@@ -1447,6 +1493,7 @@ footer a {
 #specsbar li:last-child {
 	border-bottom: 0px;
 }
+
 
 /************************** samples *****************************/
 
