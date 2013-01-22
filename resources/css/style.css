@@ -334,6 +334,32 @@ a {
 	display: inline-block;
 	line-height: 31px;
 }
+.specsTooltip {
+	width: 234px;
+	background: url(../images/specstoolbg.png) repeat-y;
+	line-height: 12px;
+}
+.specsTooltip:before {
+	content: "";
+	background: url(../images/specstooltipsprite.png) no-repeat center top;
+	display: block;
+	width: 234px;
+	height: 30px;
+	margin-top: -30px;
+}
+.specsTooltip:after {
+	content: "";
+	background: url(../images/specstooltipsprite.png) no-repeat center bottom;
+	display: block;
+	width: 234px;
+	height: 30px;
+	margin-bottom: -30px;
+	clear: both;
+}
+.specsTooltip p {
+	padding: 0 15px !important;
+	line-height: 16px !important;
+}
 #viewall {
 	float: right;	
 	margin-top: 15px;
@@ -1497,6 +1523,9 @@ footer a {
 	height: 35px;
 	margin-right: 5px;
 }
+#spcsimgs img{
+	margin-left: 10px;
+}
 #colorpicker li a.selected {
 	background-position: -6px -7px;
 }
@@ -1516,13 +1545,14 @@ footer a {
 #specsbox .firmware_proc  {
 	border: 0;
 	width: auto;
-	height: 493px;
+	min-height: 393px;
+	clear: both;
 }
 #specsbox .firmware_proc .jScrollbar_mask {
 	width: 976px;
 }
 #specsbox .firmware_proc .jScrollbar_draggable {
-	height: 465px;
+	height: 395px;
 }
 #specsbox table {
 	width: 100%;
@@ -1535,12 +1565,24 @@ footer a {
 #specsbox table tr th {
 	border: 1px solid #b2b2b2;
 	text-align: left;
+	padding: 10px;
 }
 #specsbox table tr td {
 	border: 1px solid #b2b2b2;
+	padding: 10px;
 }
 #specsbox table tr td:last-child, #specsbox table tr th:last-child {
 	background: #fff;
+}
+#specsboximg {
+	float: left;
+}
+#specsbox h2 {
+	text-align: left;
+}
+#printspecs {
+	float: right;
+	margin: -40px 57px 0 0;
 }
 /************************** samples *****************************/
 
@@ -1748,6 +1790,9 @@ footer a {
 
 #pagi{
 	text-align: center;
+}
+#pagi a {
+	margin-right: 10px;
 }
 #pagi a img{
 	

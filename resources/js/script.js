@@ -25,6 +25,14 @@ $(function(){
         fixed: true  
     });
 }); 
+$(function(){  
+	$('#spcsimgs a').aToolTip({  
+        fixed: true,
+        toolTipClass: 'specsTooltip',   // Set class name for custom theme/styles  
+        xOffset: -40,                     // x position  
+        yOffset: 60
+    });
+});
 
 $(function() {
     $( ".tabs" ).tabs();

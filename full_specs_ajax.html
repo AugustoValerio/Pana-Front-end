@@ -1,22 +1,24 @@
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.firmware_proc').jScrollbar();
-		
-	});
-
-	
-
+$(document).ready(function(){
+	var contentwrap = $(".jScrollbar_mask");
+	var mask = $(".firmware_proc");
+if (contentwrap.height() > mask.height()) {
+    $('.firmware_proc').jScrollbar();
+} else {
+    $('.jScrollbar_draggable').css({'display':'none'});
+} });
 </script>
 <div id="specsbox" class="firmware_box">
 	
-	
+	<img id="specsboximg" src="resources/images/unarefri.jpg" alt="unarefri" width="91" height="96" />
 	
 	<h2>LUMIX® Firmware download instructions</h2>
 	
-	
+	<a href="#" id="printspecs"><img src="resources/images/print.png" alt="print" width="93" height="45" /></a>
 	<div class="firmware_proc">
 
 		<div class="jScrollbar_mask">
+		
 			<table border="0">
 <tr><th>Specifications</th><th>Header 2</th><th>Header 3</th></tr>
 <tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td></tr>
@@ -25,8 +27,14 @@
 <tr><td>Row:4 Cell:1</td><td>Row:4 Cell:2</td><td>Row:4 Cell:3</td></tr>
 <tr><td>Row:5 Cell:1</td><td>Row:5 Cell:2</td><td>Row:5 Cell:3</td></tr>
 <tr><td>Row:6 Cell:1</td><td>Row:6 Cell:2</td><td>Row:6 Cell:3</td></tr>
+<tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td></tr>
+<tr><td>Row:2 Cell:1</td><td>Row:2 Cell:2</td><td>Row:2 Cell:3</td></tr>
+<tr><td>Row:3 Cell:1</td><td>Row:3 Cell:2</td><td>Row:3 Cell:3</td></tr>
+<tr><td>Row:4 Cell:1</td><td>Row:4 Cell:2</td><td>Row:4 Cell:3</td></tr>
+<tr><td>Row:5 Cell:1</td><td>Row:5 Cell:2</td><td>Row:5 Cell:3</td></tr>
+<tr><td>Row:6 Cell:1</td><td>Row:6 Cell:2</td><td>Row:6 Cell:3</td></tr>
 </table>
-
+		
 		</div>
 		<div class="jScrollbar_draggable">
 			<a href="#" class="draggable"></a>
