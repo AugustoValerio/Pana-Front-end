@@ -50,7 +50,7 @@ bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 
 bar.css('background', 'linear-gradient(64deg, #00a0c6 '+ baseX +'%, #434343 '+ baseX +'%)');
 
 $window.scroll(function(e) {      
-    var x = $window.scrollTop() / docHeight * 195 + baseX;
+    var x = $window.scrollTop() / docHeight * 175 + baseX;
     bar.css('background', '-webkit-linear-gradient(30deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
     bar.css('background', '-moz-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');
     bar.css('background', '-ms-linear-gradient(64deg, #00a0c6 '+ x +'%, #434343 '+ x +'%)');

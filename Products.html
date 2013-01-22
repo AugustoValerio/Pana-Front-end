@@ -38,6 +38,23 @@
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 <![endif]-->
  <script type="text/javascript" src="resources/js/script.js"></script>
+ <script type="text/javascript" src="http://www.tinybigideas.com/assets/demo/jquery-gravity/jGravity-min.js"></script>
+ <script>
+
+$(document).ready(function() {
+
+     $('a.blubot').live('click', function() {
+          $('body').jGravity({
+               target: 'everything',
+               ignoreClass: 'ignoreMe',
+               weight: 25,
+               depth: 5,
+               drag: true
+          });
+     });
+});
+
+</script>
 </head>
 <body>
 <div id="page">
@@ -120,9 +137,9 @@
       <div class="container clearfix">
         <p id="brand"><span>Lumix</span><sup>®</sup>  <span>DMC-GH3</span> <!-- AddThis Button BEGIN -->
 <a class="addthis_button barshare" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50ec76a73303a96b">share</a>
-<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50ec76a73303a96b"></script>
-<!-- AddThis Button END --></p>
-        <p id="browsebot"><sup>$</sup><span>1,299.99</span> <a href="#"  class="blubot">Buy</a></p>
+<!--<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50ec76a73303a96b"></script>
+ AddThis Button END --></p>
+        <p id="browsebot"><sup>$</sup><span>1,299.99</span> <a href="#"  class="blubot">Fuck this shit!</a></p>
       </div>
     </div>
 
@@ -181,7 +198,8 @@
       <div class="features_slide">
         <div class="slider01">
           
-          <div class="features_slide_block" title="1 column">
+          <div class="features_slide_block">
+            <div style="display: none" id="title">1</div>
             <img src="resources/images/features/slide_1.jpg">
             <div class="quality_info">
               <h1>High quality image, high speed processing</h1>
@@ -191,7 +209,8 @@
             <div class="clearfix"></div>
           </div>
 
-          <div class="features_slide_block" title="2 columns">
+          <div class="features_slide_block">
+            <div style="display: none" id="title">2</div>
             <div class="features_slide_block_2">
               <img src="resources/images/features/slide_2b.jpg">
               <h2>Freezeproof</h2>
@@ -205,7 +224,8 @@
             <div class="clearfix"></div>
           </div>
 
-          <div class="features_slide_block" title="3 columns">
+          <div class="features_slide_block">
+            <div style="display: none" id="title">3</div>
             <div class="features_slide_block_3">
               <h1>Everything you need for the shot you want</h1>
               <img src="resources/images/features/slide_4c.png">
@@ -224,7 +244,8 @@
             </div>
           </div>
 
-          <div class="features_slide_block" title="4 columnas">
+          <div class="features_slide_block">
+            <div style="display: none" id="title">4</div>
             <div class="features_slide_block_4">
               <h2>Feature One</h2>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
@@ -252,10 +273,6 @@
             <div class="clearfix"></div>
           </div>
 
-          <div class="features_slide_block" title="test">
-            test
-          </div>
-
         </div>
       </div>
 
@@ -265,11 +282,11 @@
 
         <div class="first-child" id="feature_back">
           <a id="prev_features" class="prev" href="#"></a>
-          <p id="prev_feature_title"></p>
+          <p id="prev_feature_title">16.05 million pixel Live MOS senso</p>
         </div>
         <div class="paginator" id="fpaginator"></div>
         <div class="last-child" id="feature_next">
-          <p id="next_feature_title"></p>
+          <p id="next_feature_title">Automatic shooting intervals</p>
           <a id="next_features" class="next" href="#"></a>
         </div>
 
@@ -295,7 +312,7 @@
 	    			<h5>Digital live MOS Sensor</h5>
     			</li>
     		</ul>
-    		<a class="specsbut" href="#">SEE ALL SPECS</a>
+    		<a class="specsbut fancybox fancybox.ajax" href="full_specs_ajax.html">SEE ALL SPECS</a>
     		
     		<div id="spcsimgs"><img src="resources/images/spec-logos.png" alt="spec-logos" width="231" height="37"></div>
     	</div>

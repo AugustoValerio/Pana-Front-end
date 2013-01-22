@@ -1494,8 +1494,40 @@ footer a {
 #specsbar li:last-child {
 	border-bottom: 0px;
 }
-
-
+#specsbox {
+	width: 1024px;
+	max-width: 1024px;
+	height: 572px;
+}
+#specsbox .firmware_proc  {
+	border: 0;
+	width: auto;
+	height: 493px;
+}
+#specsbox .firmware_proc .jScrollbar_mask {
+	width: 976px;
+}
+#specsbox .firmware_proc .jScrollbar_draggable {
+	height: 465px;
+}
+#specsbox table {
+	width: 100%;
+	background: #f5f5f5;
+	border: 1px solid #b2b2b2;
+}
+#specsbox table tr {
+	border: 1px solid #b2b2b2;
+}
+#specsbox table tr th {
+	border: 1px solid #b2b2b2;
+	text-align: left;
+}
+#specsbox table tr td {
+	border: 1px solid #b2b2b2;
+}
+#specsbox table tr td:last-child, #specsbox table tr th:last-child {
+	background: #fff;
+}
 /************************** samples *****************************/
 
 #samples .pan_menu {
