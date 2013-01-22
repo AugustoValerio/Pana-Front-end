@@ -125,6 +125,7 @@ $(function() {
             responsive: true,
             scroll: { fx: "uncover-fade" },
             items: { visible: 1, width: 640, height: "auto" },
+            pagination: { container: "#pagi", keys: true },
             prev: '#prev_samples',
             next: '#next_samples',
             auto: false
@@ -162,15 +163,48 @@ $(function() {
 
         $('.countrydp').dropkick();
         $('.countryldp').dropkick();
+        setThumnail();
 
       });
 
 $(function(){
-	$('.pagi li a img').click(function () {
-	 $('.pagi li a img').removeClass('slide-option-selected');	
-     $(this).addClass('slide-option-selected');
-    });
+	
+	$(window).resize(function(){
+		setThumnail();
+	});
+	
+	 
 });
+
+$(function(){
+	var pagiA;
+	pagiA = $('#pagi a');
+	$('#next_samples , #prev_samples').click(function(){
+		pagiA.removeClass('slide-option-selected');
+		$('#pagi .selected').addClass('slide-option-selected');
+	});
+	 
+});
+
+ function setThumnail(){
+	
+	var thumbLength, pagiA, thumImg;
+	pagiA = $('#pagi a');
+	thumbLength = pagiA.length;
+	$('#pagi a span').hide();
+	setTimeout(function(){	
+		
+		for(var x=0; x<thumbLength; x++ ){
+			thumImg = $('#thumbnail').children().eq(x).clone();
+			$('#pagi a').eq(x).append(thumImg);
+		}
+		$('#pagi .selected').addClass('slide-option-selected');
+	},100);
+	pagiA.click(function () {
+		 pagiA.removeClass('slide-option-selected');
+	     $(this).addClass('slide-option-selected');
+	 });
+}
 
     $('.score').raty({
       score: function() {
