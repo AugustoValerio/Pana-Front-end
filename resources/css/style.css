@@ -99,6 +99,15 @@ h6 {
 	font-weight: bold;
 }
 
+a {
+	font-family: arial;
+	font-size: 12px;
+	/*line-height: 17px;*/
+	color: #00a0c6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 /************************** generic class *****************************/
 
 .container {
@@ -124,14 +133,14 @@ h6 {
 	display: none !important;
 }
 
-.link {
+/*.link {
 	font-family: arial;
 	font-size: 12px;
 	line-height: 17px;
 	color: #00a0c6;
 	font-weight: bold;
 	text-decoration: none;
-}
+}*/
 
 /************************** header *****************************/
 
