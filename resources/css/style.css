@@ -901,7 +901,7 @@ h6 {
 
 /************************** support  *****************************/
 
-#support_bg {
+.support_bg {
 	background-color: #d2d2d2;
 	padding-top: 2px;
 }
@@ -1011,7 +1011,7 @@ h6 {
 	width:650px;
 	position:relative;
 	top:0;
-	height: 300px;
+	min-height: 300px;
 }
 
 .firmware_proc .jScrollbar_mask p {
