@@ -454,6 +454,9 @@ a {
          -o-transition: height 500ms ease-out;
 		    transition: height 500ms ease-out;
 	border-top: 1px solid #1f1f1f;
+	
+}
+#browsebar.hidden {
 	overflow: hidden;
 }
 .hidden {
@@ -525,6 +528,45 @@ a {
 .sticky-wrapper2 {
 	height: 0 !important;
 	margin-top: -34px;
+}
+#buypanel {
+	height: 0px;
+	width: 200px;
+	background: url(../images/buybg.png) repeat-x center top;
+	position: relative;
+	top: 34px;
+	left: 776px;
+	-webkit-transition: height 500ms ease-out;
+	   -moz-transition: height 500ms ease-out;
+        -ms-transition: height 500ms ease-out;
+         -o-transition: height 500ms ease-out;
+		    transition: height 500ms ease-out;
+}
+#buypanel.on {
+	height: 80px;	
+}
+#buypanel a {
+	display: none;
+	font-size: 12px;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 0 20px;
+	background-image:url(../images/buysprt.png);
+	background-repeat: no-repeat;
+}
+#buypanel.on a {
+	display: block;
+}
+#buyfrom {
+	position: relative;
+	top: -15px; 
+	background-position: 174px 33px;
+}
+#whereto {
+	background-position: 177px 30px;
+	background-position: 158px -13px;
+	height: 17px;
+	line-height: 17px;
 }
 /************************** generic class *****************************/
 #sections {

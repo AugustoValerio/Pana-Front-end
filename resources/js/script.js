@@ -6,6 +6,11 @@ $(document).ready(function(){
 	  $("#browsebar").toggleClass("hidden");
 	  $(".sticky-wrapper").toggleClass("hidden");
 	});
+	
+	$("#browsebot .blubot").click(function(){
+	  //$("#buypanel").slideToggle("slow");
+	  $("#buypanel").toggleClass("on");
+	});
 
   $(".btn-fooslide").click(function(){
     $("#foo_navmenu .hide").slideToggle("slow");
