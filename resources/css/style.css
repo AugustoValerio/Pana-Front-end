@@ -809,6 +809,10 @@ a {
 	margin: 10px 2.049180327869% 0 2.049180327869%;
 }
 
+#prev_feature_title { /* IE8 */
+	text-align: left;
+}
+
 #features_paginator p:last-child, .last-child p {
 	float: left;
 	width: 110px; /*10.245901639344%*/
@@ -850,7 +854,7 @@ a {
 .features_slide_block_3 {
 	width: 31%;
 	float: left;
-	margin-right: 3%;
+	margin-right: 2%;
 }
 
 .features_slide_block_3 img {
