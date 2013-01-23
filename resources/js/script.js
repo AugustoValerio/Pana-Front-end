@@ -178,9 +178,15 @@ $(function(){
 	
 }
 
-$('.score').raty({
-  score: function() {
-    return $(this).attr('data-rating');
-  },
-  path: 'resources/images/raty/img/'
+$(function(){
+  
+  $('.score').raty({
+    score: function() {
+      return $(this).attr('data-rating');
+    },
+    path: 'resources/images/raty/img/'
+  });
+   
 });
+
+
