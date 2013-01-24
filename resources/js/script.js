@@ -189,7 +189,7 @@ $(function(){
     score: function() {
       return $(this).attr('data-rating');
     },
-    path: 'resources/images/raty/img/'
+    path: 'resources/images/raty/'
   });
    
 });
