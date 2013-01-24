@@ -946,6 +946,11 @@ a {
 
 /************************** reviews  *****************************/
 
+#reviews h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 .reviews_slide {
 	position: relative;
 	width: 907px;
