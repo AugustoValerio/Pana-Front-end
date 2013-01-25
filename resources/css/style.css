@@ -994,10 +994,13 @@ a {
 	padding-top: 2px;
 }
 
-#support {
-	/*height: 200px;*/
-	text-align: center;
+/*#support {
+	text-align: center;    CQ5 FIX
 	padding: 40px 0 40px 0;
+}*/
+
+.supportsection {
+ 	text-align: center;
 }
 
 #support h2 {
@@ -1016,7 +1019,8 @@ a {
 #supportsearch input[type=text] {
 	background-color: #fff;
 	border: 0;
-	height: 30px;
+	/*height: 30px;  cq5 fix */ 
+	height: 38px;
 	font-size: 12px;
 	color: #323232;
 	width: 85%; /*380px*/
