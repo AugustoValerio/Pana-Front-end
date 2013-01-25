@@ -1,0 +1,36 @@
+.barshare {
+	-pie-border-radius: 2px;
+	behavior: url(resources/css/PIE.htc);
+}
+.blubot {
+	-pie-border-radius: 4px;
+	behavior: url(resources/css/PIE.htc);
+	position: relative;
+}
+.pan_menu nav ul li:first-child, .pan_menu nav li.pie_first-child {
+	-pie-border-radius:  5px 0px 0px 5px;
+	behavior: url(resources/css/PIE.htc);
+}
+.pan_menu nav ul li:last-child, .pan_menu nav li.pie_last-child {
+	-pie-border-radius:  0px 5px 5px 0px;
+	behavior: url(resources/css/PIE.htc);
+}
+#searchformhead {
+	-pie-border-radius: 4px;
+	behavior: url(resources/css/PIE.htc);
+	position: relative;
+	
+}
+.nav-container .pinnav {
+	behavior: url(resources/css/PIE.htc);
+}
+#supportsearch input[type="text"] {
+	-pie-border-radius: 5px 0 0 5px;
+	behavior: url(resources/css/PIE.htc);
+	position: relative;
+}
+#supportsearch input[type="submit"] {
+	-pie-border-radius: 0 5px 5px 0;
+	behavior: url(resources/css/PIE.htc);
+	position: relative;
+}

@@ -8,8 +8,8 @@ $(document).ready(function(){
 	});
 	
 	$("#browsebot .blubot").click(function(){
-	  //$("#buypanel").slideToggle("slow");
 	  $("#buypanel").toggleClass("on");
+	  return false;
 	});
 
   $(".btn-fooslide").click(function(){
