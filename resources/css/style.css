@@ -1810,8 +1810,6 @@ footer a {
 	background: linear-gradient(to right,  rgba(0,77,95,1) 0%,rgba(0,160,198,1) 9%,rgba(0,160,198,1) 46%,rgba(67,67,67,1) 50%,rgba(67,67,67,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004d5f', endColorstr='#434343',GradientType=1 ); /* IE6-8 */
 	height: 34px;
-	/*filter: none;*/ /*ie9*/
-
 }
 
 .nav-container nav{
