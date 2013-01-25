@@ -1416,7 +1416,6 @@ footer a {
 }
 
 #foo_socialmedia li {
-	background: url('../images/footer/spr-footer-social.png') no-repeat;
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -1432,13 +1431,6 @@ footer a {
     height: 20px;
     display: block;
 }
-
-#foo_socialmedia li.twitter {background-position: left top;}
-#foo_socialmedia li.facebook {background-position: -26px top;}
-#foo_socialmedia li.googleplus {background-position: -52px top;}
-#foo_socialmedia li.pinterest {background-position: -78px top;}
-#foo_socialmedia li.youtube {background-position: -104px top;}
-
 
 /************************** overview *****************************/
 
