@@ -5,10 +5,14 @@ $(document).ready(function() {
 
 
 $(function() {
-
+  
   var sections = $(".pagesection");
   var navigation_links = $(".pinnav a");
-  $("section").each(function(index, element){ console.log( $(element).attr('id') )});
+
+  var arr = [];
+  $("section").each(function(index, element){ 
+  	arr.push( $(element).attr('id') );
+  });
 	
 	sections.waypoint({
 		handler: function(event, direction) {
@@ -24,43 +28,94 @@ $(function() {
 
 			var act_sec = active_section.closest('section').attr('id');
 			switch(act_sec){
-				case 'features':
-				$("#fill_nav").animate({'backgroundPosition': '-600px'}, 100, 'swing');
+
+				case arr[0]:
+				$("#fill_nav").animate({'backgroundPosition': '-870px'}, 100, 'swing');
 				break;
 
-				case 'techspecs':
-				$("#fill_nav").animate({'backgroundPosition':'-470px'}, 100, 'swing');
+				case arr[1]:
+				$("#fill_nav").animate({'backgroundPosition': '-754px'}, 100, 'swing');
 				break;
 
-				case 'samples':
-				$("#fill_nav").animate({'backgroundPosition':'-340px'}, 100, 'swing');
+				case arr[2]:
+				$("#fill_nav").animate({'backgroundPosition':'-638px'}, 100, 'swing');
 				break;
 
-				case 'reviews':
-				$("#fill_nav").animate({'backgroundPosition':'-210px'}, 100, 'swing');
+				case arr[3]:
+				$("#fill_nav").animate({'backgroundPosition':'-522px'}, 100, 'swing');
 				break;
 
-				case 'accessories':
-				$("#fill_nav").animate({'backgroundPosition':'-80px'}, 100, 'swing');
+				case arr[4]:
+				$("#fill_nav").animate({'backgroundPosition':'-406px'}, 100, 'swing');
 				break;
 
-				case 'support':
-				$("#fill_nav").animate({'backgroundPosition':'-0px'}, 100, 'swing');
+				case arr[5]:
+				$("#fill_nav").animate({'backgroundPosition':'-290px'}, 100, 'swing');
+				break;
+
+				case arr[6]:
+				$("#fill_nav").animate({'backgroundPosition':'-174px'}, 100, 'swing');
+				break;
+
+				case arr[7]:
+				$("#fill_nav").animate({'backgroundPosition':'-58px'}, 100, 'swing');
 				break;
 
 				case undefined:
-				$("#fill_nav").animate({'backgroundPosition':'-700px'}, 100, 'swing');
+				$("#fill_nav").animate({'backgroundPosition':'-870px'}, 100, 'swing');
 				break;
 
 			}
-			 // console.log(act_sec);
+			   // console.log(act_sec);
 
 		},
-		offset: '10%'
+		offset: 94
 	});
-
+	// cachar el activo
 	$("#fill_nav ul li a").mouseover(function(){
-		//console.log($(this).attr('href'));
+		var value = $(this).attr('href');
+
+		switch(value){
+
+			case '#header':
+			$("#fill_nav").animate({'backgroundPosition': '-870px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[1]:
+			$("#fill_nav").animate({'backgroundPosition': '-754px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[2]:
+			$("#fill_nav").animate({'backgroundPosition':'-638px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[3]:
+			$("#fill_nav").animate({'backgroundPosition':'-522px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[4]:
+			$("#fill_nav").animate({'backgroundPosition':'-406px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[5]:
+			$("#fill_nav").animate({'backgroundPosition':'-290px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[6]:
+			$("#fill_nav").animate({'backgroundPosition':'-174px'}, 100, 'swing');
+			break;
+
+			case '#'+arr[7]:
+			$("#fill_nav").animate({'backgroundPosition':'-58px'}, 100, 'swing');
+			break;
+
+			case undefined:
+			$("#fill_nav").animate({'backgroundPosition':'-870px'}, 100, 'swing');
+			break;
+		}
+		
+	}).mouseout(function(){
+
 	});
 	
 navigation_links.click( function(event) {
