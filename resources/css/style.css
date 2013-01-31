@@ -593,8 +593,11 @@ a {
 	text-align: center;
 }
 
-.pan_menu nav li{
+.pan_menu nav ul {
 	list-style: none;
+}
+
+.pan_menu nav li{
 	display: inline-block;
 	margin-left: -5px;
 	padding: 10px 2.561475% 10px 2.561475%;
@@ -604,7 +607,7 @@ a {
 
 .pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active{
 	background-image: url("../images/features/nav_bg_hover.jpg");
-
+	cursor: pointer;
 }
 
 .pan_menu li:hover a{
@@ -1471,8 +1474,9 @@ footer a {
 }
 
 #overview_logo {
-	margin-top: 75px;
+	margin-top: 65px;
 	color: #fff;
+	margin-bottom: 10px;
 }
 
 #overviewblock h1 {
