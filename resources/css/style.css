@@ -1470,8 +1470,12 @@ footer a {
 	width: 215px;
 }
 
+#overview_logo {
+	margin-top: 75px;
+	color: #fff;
+}
+
 #overviewblock h1 {
-	margin-top: 85px;
 	line-height: 36px;
 	color: #FFF;
 }
@@ -1812,7 +1816,7 @@ background: #434343;
 }
 
 .nav-container nav{
-	background-color: #434343;
+	/*background-color: #434343;*/
 	background-repeat: no-repeat;
 	height: 34px;
 	width: 976px;
@@ -1846,7 +1850,12 @@ background: #434343;
 	background: #00a0c6;
 }
 .nav-container nav li a.selected, .nav-container nav li:first-child a {
-	background: url('../images/pin-nav-bg.png') no-repeat top right;
+	/*background: url('../images/pin-nav-bg.png') no-repeat top right;*/
+}
+
+#fill_nav {
+	background: url('../images/pin-nav-bg2.png') no-repeat;
+	background-position: -700px 0px;
 }
 
 #pagi{
