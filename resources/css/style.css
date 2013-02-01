@@ -547,7 +547,8 @@ a {
 		    transition: height 100ms ease-out;
 }
 #buypanel.on {
-	height: 80px;	
+	height: 80px;
+	z-index: 1000;	
 }
 #buypanel a {
 	display: none;
@@ -557,6 +558,7 @@ a {
 	padding: 0 20px;
 	background-image:url(../images/buysprt.png);
 	background-repeat: no-repeat;
+
 }
 #buypanel.on a {
 	display: block;
@@ -1784,6 +1786,10 @@ footer a {
 
 /************************** pining_nav *****************************/
 
+#pining_nav {
+	z-index: 500;
+}
+
 .stuck {
   position: fixed;
   top: 0;
@@ -1860,31 +1866,6 @@ background: #434343;
 #fill_nav {
 	background: url('../images/pin-nav-bg2.png') no-repeat;
 	background-position: -870px 0px;
-}
-
-.fill_nav_0 {
-	background-position: -870px;
-}
-.fill_nav_1 {
-	background-position: -754px;
-}
-.fill_nav_2 {
-	background-position: -638px;
-}
-.fill_nav_3 {
-	background-position: -522px;
-}
-.fill_nav_4 {
-	background-position: -406px;
-}
-.fill_nav_5 {
-	background-position: -290px;
-}
-.fill_nav_6 {
-	background-position: -174px;
-}
-.fill_nav_7 {
-	background-position: -58px;
 }
 
 #pagi{
