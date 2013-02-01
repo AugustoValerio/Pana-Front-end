@@ -43,7 +43,7 @@ $(function() {
     $( ".tabs" ).tabs();
 });
     
-/* nav menu drop down */    
+/* nav menu drop down    
 $(function(){
     $('#navmenucats').liquidSlider({
         autoSlide:false,
@@ -56,7 +56,57 @@ $(function(){
         preloaderFadeOutDuration: 250
     });
 
+}); */ 
+
+$(document).ready(function(){
+
+	var nav_iteam = $("#navmenucats .parbase");
+	var active_child = $('.headerpanelsubcategory .categoryElement');
+	
+	$('#navmenucats .parrays > .parbase > .parbase > a').on({'click': function(){
+		    var active_cat = $(this).attr("title");
+		    var active_cont = $(this).parent('div').nextAll('.headerpanelsubcategory');
+		    
+	        $('.inbread').html('<span><a href="#" id="maincat">Products</a>  > <span id="subcat"> ' + active_cat + '</span></span>');	
+	        $('.inbread').attr('title', active_cat);
+	        nav_iteam.hide();
+			active_cont.fadeIn();
+			active_cont.css({'display': 'inline-block'});
+			$(this).parent('div').addClass("show");
+			$(this).parent('div').parent('div').addClass('show');
+			active_child.addClass("on");
+	        return false; 
+	  }
+	  
+	});
+	
+	$('#navmenucats .headerpanelsubcategory .categoryElement > a').on({'click': function(){
+			var active_parent = $(".show .categoryElement a").attr("title");
+			var active_cat = $(this).attr("title");
+		    var active_cont_b = $(this).parent('div').nextAll('.headerpanelelement');
+		    var active_cont_b = $(this).parent('div').nextAll('.headerpanelelement');
+		    
+		    nav_iteam.hide();
+			active_cont_b.fadeIn();
+			active_cont_b.addClass('onp');
+			$(this).parent('div').parent('div').removeClass('show');
+			$(this).parent('div').parent('div').addClass('showed');
+			active_child.removeClass("on")
+			$('.inbread').html('<span><a href="#" id="maincat">Products</a>  > <a href="#" id="subcat"> ' + active_parent + '</a> > ' + active_cat + ' </span>');
+	        return false;
+	        
+	  }
+	});
+	$('.inbread').on({'click': function(){
+		   $(".headerpanelcategory").removeClass(".show");
+		   $(".headerpanelsubcategory").removeClass(".showed");
+		   return false;
+	  }
+	});
 });
+
+
+
 
 $(document).ready(function(){
 
