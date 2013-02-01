@@ -66,12 +66,12 @@ $(function() {
 				break;
 
 			}
-			   // console.log(act_sec);
+			    //console.log(act_sec);
 
 		},
 		offset: 94
 	});
-	// cachar el activo
+
 	$("#fill_nav ul li a").mouseover(function(){
 		var value = $(this).attr('href');
 
@@ -116,6 +116,41 @@ $(function() {
 		
 	}).mouseout(function(){
 
+		switch(act_sec){
+
+			case undefined:
+			$("#fill_nav").animate({'backgroundPosition': '-870px'}, 100, 'swing');
+			break;
+
+			case arr[1]:
+			$("#fill_nav").animate({'backgroundPosition': '-754px'}, 100, 'swing');
+			break;
+
+			case arr[2]:
+			$("#fill_nav").animate({'backgroundPosition':'-638px'}, 100, 'swing');
+			break;
+
+			case arr[3]:
+			$("#fill_nav").animate({'backgroundPosition':'-522px'}, 100, 'swing');
+			break;
+
+			case arr[4]:
+			$("#fill_nav").animate({'backgroundPosition':'-406px'}, 100, 'swing');
+			break;
+
+			case arr[5]:
+			$("#fill_nav").animate({'backgroundPosition':'-290px'}, 100, 'swing');
+			break;
+
+			case arr[6]:
+			$("#fill_nav").animate({'backgroundPosition':'-174px'}, 100, 'swing');
+			break;
+
+			case arr[7]:
+			$("#fill_nav").animate({'backgroundPosition':'-58px'}, 100, 'swing');
+			break;
+
+		}
 	});
 	
 navigation_links.click( function(event) {
