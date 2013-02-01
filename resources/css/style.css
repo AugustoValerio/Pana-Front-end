@@ -265,6 +265,48 @@ a {
 .parrays li img {
 	display: block;
 }
+
+/* new menu style */
+#navmenucats .parrays {
+	text-align: center;
+}
+#navmenucats .parbase {
+	width: 105px;
+	display: inline-block;
+	margin: 15px 10px;
+}
+#navmenucats .parbase .parbase, #navmenucats .parbase .parbase .parbase {
+	margin: 0;
+}
+#navmenucats .parbase {
+	display: none;
+	overflow: hidden;
+}
+#navmenucats .parrays > .headerpanelcategory > div {
+	display: inline-block;
+}
+#navmenucats .parbase img {
+	max-width: 99%;
+}
+#navmenucats .parbase.showed, #navmenucats .parbase.show {
+	width: 100%;
+	display: inline-block !important;
+}
+#navmenucats .parbase.show, .headerpanelcategory, #navmenucats .parbase.on{
+	display: inline-block !important;
+}
+#navmenucats .parbase.show > a, #navmenucats .parbase.showed > a  {
+	display: none;
+}
+#navmenucats .parbase.show > div, .onp {
+	display: inline-block !important;
+}
+.headerpanelsubcategory.show .categoryElement a, .headerpanelsubcategory.show .categoryElement img{
+	display: block !important;
+}
+
+/* end new menu style */
+
 #panfoot {
 	height: 40px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -1803,6 +1845,7 @@ footer a {
 }
 #pining_nav.stuck {
 	margin-top: 35px;
+	z-index: 999998;
 }
 .placeholder.anav {
 	height: 40px;

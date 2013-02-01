@@ -34,3 +34,6 @@
 	behavior: url(resources/css/PIE.htc);
 	position: relative;
 }
+body {
+	background: red !important;
+}
