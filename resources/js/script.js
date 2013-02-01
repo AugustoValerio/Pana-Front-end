@@ -42,22 +42,7 @@ $(function(){
 $(function() {
     $( ".tabs" ).tabs();
 });
-    
-/* nav menu drop down    
-$(function(){
-    $('#navmenucats').liquidSlider({
-        autoSlide:false,
-        autoHeight:false,
-        crossLinks: true,
-        dynamicTabs: false,
-        dynamicArrows: false,
-        slideEaseDuration: 0,
-        preloader: true,
-        preloaderFadeOutDuration: 250
-    });
-
-}); */ 
-
+// nav menu cats
 $(document).ready(function(){
 
 	var nav_iteam = $("#navmenucats .parbase");
@@ -67,7 +52,7 @@ $(document).ready(function(){
 		    var active_cat = $(this).attr("title");
 		    var active_cont = $(this).parent('div').nextAll('.headerpanelsubcategory');
 		    
-	        $('.inbread').html('<span><a href="#" id="maincat">Products</a>  > <span id="subcat"> ' + active_cat + '</span></span>');	
+	        $('.inbread').html('<span><a href="#" class="maincat">Products</a>  > <span class="subcat"> ' + active_cat + '</span></span>');	
 	        $('.inbread').attr('title', active_cat);
 	        nav_iteam.hide();
 			active_cont.fadeIn();
@@ -92,21 +77,37 @@ $(document).ready(function(){
 			$(this).parent('div').parent('div').removeClass('show');
 			$(this).parent('div').parent('div').addClass('showed');
 			active_child.removeClass("on")
-			$('.inbread').html('<span><a href="#" id="maincat">Products</a>  > <a href="#" id="subcat"> ' + active_parent + '</a> > ' + active_cat + ' </span>');
+			$('.inbread').html('<span><a href="#" class="maincat">Products</a>  > <a href="#" class="subcat"> ' + active_parent + '</a> > <span class="lastp">' + active_cat + ' </span></span>');
 	        return false;
 	        
 	  }
 	});
-	$('.inbread').on({'click': function(){
-		   $(".headerpanelcategory").removeClass(".show");
-		   $(".headerpanelsubcategory").removeClass(".showed");
+	$('.inbread').on('click', 'a.maincat', function() {
+		    nav_iteam.hide();
+		    nav_iteam.removeClass('onp');
+		    active_child.removeClass("on");
+		   $(".headerpanelcategory").removeClass("show");
+		   $(".headerpanelsubcategory").removeClass("showed");
+		   $(".headerpanelcategory .categoryElement").removeClass("show");
+		   $(".headerpanelcategory").fadeIn();
+		   $(".headerpanelcategory").css({'display': 'inline-block'});
+		   $(".headerpanelcategory .categoryElement").fadeIn();
+		   $(".headerpanelcategory .categoryElement").css({'display': 'inline-block'});
+		   $('.inbread').html('<span>Products</a>  > </span>');
 		   return false;
-	  }
-	});
+	  });
+	  $('.inbread').on('click', 'a.subcat', function() {
+		    nav_iteam.hide();
+		    nav_iteam.removeClass('onp');
+		   $(".show .headerpanelsubcategory").removeClass("showed");
+		   $(".headerpanelcategory.show .headerpanelsubcategory").fadeIn();
+		   $(".headerpanelcategory.show .headerpanelsubcategory .categoryElement").fadeIn();
+		   $(".headerpanelcategory.show .headerpanelsubcategory .categoryElement").css({'display': 'inline-block'});
+		   $('.lastp').remove();
+		   return false;
+	  });
 });
-
-
-
+// end nav menu cats
 
 $(document).ready(function(){
 
