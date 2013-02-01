@@ -12,7 +12,7 @@ function init(){
 			var numImgs = $("#wrapper img").size();
 			var angle = Math.round(100/(numImgs-1));
 			var angleActualImg = Math.round($("#angle_scroll").slider( "value" )/angle)+1;
-			//console.log(angleActualImg);
+			console.log(angleActualImg);
 			var imageHeight = $("#wrapper #image_container img").height();
 			//console.log(imageHeight);
 			var topImages = -1*angleActualImg*imageHeight;
