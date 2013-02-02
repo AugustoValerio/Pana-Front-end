@@ -1540,6 +1540,31 @@ footer a {
 	float: left;
 	width: 62.5%;
 }
+
+#overview_sales_date{
+	margin-top: 10px;
+	float:right;
+}
+
+#overview_sales_date h4{
+
+	color:#fff;
+	display:inline;
+	vertical-align: bottom;
+	
+}
+
+#overview_sales_date img{
+	display:inline;
+}
+
+#overview_optional_image img{
+	float:right;
+	position: relative;
+	top: 75px;
+
+}
+
 .overviewbut{
 	display: inline-block;
 	background-position:-140px -26px;
@@ -1559,10 +1584,12 @@ footer a {
 	color: #6c6c6c;
 	font-family: Arial;
 	font-size: 11px;
-	text-align: right;
-	line-height: 12px;
+	text-align: left;
+	position: relative;
+	bottom: 20px;
+	/*line-height: 12px;
 	margin-top: -32px;
-	float: right;
+	float: right;*/
 }
 
 
