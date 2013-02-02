@@ -745,7 +745,7 @@ a {
 	height: 621px;
 	width: 1203px;
 	background:url(../images/hero-shuttler-bg.png) no-repeat left top;
-	z-index: 999999;
+	z-index: 1000001;
 	margin-right: -601px;
 	right:50%;
 	opacity: 0.25;
