@@ -195,44 +195,10 @@ $(function() {
 
         $('.countrydp').dropkick();
         $('.countryldp').dropkick();
-        setThumnail();
+       
 
 });
 
-$(function(){
-	
-	$(window).resize(function(){
-		setThumnail();
-	});
-	
-	 
-});
-
- function setThumnail(){
-	
-	var thumbLength, pagiA, thumImg;
-	
-	pagiA = $('#pagi a');
-	thumbLength = pagiA.length;
-	$('#pagi a span').hide();
-	setTimeout(function(){	
-		
-		for(var x=0; x<thumbLength; x++ ){
-			$('#pagi a').eq(x).children().remove();
-			thumImg = $('#thumbnail').children().eq(x).clone();
-			$('#pagi a').eq(x).append(thumImg);
-		}
-		$('#pagi .selected img').addClass('slide-option-selected');
-		$('#pagi').css('margin-top','45');
-	},100);
-	
-	$('#next_samples , #prev_samples, #pagi a').click(function(){
-		$('#pagi a img').removeClass('slide-option-selected');
-		$('#pagi .selected img').addClass('slide-option-selected');
-	});
-	
-	
-}
 
 $(function(){
   
