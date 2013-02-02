@@ -1488,15 +1488,16 @@ footer a {
 
 /************************** overview *****************************/
 
-#backcat:before, .overviewbut, .specsbut {
-	background: url('../images/product-sprite.png') no-repeat;
+#backcat a:before, .overviewbut, .specsbut {
+ 	background: url('../images/product-sprite.png') no-repeat;
 }
-#backcat:before {
-	content: "";
-	display: inline-block;
-	height: 8px;
-    width: 14px;
+#backcat a:before {
+	 content: "";
+	 display: inline-block;
+	 height: 8px;
+	 width: 10px;
 }
+
 #backcat {
 	float: left;
 	margin: 10px 0 0 0;
