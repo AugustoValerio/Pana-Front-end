@@ -116,7 +116,7 @@ $(function() {
 		
 	}).mouseout(function(){
 
-		switch(act_sec){
+		switch(true){
 
 			case undefined:
 			$("#fill_nav").animate({'backgroundPosition': '-870px'}, 100, 'swing');
