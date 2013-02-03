@@ -649,9 +649,10 @@ a {
 .pan_menu nav li{
 	display: inline-block;
 	margin-left: -5px;
-	padding: 10px 2.561475% 10px 2.561475%;
+	padding: 0 10px 0 10px;
 	background-image: url("../images/features/nav_bg.jpg");
 	border: #e1e1e1 solid 1px;
+	height: 34px;
 }
 
 .pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active,.pan_menu nav li.ui-tabs-hover{
@@ -681,7 +682,9 @@ a {
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: bold;
+	height: 14px;
 	display: block;
+	padding: 10px;
 }
 
 .pan_menu nav li a:hover, .pan_menu nav li:hover{
