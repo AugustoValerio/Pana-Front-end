@@ -23,7 +23,11 @@ $(document).ready(function(){
 
   $('.firmware_procedures').jScrollbar();
 
+  
+
 });
+
+
 
 $(function(){  
 	$('.rcnttm a').aToolTip({  
@@ -199,6 +203,14 @@ $(function() {
 
 });
 
+
+$(function(){
+  $("#fpaginator .paginator a").mouseover(function(){
+    $(this).css({"background":"url('../images/product-sprite.png') no-repeat scroll -27px -1px;"});
+  }).mouseout(function(){
+    $(this).css({"background":"url('../images/product-sprite.png') no-repeat scroll -50px -4px;"});
+  });
+});
 
 $(function(){
   

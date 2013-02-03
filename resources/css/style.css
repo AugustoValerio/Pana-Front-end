@@ -653,9 +653,10 @@ a {
 	border: #e1e1e1 solid 1px;
 }
 
-.pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active{
+.pan_menu nav li:hover, .pan_menu nav li.ui-tabs-active,.pan_menu nav li.ui-tabs-hover{
 	background-image: url("../images/features/nav_bg_hover.jpg");
 	cursor: pointer;
+	color: #1f1f1f;
 }
 
 .pan_menu li:hover a{
@@ -680,6 +681,10 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	display: block;
+}
+
+.pan_menu nav li a:hover, .pan_menu nav li:hover{
+	color: #1f1f1f;
 }
 
 /************************** arrows slider *****************************/
@@ -709,11 +714,11 @@ a {
 
 .paginator a {
 	background: url("../images/product-sprite.png") no-repeat scroll -50px -4px;
-	width: 3px;
-	height: 3px;
+	width: 15px;
+	height: 15px;
 	display: inline-block;
 	text-indent: -99999px;
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-top: 20px;
 	-webkit-padding-before: 7px;
 }
@@ -726,11 +731,12 @@ a {
 	border:0;
 }
 
-.paginator .selected {
+.paginator .selected,.paginator a:hover {
 	background: url("../images/product-sprite.png") no-repeat scroll -27px -1px;
 	width: 10px;
 	height: 10px;
 	padding-top: 4px;
+	margin-right:10px
 }
 
 /************************** hero shuttle *************************/
