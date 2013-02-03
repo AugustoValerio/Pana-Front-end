@@ -726,20 +726,40 @@ a {
 	-webkit-padding-before: 7px;
 }
 
-.paginator a:first-child {
+/*.paginator a:first-child {
 	margin-left: 0;
-}
+}*/
 
 .paginator a:last-child{
 	border:0;
 }
 
-.paginator .selected,.paginator a:hover {
+.paginator a:hover{
 	background: url("../images/product-sprite.png") no-repeat scroll -27px -1px;
-	width: 10px;
-	height: 10px;
-	padding-top: 4px;
-	margin-right:10px
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -99999px;
+	margin-left: 5px;
+	margin-top: 20px;
+	-webkit-padding-before: 7px;
+	position:relative;
+	bottom:3px;
+	right:3px;
+}
+
+.paginator .selected{
+	background: url("../images/product-sprite.png") no-repeat scroll -27px -1px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -99999px;
+	margin-left: 5px;
+	margin-top: 20px;
+	-webkit-padding-before: 7px;
+	position:relative;
+	bottom:3px;
+	right:3px;
 }
 
 /************************** hero shuttle *************************/
