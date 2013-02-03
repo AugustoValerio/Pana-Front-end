@@ -196,7 +196,7 @@ a {
 	color: #b6b6b6;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: -1px -1px 1px #000000;
+	text-shadow: -1px -1px 1px #222;
 }
 
 .main_menu li a:hover {
@@ -482,6 +482,7 @@ a {
 	margin-right: -3px;
 	background-position : -127px -116px ;
 	background-repeat : no-repeat ;
+	cursor: pointer;
 }
 
 /************************** browsebar *****************************/
