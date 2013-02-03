@@ -159,11 +159,11 @@ $(function() {
 
          $(".slider02").carouFredSel({
             responsive: true,
-            scroll: { fx: "uncover-fade" },
+            scroll: { fx: "fade"},
             items: { visible: 1, width: 640, height: "auto" },
             pagination: { container: "#pagi", keys: true },
-            prev: '#prev_samples',
-            next: '#next_samples',
+            prev: {button:'#prev_samples',fx:"fade",duration:500},
+            next: {button:'#next_samples',fx:"fade",duration:500},
             auto: false
           });
 
@@ -204,13 +204,6 @@ $(function() {
 });
 
 
-$(function(){
-  $("#fpaginator .paginator a").mouseover(function(){
-    $(this).css({"background":"url('../images/product-sprite.png') no-repeat scroll -27px -1px;"});
-  }).mouseout(function(){
-    $(this).css({"background":"url('../images/product-sprite.png') no-repeat scroll -50px -4px;"});
-  });
-});
 
 $(function(){
   
