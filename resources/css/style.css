@@ -1832,6 +1832,10 @@ footer a {
 
 /************************** samples *****************************/
 
+#samples{
+	background:url(../images/features/feat_bg.png) 0 86px no-repeat;
+}
+
 #samples .pan_menu {
 	margin-bottom: 40px;
 }
@@ -1875,6 +1879,11 @@ footer a {
 	font-size: 12px;
 	line-height: 18px;
 	height: 75px;
+	text-align: left;
+}
+
+#samples .tabs p strong{
+	font-weight: bold;
 }
 
 /************************** acces *****************************/
