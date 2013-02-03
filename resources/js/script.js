@@ -159,17 +159,17 @@ $(function() {
 
          $(".slider02").carouFredSel({
             responsive: true,
-            scroll: { fx: "fade"},
+            scroll: { easing:"linear",duration:500 },
             items: { visible: 1, width: 640, height: "auto" },
             pagination: { container: "#pagi", keys: true },
-            prev: {button:'#prev_samples',fx:"fade",duration:500},
-            next: {button:'#next_samples',fx:"fade",duration:500},
+            prev: {button:'#prev_samples'},
+            next: {button:'#next_samples'},
             auto: false
           });
 
          $(".slider03").carouFredSel({
             responsive: true,
-            scroll: { fx: "uncover-fade" },
+            scroll: { easing:"linear",duration:500 },
             items: { visible: 1, width: 400, height: "auto" },
             pagination: { container: "#rpaginator", keys: true },
             prev: '#prev_reviews',
