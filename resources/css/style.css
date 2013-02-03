@@ -727,9 +727,6 @@ a {
 	-webkit-padding-before: 7px;
 }
 
-/*.paginator a:first-child {
-	margin-left: 0;
-}*/
 
 .paginator a:last-child{
 	border:0;
