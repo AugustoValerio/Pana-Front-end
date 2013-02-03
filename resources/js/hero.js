@@ -13,7 +13,7 @@ $(".overviewbut").click(function(){
          'left': 0,
          'background-color': '#3b3b3b',
          'width': '100%',
-         'z-index': 5000
+         'z-index': 999999
       });
     $("#heroshuttle").css({'display':'block'});
     $("#heroshuttle").animate({ opacity: 1 }, 1000, function() {
