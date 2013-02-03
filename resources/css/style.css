@@ -1371,11 +1371,20 @@ footer a {
 	padding: 20px 10px 20px 10px;
 }
 
-#foo_nav nav li:hover {
+/*#foo_nav nav li:hover {
 	background-color: #616161;
 	cursor: pointer;
+} */
+#foo_nav nav li:last-child {
+	padding: 0;
 }
-
+#-btn-fooslide a{
+	padding: 20px 10px 20px 10px;
+	display: block;
+}
+#btn-fooslide.active {
+	background-color: #616161;
+}
 .foonavactive {
 	background-color: #616161;
 }
@@ -1446,7 +1455,9 @@ footer a {
 	font-weight: bold;
 	display: block;
 }
-
+.area-country-menu li.ui-state-active a {
+	color: #b9b9b9;
+}
 .area-country-list li {
 	width: 162px;
 	float: left;
