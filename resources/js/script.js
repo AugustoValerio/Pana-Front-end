@@ -14,7 +14,8 @@ $(document).ready(function(){
 
   $(".btn-fooslide").click(function(){
     $("#foo_navmenu .hide").slideToggle("slow");
-    $(this).toggleClass("active foonavactive");
+    $(".btn-fooslide").toggleClass("active foonavactive");
+    return false;
   });
 
   $('.fancybox').fancybox({

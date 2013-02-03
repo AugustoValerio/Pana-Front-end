@@ -1347,7 +1347,16 @@ footer a {
 	background-position : -45px -167px ;
 	background-repeat : no-repeat ;
 }
-
+#acclose {
+	display: block;
+	font-size: 1px;
+	text-indent: -9999px;
+	background: url(../images/acclose.png);
+	width: 11px;
+	height: 12px;
+	float: right;
+	margin-top: -52px;
+}
 #foo_btop {
 	float: left;
 	width: 36.06557%;
