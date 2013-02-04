@@ -1739,15 +1739,15 @@ footer a {
 #colorpicker li a.selected {
 	background-position: -6px -7px;
 }
-#specsbar li {
+/*#specsbar li {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	border-bottom: #dddddd 1px solid;
 }
 #specsbar li:last-child {
 	border-bottom: 0px;
-}
-#specsbox {
+}*/
+/*#specsbox {
 	width: 1024px;
 	max-width: 1024px;
 	height: 572px;
@@ -1783,7 +1783,7 @@ footer a {
 }
 #specsbox table tr td:last-child, #specsbox table tr th:last-child {
 	background: #fff;
-}
+}*/
 #specsboximg {
 	float: left;
 }
@@ -1844,20 +1844,29 @@ footer a {
 }
 
 .tech_specs {
-	border: #cccccc solid 1px;
+	/*border: #cccccc solid 1px;*/
 }
 
 .tech_specs td{
-	/*border: #cccccc solid 1px;*/
+	border: #cccccc solid 1px;
 	line-height: 30px;
+	padding-left: 5px;
 }
 
-/*
+
 .col-3 {
-	border: none;
 	background-color: #FFF;
 }
-*/
+
+/*.body-child td {
+	border: none;
+}*/
+
+.body-child tbody:first-child td {
+	/*border: red solid 1px !important;*/
+	border: none;
+	/*background-color: #ebeb33;*/
+}
 
 .spech_lightbox .jScrollbar_draggable {
 	float:left;
