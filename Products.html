@@ -638,8 +638,11 @@
 
         <form role="search" method="get" id="supportsearch" action="#">
           <label for="s" class="assistivetext">Search Support</label>
-          <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Got a question? ask here."  />
-          <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+          <div onclick="submitOnClick('supportsearch')" class="submit">
+        	<p>Got a question? ask here.</p>
+        	<div class="search_image"></div>
+    	  </div>
+          
         </form>
 
         <div id="support_slide">
@@ -681,8 +684,11 @@
 
         <form role="search" method="get" id="supportsearch" action="#">
           <label for="s" class="assistivetext">Search Support</label>
-          <input type="text" class="field" name="s" id="s"  autocomplete="off" value="Got a question? ask here."  />
-          <input type="submit" class="submit" name="submit" id="searchsubmit" value="search" />
+          
+          <div onclick="submitOnClick('supportsearch')" class="submit">
+        	<p>Got a question? ask here.</p>
+        	<div class="search_image"></div>
+    	  </div>
         </form>
 
         <div id="support_slide">

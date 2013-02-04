@@ -1087,7 +1087,7 @@ a {
 
 #supportsearch {
 	width: 45%;
-	margin: 40px auto;
+	margin: 35px auto;
 }
 
 #supportsearch label {
@@ -1108,18 +1108,38 @@ a {
 	float: left;
 }
 
-#supportsearch input[type=submit] {
-	background: #fff url('../images/support/search.png') no-repeat -4px 2px;
+#supportsearch .submit {
+	background-image: url('../images/Loose_Graphics/btn-support-1px.png');
 	border: 0;
-	width: 35px;
+	width: 218px;
 	height: 38px;
-	font-size: 1px;
-	text-indent: -99999px;
-	float: left;
-	-webkit-border-radius: 0px 5px 5px 0px;
-	border-radius: 0px 5px 5px 0px;
-	border-top: 1px solid #ccc;
+	font-size: 12px;
+	-moz-border-radius: 2px;
+ 	-webkit-border-radius: 2px;
+ 	border-radius: 2px;
+	cursor: pointer;
+	margin: 0 auto;
+	color: #1f1f1f;
+	
 }
+
+#supportsearch p {
+	margin: 12px 0px 0px 8px;
+	font-size: 13px;
+	width: 165px;
+	float:left;
+	
+}
+
+#supportsearch .search_image {
+	margin: 4px 10px 2px 2px;
+	background: url('../images/product/search_support.png') no-repeat;
+	float: right;
+	width: 33px;
+	height: 30px;
+}
+
+
 
 #support_slide {
 	float: left;
