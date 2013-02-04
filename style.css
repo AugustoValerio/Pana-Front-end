@@ -1589,7 +1589,7 @@ footer a {
 #colorpicker li a.selected {
 	background-position: -6px -7px;
 }
-#specsbar li {
+/*#specsbar li {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	border-bottom: #dddddd 1px solid;
@@ -1613,8 +1613,8 @@ footer a {
 }
 #specsbox .firmware_proc .jScrollbar_draggable {
 	height: 395px;
-}
-#specsbox table {
+}*/
+/*#specsbox table {
 	width: 100%;
 	background: #f5f5f5;
 	border: 1px solid #b2b2b2;
@@ -1633,7 +1633,7 @@ footer a {
 }
 #specsbox table tr td:last-child, #specsbox table tr th:last-child {
 	background: #fff;
-}
+}*/
 #specsboximg {
 	float: left;
 }
@@ -1650,7 +1650,7 @@ footer a {
 }
 
 .spech_lightbox {
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 	width: 100%;	
 	height: 250px;
 	overflow:hidden;
@@ -1666,6 +1666,10 @@ footer a {
 
 .tech_specs {
 	height: 250px;
+}
+
+.tech_specs table tr td {
+	border: #ccc solid 1px !important;
 }
 
 .spech_lightbox .jScrollbar_draggable {
@@ -1684,6 +1688,11 @@ footer a {
 	height:95px;
 	width:33px;
 	cursor:s-resize;
+}
+
+.body-child tbody{
+	border: none;
+	background-color: #ebeb33;
 }
 
 /************************** samples *****************************/
