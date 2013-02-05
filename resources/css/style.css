@@ -273,10 +273,10 @@ a {
 #navmenucats .parbase {
 	width: 105px;
 	display: inline-block;
-	margin: 15px 10px;
+	margin: 0;
 }
 #navmenucats .parbase .parbase, #navmenucats .parbase .parbase .parbase {
-	margin: 0;
+	
 }
 #navmenucats .parbase {
 	display: none;
