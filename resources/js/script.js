@@ -190,7 +190,7 @@ $(function() {
           
           $(".heroslider").carouFredSel({
             responsive: false,
-            scroll: { items: 1, easing: "elastic", duration: 500 },
+            scroll: { items: 1 },
             items: { visible: { min: 1, max: 1 }, width: 498, height: 378 },
             pagination: { container: "#hpaginator", keys: true },
             prev: '#prev_heros',
