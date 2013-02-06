@@ -873,7 +873,7 @@ a {
 #hpaginator a {
 	background-position: -247px -48px;
 }
-#hpaginator a.selected {
+#hpaginator a.selected, #hpaginator a:hover {
 	background-position: -224px -45px;
 }
 /************************** features *****************************/
