@@ -126,10 +126,13 @@ $(document).ready(function(){
 	
 	$('#dimimg a').on({
 	    'click': function(){
-		    var active_img = $(this).attr("href");
-	        $('#dimimg img').attr('src', active_img);
+          var active_img = $(this).attr("href");
+          $('#dimimg img').fadeOut('slow', function(){
+            $('#dimimg img').attr('src', active_img);
+            $('#dimimg img').fadeIn('slow');
+          });
 	        specs_links.removeClass("selected");
-			$(this).addClass("selected");
+			    $(this).addClass("selected");
 	        return false;
 	    } 
 	});
