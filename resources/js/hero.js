@@ -15,16 +15,14 @@ $(".overviewbut").click(function(){
          'width': '100%',
          'z-index': 999999
       });
-    $("#heroshuttle").css({'display':'block'});
-    $("#heroshuttle").animate({ opacity: 1 }, 1000, function() {
-    // Animation complete. 
-    });
+    
+    $("#heroshuttle").fadeToggle("slow", "linear");
     
    });
 
 $("#closehero").click(function(){
   
-    $("#heroshuttle").css({'display':'none'});
+    $("#heroshuttle").fadeToggle("slow", "linear");
     $('#overlay').remove();
    });   
    
