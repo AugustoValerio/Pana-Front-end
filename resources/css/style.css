@@ -780,7 +780,6 @@ a {
 	z-index: 1000001;
 	margin-right: -601px;
 	right:50%;
-	opacity: 0.25;
 }
 #heroshuttle h1 {
 	color: #FFFFFF;
@@ -1125,7 +1124,43 @@ a {
 	border-radius: 0px 5px 5px 0px;
 	border-top: 1px solid #ccc;
 }
-
+#supbutpro:before {
+	content: "";
+	display: block;
+	float: left;
+	background: url(../images/spr-global-product.png) no-repeat;
+	width : 28px ;
+	height : 45px ;
+	background-position : -510px -72px ;
+	background-repeat : no-repeat ;
+	margin-left: -28px;
+}
+#supbutpro {
+	display: block;
+	height: 45px;
+	background: url(../images/btn-support-1px.png) repeat-x;
+	font-family: arial;
+	font-size: 13px;
+	color: #00a0c6;
+	font-weight: bold;
+	text-decoration: none;
+	width: 240px;
+	line-height: 25px;
+	margin: 40px auto;
+	line-height: 45px;
+}
+#supbutpro:after {
+	content: "";
+	display: block;
+	float: right;
+	background: url(../images/spr-global-product.png) no-repeat;
+	width : 11px ;
+	height : 45px ;
+	background-position : -544px -72px ;
+	background-repeat : no-repeat ;
+	margin-right: -11px;
+	
+}
 #support_slide {
 	float: left;
 	margin-top: 40px;
