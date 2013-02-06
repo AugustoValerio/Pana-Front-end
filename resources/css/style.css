@@ -2284,7 +2284,306 @@ background: #434343;
 		float: right;
 	}
 }*/
+/************************** home page styles *****************************/
 
+.homepg{
+	background: #434343;
+}
+.homepg a h2.subheader2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #a9a9a9;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px 0 10px 0;
+	float:left;
+}
+.homepg a:hover h2.subheader2{
+	color: #ffffff;
+}
+.homepg a p.bodyCopy{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #a9a9a9;
+	font-weight: normal;
+	line-height: 17px;
+	float:left;
+}
+.homepg a:hover p.bodyCopy{
+	color: #ffffff;
+}
+
+.homepg-hero{
+	width: 100%;
+	height: 470px;
+	background: none;
+	margin: 0 auto;
+	position: relative;
+	background: #434343;
+}
+.homepg-hero-wrap{
+	width: 100%;
+	min-width: 976px;
+	max-width: 1200px;
+	height: 470px;
+	margin: 0 auto;
+	position: relative;
+}
+.homepg-slider{
+	position: relative;
+}
+.homepg-arrow-wrap{
+	width: 1200px;
+	height: 0px;
+	margin: 0 auto;
+	position: relative;
+	top: -210px;
+}
+.homepg-hero-arrows{
+	width : 37px ;
+	height : 47px ;
+	background: url(../images/homepage/spr-homepage.png);
+	background-repeat : no-repeat ;
+	position: absolute;
+	top: -47px;
+	z-index: 999;
+}
+.homepg-hero-arrows.right-arrow{
+	background-position : -129px -111px ;
+	/*right: 112px;*/
+	right: 0;
+	right: 112px;
+}
+.homepg-hero-arrows.left-arrow{
+	background-position : -86px -111px ;
+	/*left: 112px*/
+	left: 112px;
+}
+a:hover.homepg-hero-arrows.right-arrow{
+	background-position : -43px -111px ;
+}
+a:hover.homepg-hero-arrows.left-arrow{
+	background-position : left -111px ;
+}
+.homepg-slide{
+	width: 1200px;
+	height: 470px;
+	position: relative;
+	float:left;
+}
+.homepg-slide-wrap{
+	max-width: 1200px;
+	min-width: 976px;
+	/*width: 976px*/
+	margin: 0 auto;
+	height: 470px;
+	position: relative;
+}
+.homepg-slide.hslide1{
+	background: #434343 url(../images/homepage/bg-homepage-shave.jpg) no-repeat center;
+}
+.homepg-slide.hslide2{
+	background: #e3e3e3
+}
+.homepg-slide.hslide3{
+	background: #000000
+}
+.homepg-slide .subtext1{
+	width: 115px;
+	position: absolute;
+	top: 205px;
+	/*left: 478px;*/
+	left: 48.97541%;
+	padding-left: 1.0245%;
+	/*padding-left: 10px;*/
+}
+.homepg-slide .subtext2{
+	width: 170px;
+	position: absolute;
+	bottom: 50px;
+	/*right: 50px;*/
+	left: 72%;
+	padding-left: 1.0245%;
+	/*padding-left: 10px;*/
+}
+.homepg-slide .subheader1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+	float:left;
+	padding-bottom: 10px;
+} 
+.homepg-slide .bodyCopy1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+	padding-bottom: 15px;
+	float:left;
+	line-height: 17px;
+}
+.homepg-slide a .slideBtn{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	color: #1f1f1f;
+	font-weight: bold;
+	background: url(../images/homepage/btn-hero-lightgrey-1px.png) repeat-x;
+	padding: 16.5px 7px 16.5px 7px;
+	cursor:pointer;
+	float:left;
+	text-transform: uppercase;
+}
+.homepg-slide a:hover .slideBtn{
+	color: #ffffff;
+	background: url(../images/homepage/btn-hero-darkgrey-1px.png) repeat-x;
+	
+}
+.homepg-slide a .slideBtnLeft{
+	background: url(../images/homepage/spr-homepage.png) no-repeat;
+	width : 16px ;
+	height : 47px ;
+	background-position : -216px -111px ;
+	background-repeat : no-repeat ;
+	float:left;
+	cursor:pointer;
+}
+.homepg-slide a .slideBtnRight{
+	background: url(../images/homepage/spr-homepage.png) no-repeat;
+	width : 16px ;
+	height : 47px ;
+	background-position : -238px -111px ;
+	background-repeat : no-repeat ;
+	float:left;
+	cursor:pointer;
+}
+.homepg-slide a:hover .slideBtnRight{
+	background-position : -194px -111px ;
+	background-repeat : no-repeat ;
+}
+.homepg-slide a:hover .slideBtnLeft{
+	background-position : -172px -111px ;
+	background-repeat : no-repeat ;
+}
+.homepg-bottom{
+	width: 100%;
+	min-width: 976px;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.homepg-bottom-content{
+	width: 100%;
+	background: #434343 url(../images/homepage/bg-homepg-bottom.jpg) no-repeat center top;
+	display: block;
+}
+.homepg-bottom-content .hp-boxes{
+	width: 997px;
+	margin: 0 auto;
+	padding: 25px 0 75px 0;
+	min-height: 228px;
+}
+.homepg-bottom-content .hp-box{
+	width: 312px;
+	padding-right: 10px;
+	float:left;
+	background: url(../images/homepage/spr-homepage.png) ;
+	height : 105px ;
+	background-position : left top ;
+	background-repeat : no-repeat ;
+	margin-left: 10px;
+}
+.homepg-under-hero{
+	display: block;
+	width: 997px;
+	height: 11px;
+	padding-top: 25px;
+	margin: 0 auto;
+	text-align: center;
+}
+.homepg-hero-controls{
+	float:left;
+	margin-left: 461.5px;
+}
+.homepg-hero-controls li{
+	float:left;
+}
+.homepg-under-hero a:first-child{
+	margin-left: 461.5px;
+}
+.homepg-under-hero a{
+	background: url(../images/homepage/spr-homepage.png);
+	width : 11px ;
+	height : 11px ;
+	background-position : -260px -111px ;
+	background-repeat : no-repeat ;	
+	margin-right: 10px;
+	float:left;
+}
+.homepg-under-hero a span{
+	display: none;
+}
+.homepg-under-hero a:hover, .homepg-under-hero a.selected{
+	background-position : -277px -111px ;
+}
+.homepg-hero-controls li a.last{
+	margin-right: 0;
+}
+@media only screen and (min-width: 977px) and (max-width : 1200px) {
+	.homepg-hero-wrap{
+		min-width: 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+	.homepg-slide{
+		width: 100%;
+	}
+	.homepg-slide-wrap{
+		width: 100%;
+	}
+	.homepg-arrow-wrap {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.homepg-hero-arrows.left-arrow {
+		left:  9.33333333%;
+	}
+	.homepg-hero-arrows.right-arrow {
+		right:  9.33333333%;
+	}
+	.homepg-slide .subtext2 {
+		right: 0%;
+	}
+}
+@media only screen and (max-width: 976px) {
+	.homepg-hero-wrap{
+		min-width: 976px;
+		max-width: 976px;
+		width: 976px;
+	}
+	.homepg-slide{
+		width: 976px;
+	}
+	.homepg-slide-wrap{
+		width: 976px;
+	}
+	.homepg-arrow-wrap{
+		width: 976px;
+	}
+	.homepg-arrow-wrap {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.homepg-hero-arrows.left-arrow {
+		left: 9.33333333%;
+	}
+	.homepg-hero-arrows.right-arrow {
+		right: 9.33333333%;
+	}
+	.homepg-slide .subtext2 {
+		right: 0%;
+	}
+}
+/*end home page styles*/
 
     
 
