@@ -2,19 +2,20 @@
 	$(document).ready(function(){
 		$('.spech_lightbox').jScrollbar();
 	});
+	var printStyle = 'body, td { font-family: arial; font-size: 10pt;} tr td { vertical-align: top; cell-padding: } .tech_specs { min-height: 700px; width: 976px; font-size: 12px; font-family: arial; text-align: left; } .tech_specs td{ border: #cccccc solid 1px; line-height: 30px; padding-left: 5px; } .col-3 { background-color: #FFF; } .body-child tbody:first-child td { border: none; } .printbut{display: none;} .spech_title{ display: block; margin-top: 15px; margin-bottom: 20px; font-size: 20px; line-height: 24px; color: #1f1f1f; font-weight: bold; } .spech_title img{ display: none; }';
 </script>
 
-<div class="spech_box">
+<div class="spech_box" id="printme">
 	<div class="spech_title">
 		<img alt="Lumix® DMC-GH3" src="resources/images/specs/product.jpg">
 		<h2>Lumix® DMC-GH3</h2>
-		<a class="printbut" href="#">Print</a>
+		<a class="printbut" href="#" onclick="printIt(document.getElementById('printme').innerHTML, printStyle); return false;">Print</a>
 	</div>
 	<div class="clearfix"></div>
 	<br>
 	<div class="spech_lightbox">
 		<div class="jScrollbar_mask">
-			<table class="tech_specs">
+			<table class="tech_specs" cellpadding="0" cellspacing="0">
 				<tbody class="body-child">
 					<tr>
 						<td rowspan="30">TechnicalFeature</td>

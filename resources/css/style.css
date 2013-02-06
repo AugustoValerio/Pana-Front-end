@@ -911,13 +911,19 @@ a {
 	font-size: 12px;
 	font-family: arial;
 	line-height: 18px;
-	margin: 35px 10% 20px 0;
+	margin: 20px 10% 20px 0;
 }
-.features_slide_block h4{
+.features_slide_block_2 h4{
 	font-size: 20px;
 	line-height: 24px;
 	color: #1f1f1f;
 	font-weight: bold;
+}
+.features_slide_block_2 p{
+	font-size: 12px;
+	font-family: arial;
+	line-height: 18px;
+	margin: 35px 10% 20px 0;
 }
 #features_paginator {
 	float: left;
@@ -1946,6 +1952,7 @@ footer a {
 
 #sampleslide .slide {
 	text-align: center;
+	float:left;
 }
 
 #sampleslide .pagi {
@@ -2627,9 +2634,7 @@ a:hover.homepg-hero-arrows.left-arrow{
 }
 /*end home page styles*/
 
-    
-
-
+   
 
 
 

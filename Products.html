@@ -22,8 +22,6 @@
   <link rel="stylesheet" type="text/css"  href="resources/css/360view.css">
   
   
-  
-  
 <!--[if lte IE 9]>
 <script src="resources/js/html5.js" type="text/javascript"></script>
 <link rel="stylesheet" href="resources/css/ie.css">
@@ -992,6 +990,22 @@
   <script src="resources/js/jScrollbar.jquery.min.js" type="text/javascript"></script>
   <script src="resources/js/navbar.js" type="text/javascript"></script>
   <script src="resources/js/hero.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var win=null;
+  function printIt(printThis, printStyle)
+  {
+    win = window.open();
+    self.focus();
+    win.document.open();
+    win.document.write('<'+'html'+'><'+'head'+'><'+'style'+'>');
+	win.document.write(printStyle);
+    win.document.write('<'+'/'+'style'+'><'+'/'+'head'+'><'+'body'+'>');
+    win.document.write(printThis);
+    win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
+    win.print();
+	win.close();
+  }
+</script>
 </body>
 
 </html>
