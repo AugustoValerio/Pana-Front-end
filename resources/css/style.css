@@ -527,8 +527,9 @@ a {
 }
 #brand .barshare {
 	text-transform: none;
-	background: url(../images/addthisplus.png) no-repeat 42px 2px ;
+	background: url(../images/addthisplus.png) no-repeat left top ;
 }
+
 #brand sup, #browsebot sup {
 	vertical-align:super;
 	font-size: 11px;
@@ -548,16 +549,17 @@ a {
 	        border-radius: 2px;
 	display: inline-block;
 	line-height: 11px;
-    padding:3px 21px 3px 6px;
 	color: #dedede;
 	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	text-decoration: none;
 	line-height: 12px;
-	border: #7c7c7c solid 1px;
 	margin-left: 15px;
 	position: relative;
+	width: 14px;
+	height: 14px;
 }
+
 .blubot {
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
