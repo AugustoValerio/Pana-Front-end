@@ -889,7 +889,7 @@ a {
 	position: relative;
 }
 .features_slide_block {
-	margin-top: 70px;
+	margin-top: 40px;
 	margin-bottom: 50px;
 	float: left;
 }
@@ -911,9 +911,14 @@ a {
 	font-size: 12px;
 	font-family: arial;
 	line-height: 18px;
-	margin: 20px 10% 20px 0;
+	margin: 35px 10% 20px 0;
 }
-
+.features_slide_block h4{
+	font-size: 20px;
+	line-height: 24px;
+	color: #1f1f1f;
+	font-weight: bold;
+}
 #features_paginator {
 	float: left;
 	margin-top: 40px;
@@ -959,11 +964,11 @@ a {
 
 .features_slide_block_2 {
 	float: left;
-	width: 48%;
+	width: 478px;
 }
 
 .features_slide_block .features_slide_block_2:first-child{
-	margin-right: 4%;
+	margin-right: 20px;
 }
 
 .features_slide_block_2 img {
