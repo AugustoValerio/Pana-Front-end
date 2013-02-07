@@ -9,19 +9,30 @@ var filter = {
 		$('.more_filtersbtn')
 			.css(
 				{
-				 position: 'absolute',
-				 marginTop: '-13px',
+				 position: 'fixed',
+				 marginTop: '-1px',
+				 zIndex: 3, 
 				 marginLeft: ctrMarg
 				});
 		},
-	click: function(e){
+	open: function(e){
 		e.preventDefault();
-		$('#browse_headbar').slideToggle(300);
+		$("html, body").animate({ scrollTop: 0 }, "fast");
+		$('#headbar').slideToggle(350);
 		$('.more_filtersbtn a').toggle();
-		$('.browse_filterbar').switchClass('browse_filterbar', 'browse_filterbar-complete',50);
-		$('.browse_filterbar-complete').switchClass('browse_filterbar-complete', 'browse_filterbar',50);
+		$('.more_filtersbtn').css('marginTop','244px');
+		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);
+		$('.filterbar-complete').switchClass('filterbar-complete', 'filterbar',20);
 		
 		
+	},
+	close: function(e){
+		e.preventDefault();
+		$('#headbar').slideToggle(350);
+		$('.more_filtersbtn a').toggle();
+		$('.more_filtersbtn').css('marginTop','-1px');
+		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);
+		$('.filterbar-complete').switchClass('filterbar-complete', 'filterbar',20);
 	}
 		
 }
@@ -29,8 +40,11 @@ $(document).ready(function(){
 	filter.init();
 	var btn;
 	
-	$('.more_filtersbtn a').click(function(e){
-		filter.click(e);
+	$('.more_filtersbtn .open').click(function(e){
+		filter.open(e);
+		});
+	$('.more_filtersbtn .close').click(function(e){
+		filter.close(e);
 		});
 	
 	$(window).resize(function(){

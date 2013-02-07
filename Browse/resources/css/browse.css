@@ -28,10 +28,12 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+	background-color: #e3e3e3;
 	font-size: 75%;
 	line-height: 1;
 	color:#222;
 	font-family: arial;
+	
 }
 
 ol, ul {
@@ -109,11 +111,12 @@ a {
 }
 
 /************************** generic class *****************************/
-
+.swing{
+	height: 200px;
+}
 .container {
 	max-width: 976px;
 	margin: 0 auto;
-	padding: 0 2px 0 2px;
 }
 
 /*#sections {
@@ -484,7 +487,10 @@ a {
 	background-repeat : no-repeat ;
 	cursor: pointer;
 }
-
+#page{
+	width: 1200px;
+	margin: 0 auto;
+}
 
 /* === Browse Page === */
 
@@ -504,10 +510,10 @@ a {
 
 /************************** Header bar  *****************************/
 
-#browse_headbar {
+#headbar{
+	background-color: #fff;
 	clear: both;
-	background: url("../images/Loose_Graphics/img-nav-headbar-browse-1px.png");
-	height:131px;
+	height:200px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
 	color: #fff;
@@ -515,37 +521,42 @@ a {
 	border-bottom: 1px solid #cecece;
 	overflow: hidden;
 }
-
-#browse_headbar #headbar .back_all  {
+#headbar #browse_headbar .back_all {
 	float:left;
 	margin-right: 8px;
-	background: url("../images/Loose_Graphics/back_arrow.png") no-repeat;
 	padding-left: 12px;
 	background-position: left;
 	margin-top: 6px;
-	width: 80px;
 }
-
-#browse_headbar #headbar .back_all a {
+#browse_headbar .back_all a {
 	font-family: Arial;
 	font-size: 12px;
 	color: #434343;
 }
-
-#browse_headbar #headbar .sup_title {
+#browse_headbar .back_all a:before {
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	float: left;
+	background-position: -136px -134px;
+	width: 7px;
+	height: 12px;
+	margin: 3px 7px 0px 0px;
+}
+#browse_headbar .sup_title {
+	height: 125px;
 	text-align: center;
 	margin: auto 0;
 }
-
-#browse_headbar #headbar .sup_title p {
+#browse_headbar .sup_title p {
 	color: #1f1f1f;
 	margin: 0 auto 0;
 	padding-top: 4px;
 	width: 286px;
 	border-top: 1px solid #b6b6b6;
 }
-
-#browse_headbar #headbar .sup_title h1 {
+#browse_headbar .sup_title h1 {
 	margin: 0 auto 4px  auto;
 	padding-top: 30px;
 	width: 290px;
@@ -554,37 +565,68 @@ a {
 	color: #1f1f1f;
 	font-weight: bold;
 }
-
-#browse_headbar #headbar .sup_title .more_info{
+#browse_headbar .sup_title .more_info{
 	color: #1f1f1f;
 	float: right;
 	width: 200px;
-	height: 130px;
+	height: 62px;
 	margin: 40px 0 0 0;
 	
 }
-
-#browse_headbar #headbar .sup_title .more_info h4{
+#browse_headbar .sup_title .more_info h4{
 	float: right;
 	font-size: 16px;
-	margin: 0 2px 6px 0;
+	margin: 0 2px 8px 0;
 	color: #1f1f1f;
 	clear:both;
 }
-
-#browse_headbar #headbar .sup_title .more_info a{
-	background: url("../images/browse/arrow_light_blue.png") left no-repeat;
-	padding-left: 14px;
-}
-
-#browse_headbar #headbar .sup_title .more_info .more_info_link{
+#browse_headbar .sup_title .more_info .more_info_link{
+	background: url("../images/Loose_Graphics/btn-get-info-1px.png") repeat-x;
 	float: right;
-	background: url("../images/browse/more_info_box.png") no-repeat;
-	margin: 0 auto 0;
-	padding-top: 10px;
+	margin-right:11px;
+	padding-top:9px;
 	height: 46px;
-	width: 160px;
+	width: 139px;
 }
+#browse_headbar .sup_title .more_info .more_info_link:before{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	margin:-9px 0px 0px -11px;
+	width : 11px ;
+	height : 36px ;
+	background-position : -183px -74px ;
+	background-repeat : no-repeat ;
+	
+}
+#browse_headbar .sup_title .more_info .more_info_link:after{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: right;
+	margin:-9px -11px 0px 0px;
+	width : 11px ;
+	height : 36px ;
+	background-position : -202px -74px ;
+	background-repeat : no-repeat ;
+	
+}
+#browse_headbar .sup_title .more_info  a{
+	background-repeat : no-repeat ;
+}
+#browse_headbar .sup_title .more_info  a:before{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	background-position : -200px -56px ;
+	width : 7px ;
+	height : 9px ;
+	margin:4px 0px 0px 0px;
+}
+
+
 
 
 

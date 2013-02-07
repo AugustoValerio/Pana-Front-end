@@ -1,87 +1,142 @@
 /************************** Filter bar  *****************************/
-
-.browse_filterbar {
+.filterbar{
+	width: 1200px;
+	z-index: 4;
+	position: fixed;
 	overflow-y: hidden;
+	margin-top: -70px;
 	clear: both;
-	background: url("../images/browse/filter_bar_1px.png") repeat-x #e3e3e3;
-	height:83px;
+	background: url("../images/Loose_Graphics/bg-top-gradient-1px.png") repeat-x;
+	height: 77px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+.browse_filterbar {
 
-.browse_filterbar-complete {
-	clear: both;
-	height:260px;
-	background: url("../images/browse/filter_bar_expanded_1px.png") repeat-x;
-	font-family: 'Open Sans Condensed', sans-serif;
 	
 }
-
-#filterbar {
+.filterbar-complete {
+	width: 1200px;
+	clear: both;
+	height:255px;
+	z-index: 4;
+	position: fixed;
 	overflow-y: hidden;
+	background: url("../images/Loose_Graphics/bg-top-gradient-open-1px.png")  bottom center repeat-x ;
+	font-family: 'Open Sans Condensed', sans-serif;
+	width: 1200px;
+	
 }
-
+#filterbar {
+	overflow-y: hidden; 
+}
 .more_filtersbtn {
 	padding-top: 7px;
-	width: 167px;
+	width: 87px;
 	height: 36px;
 	text-align: center;
-	background: url("../images/browse/more_filter_btn.png") no-repeat;
+	background: url("../images/Loose_Graphics/btn-filter-1px.png") repeat-x;
 }
-
+.more_filtersbtn:before {
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	width : 40px ;
+	margin:-7px 0px 0px -40px;
+	height : 32px ;
+	background-position : -16px -56px ;
+	background-repeat : no-repeat ;
+}
+.more_filtersbtn:after {
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: right;
+	width : 40px ;
+	margin:-7px -40px 0px 0px;
+	height : 32px ;
+	background-position : -16px -94px ;
+	background-repeat : no-repeat ;
+}
 #filterbtn .more_filtersbtn  a {
 	color: #1f1f1f;
+	z-index:2;
 }
-
-#filterbar a {
+#filterbtn .more_filtersbtn  a .arrowclose{
+	position: absolute;
+	content: "";
+	display: block;
+	background: url("../images/spr-browse-all.png");
+	width : 7px ;
+	height : 4px ;
+	background-position : -212px -124px ;
+	background-repeat : no-repeat ;
+	margin: 2px 0px 0px 41px;
+}
+#filterbtn .more_filtersbtn  a .arrowopen{
+	position: absolute;
+	content: "";
+	display: block;
+	background: url("../images/spr-browse-all.png");
+	width : 7px ;
+	height : 4px ;
+	background-position : -212px -134px ;
+	background-repeat : no-repeat ;
+	margin: 2px 0px 0px 41px;
+}
+.browse_filterbar a {
 	color: #1f1f1f;
 }
-
-
-#filterbar .category {
-	width: 236px;
+.browse_filterbar .category {
+	margin: 0px 0px 0px 0px;
+	width: 224px;
 	float: left;
 	height: 69px;	
 }
-
-#filterbar .filters {
-	width: 498px;
-	float: left;
-	height: 69px;
-	
-}
-
-#filterbar .sort {
-	width: 234px;
+.browse_filterbar .filters {
+	margin: 0px 0px 0px 0px;
+	width: 520px;
 	float: left;
 	height: 69px;
 }
-
-#filterbar .separator {
+.browse_filterbar .filters .filter_box{
+	width:21%; 
+	float: left;
+	margin: 4px 5% 0 6%;
+	text-align: center;Ê
+}
+.browse_filterbar .filters .filter_box p{
+	padding-top:6px;
+	font-size: 14px;
+}
+.browse_filterbar .sort {
+	margin: 0px 0px 0px 0px;
+	width: 224px;
+	float: left;
+	height: 69px;
+}
+.browse_filterbar .separator {
 	background: url("../images/browse/separator.png") repeat-y;
 	float: left;
-	height: 69px;
+	min-height: 69px;
 	width: 2px;
 }
-
-#filterbar .separatorLong {
+.browse_filterbar .separatorLong {
 	background: url("../images/browse/separator.png") repeat-y;
 	float: left;
 	height: 246px;
 	width: 2px;
 }
-
-#filterbar .filters #price {
+.browse_filterbar .filters input[type=text]{
+	margin-left: 31%;
 	background-color: transparent;
 	border: 0; 
 	color: #1f1f1f; 
+
 	font-weight: bold;
 }
-
-#filterbar .filters #optZoom {
-	background-color: transparent;
-	border: 0; 
-	color: #1f1f1f; 
-	font-weight: bold;
+.browse_filterbar .filters .sliderSize {
+	width: 100%;
 }
 
 
