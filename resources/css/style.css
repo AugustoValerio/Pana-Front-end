@@ -1546,6 +1546,13 @@ footer a {
 	padding: 70px 0px 20px 0px;
 	font-size: 13px;
 }
+#global_site_link a:before{
+	background: url("../images/footer/spr-global-nav.png") no-repeat scroll -162px -10px transparent;
+    content: "";
+    display: inline-block;
+    height: 11px;
+    width: 12px;
+}
 
 #global_site_link a:hover{
 	text-decoration: underline;
