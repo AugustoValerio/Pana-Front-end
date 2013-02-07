@@ -14,6 +14,8 @@ var filter = {
 				 zIndex: 3, 
 				 marginLeft: ctrMarg
 				});
+		$(".hide_scroll").hide();
+		$(".hide_sort").hide();
 		},
 	open: function(e){
 		e.preventDefault();
@@ -23,8 +25,9 @@ var filter = {
 		$('.more_filtersbtn').css('marginTop','244px');
 		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);
 		$('.filterbar-complete').switchClass('filterbar-complete', 'filterbar',20);
-		
-		
+		$(".arrow_category").hide();
+		$(".hide_scroll").show();
+		$(".hide_sort").show();
 	},
 	close: function(e){
 		e.preventDefault();
@@ -33,6 +36,9 @@ var filter = {
 		$('.more_filtersbtn').css('marginTop','-1px');
 		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);
 		$('.filterbar-complete').switchClass('filterbar-complete', 'filterbar',20);
+		$(".arrow_category").show();
+		$(".hide_scroll").hide();
+		$(".hide_sort").hide();
 	}
 		
 }
@@ -46,7 +52,10 @@ $(document).ready(function(){
 	$('.more_filtersbtn .close').click(function(e){
 		filter.close(e);
 		});
-	
+	$('.arrow_category').click(function(e){
+		filter.open(e);
+		});
+
 	$(window).resize(function(){
 		filter.init();
 	});
