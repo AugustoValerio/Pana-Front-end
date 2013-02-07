@@ -17,6 +17,12 @@ $(document).ready(function(){
     $(".btn-fooslide").toggleClass("active foonavactive");
     return false;
   });
+  
+  $(".contactslide").click(function(){
+    $("#contactpanel").slideToggle("slow");
+    $(".contactslide").toggleClass("active foonavactive");
+    return false;
+  });
 
   $('.fancybox').fancybox({
     scrolling: 'no'

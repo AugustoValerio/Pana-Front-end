@@ -1385,7 +1385,7 @@ footer a {
 #foo_print:before {
 	background: url('../images/Loose_Graphics/spr-global-nav.png');
 	width : 15px ;
-	height : 13px ;
+	height : 12px ;
 	background-position : -45px -167px ;
 	background-repeat : no-repeat ;
 	content: "";
@@ -1437,27 +1437,48 @@ footer a {
 #foo_nav nav li {
 	display: inline-block;
 	margin-left: -3px;
-	padding: 20px 10px 20px 10px;
 }
-
-/*#foo_nav nav li:hover {
-	background-color: #616161;
-	cursor: pointer;
-} */
-#foo_nav nav li:last-child {
-	padding: 0;
-}
-#-btn-fooslide a{
+#foo_nav nav li a {
 	padding: 20px 10px 20px 10px;
 	display: block;
 }
-#btn-fooslide.active {
+
+#foo_nav nav li .active {
 	background-color: #616161;
 }
 .foonavactive {
 	background-color: #616161;
 }
-
+#contactpanel {
+	display: none;
+	border-top: 1px solid #616161;
+	border-bottom: 1px solid #616161;
+	margin-bottom: 30px;
+	height: 350px;
+}
+#contactpanel .contacol {
+	width: 220px;
+	float: left;
+	margin: 105px 104px 0 0;
+}
+#contactpanel .contacol h3 {
+	margin-bottom: 15px;
+	text-align: left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+}
+#contactpanel .contacol p {
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 14px;
+	color: #c5c5c5;
+	margin-bottom: 30px;	
+}
+#contactpanel .contacol a:hover {
+	text-decoration: underline;
+}
 #foo_nav nav li span {
 	margin-left: 5px;
 }
