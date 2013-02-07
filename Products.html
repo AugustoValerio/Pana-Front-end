@@ -1002,7 +1002,8 @@
     win.document.write('<'+'/'+'style'+'><'+'/'+'head'+'><'+'body'+'>');
     win.document.write(printThis);
     win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
-    win.print();
+	win.document.close();
+	win.print();
 	win.close();
   }
 </script>
