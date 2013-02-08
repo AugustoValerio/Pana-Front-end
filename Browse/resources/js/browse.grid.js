@@ -127,7 +127,7 @@ function init(){
 			$(this).find("p").addClass("normal");
 		}
 	});
-
+	//****************Fixed postion ********************/
 	var posB = $("#browse_browsebar").offset();
 	var posF = $(".filterbar").offset();
 	var posFO = $(".filterbar-complete").offset();
@@ -135,7 +135,7 @@ function init(){
 	var heightF = $(".filterbar").height();
 	var heightFO = $(".filterbar_complete").height();
 	
-	//****************Fixed postion ********************/
+	
 	$(window).scroll(function(){
 		//console.log(pos);
 		//*******************Title Bar********************/
@@ -148,22 +148,24 @@ function init(){
 		//******************Filters ***********************/
 		if($("#filterbar").hasClass("filterbar")){
 			if(($(this).scrollTop())>(posF.top-heightF)){
-				$(".filterbar").css({"position":"fixed","margin-top":"-155px"});
-				$('.more_filtersbtn').css({"position":"fixed","margin-top":"-86px"});
+				$(".filterbar").css({"position":"fixed"});
+				$('.more_filtersbtn').css({"position":"fixed"});
 				//$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
 			}else{
-				$(".filterbar").css({"position":"static","margin-top":"-70px"});
-				$('.more_filtersbtn').css({"position":"static","margin-top":"-7px"});
-				//$(".filterbar-complete").css({"position":"fixed","margin-top":"0px"});
+				$(".filterbar").css({"position":"static"});
+				$('.more_filtersbtn').css({"position":"fixed"});
+				//$(".filterbar-complete").css({"position":"static"});
 			}	
 		}
-		//else{
-			// if(($(this).scrollTop())>posB.top){
-			// 	$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
-			// }else{
-			// 	$(".filterbar-complete").css({"position":"fixed","margin-top":"0px"});
-			// }
-		//}
+		else{
+			if(($(this).scrollTop())>posB.top){
+				$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
+				$('.more_filtersbtn').css({"position":"fixed","margin-top":(244+heightB)+"px"});
+			}else{
+				$(".filterbar-complete").css({"position":"fixed","margin-top":"0"});
+				$('.more_filtersbtn').css({"position":"fixed","margin-top":"244px"});
+			}
+		}
 			
 	});
 	
