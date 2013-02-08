@@ -321,6 +321,7 @@ body{
 	height:104px;
 	position: relative;
 	top:60px;
+	overflow: hidden;
 }
 
 .image_camera_results .im1{
@@ -338,9 +339,11 @@ body{
 }
 
 .im1 .color_circles{
-	float: right;
-	position: relative;
+	/*float: left;*/
+	position: absolute;
 	right: 10px;
+	display:inline;
+	width:10px;
 }
 
 
