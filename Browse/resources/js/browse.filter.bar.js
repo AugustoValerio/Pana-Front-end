@@ -20,7 +20,7 @@ var filter = {
 	open: function(e){
 		e.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "fast");
-		$('#headbar').slideToggle(350);
+		$('#headbar').slideToggle(48);
 		$('.more_filtersbtn a').toggle();
 		$('.more_filtersbtn').css('marginTop','244px');
 		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);
@@ -31,7 +31,7 @@ var filter = {
 	},
 	close: function(e){
 		e.preventDefault();
-		$('#headbar').slideToggle(350);
+		$('#headbar').slideToggle(48);
 		$('.more_filtersbtn a').toggle();
 		$('.more_filtersbtn').css('marginTop','-1px');
 		$('.filterbar').switchClass('filterbar', 'filterbar-complete',30);

@@ -107,7 +107,7 @@ function init(){
 			$(".sort_elements").find("p").removeClass("active");
 			$(".sort_elements").find("p").addClass("normal");
 			$(this).find("p").addClass("active");
-			showSort()
+			showSort();
 		}
 
 	});
@@ -128,12 +128,44 @@ function init(){
 		}
 	});
 
-	// var pos = $("#browse_browsebar").offset();
-	// $(window).scroll(function(){
-	// 	pos = $("#browse_browsebar").offset();
-	// 	console.log(pos);
-	// 	if(this)
-	// })
+	var posB = $("#browse_browsebar").offset();
+	var posF = $(".filterbar").offset();
+	var posFO = $(".filterbar-complete").offset();
+	var heightB = $("#browse_browsebar").height();
+	var heightF = $(".filterbar").height();
+	var heightFO = $(".filterbar_complete").height();
+	
+	//****************Fixed postion ********************/
+	$(window).scroll(function(){
+		//console.log(pos);
+		//*******************Title Bar********************/
+		if($(this).scrollTop()>posB.top){
+			$(".container_bar").css({"position":"fixed"});
+		}else{
+			$(".container_bar").css({"position":"static"});
+		}
+
+		//******************Filters ***********************/
+		if($("#filterbar").hasClass("filterbar")){
+			if(($(this).scrollTop())>(posF.top-heightF)){
+				$(".filterbar").css({"position":"fixed","margin-top":"-155px"});
+				$('.more_filtersbtn').css({"position":"fixed","margin-top":"-86px"});
+				//$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
+			}else{
+				$(".filterbar").css({"position":"static","margin-top":"-70px"});
+				$('.more_filtersbtn').css({"position":"static","margin-top":"-7px"});
+				//$(".filterbar-complete").css({"position":"fixed","margin-top":"0px"});
+			}	
+		}
+		//else{
+			// if(($(this).scrollTop())>posB.top){
+			// 	$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
+			// }else{
+			// 	$(".filterbar-complete").css({"position":"fixed","margin-top":"0px"});
+			// }
+		//}
+			
+	});
 	
 }
 

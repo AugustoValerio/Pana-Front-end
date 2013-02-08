@@ -1,4 +1,5 @@
 /************************** Filter bar  *****************************/
+
 .filterbar{
 	width: 1200px;
 	z-index: 4;
@@ -138,10 +139,3 @@
 .browse_filterbar .filters .sliderSize {
 	width: 100%;
 }
-
-
-
-
-
-
-

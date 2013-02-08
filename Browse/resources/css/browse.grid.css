@@ -147,6 +147,12 @@ body{
 	background: #f1f1f1;
 }
 
+.container_bar{
+	background: url("../images/Loose_Graphics/img-nav-sub-comp-prod-1px.png") repeat-x;
+	width:1200px;
+	z-index: 10;
+}
+
 /*borrar********************/
 .container {
     max-width: 976px;
@@ -158,7 +164,6 @@ body{
 #browse_browsebar{
 	background: url("../images/Loose_Graphics/img-nav-sub-comp-prod-1px.png") repeat-x;
 	height: 47px;
-	
 	z-index: 100;
 }
 
