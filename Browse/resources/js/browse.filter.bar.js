@@ -14,8 +14,21 @@ var filter = {
 				 zIndex: 3, 
 				 marginLeft: ctrMarg
 				});
+
 		$(".hide_scroll").hide();
 		$(".hide_sort").hide();
+
+		$('.more_filtersbtn .open').click(function(e){
+			filter.open(e);
+			});
+		$('.more_filtersbtn .close').click(function(e){
+			filter.close(e);
+			});
+		$('.arrow_category').click(function(e){
+			filter.open(e);
+			});
+
+	
 		},
 	open: function(e){
 		e.preventDefault();
@@ -44,21 +57,5 @@ var filter = {
 }
 $(document).ready(function(){
 	filter.init();
-	var btn;
-	
-	$('.more_filtersbtn .open').click(function(e){
-		filter.open(e);
-		});
-	$('.more_filtersbtn .close').click(function(e){
-		filter.close(e);
-		});
-	$('.arrow_category').click(function(e){
-		filter.open(e);
-		});
-
-	$(window).resize(function(){
-		filter.init();
-	});
-		
 });
 

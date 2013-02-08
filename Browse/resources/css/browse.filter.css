@@ -139,3 +139,46 @@
 .browse_filterbar .filters .sliderSize {
 	width: 100%;
 }
+
+.check_container {
+	clear: both;
+	margin: 20px 0px 0px 0px;
+}
+.check_container ul{
+	list-style: none;
+	margin: 0px 0px 0px 33px;
+}
+.check_container li{
+	height: 30px;
+	float: left;
+}
+.check_container li .uncheck{
+	background: url("../images/spr-browse-all.png") -38px -132px no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	cursor: pointer;
+}
+.check_container li .checked{
+	background: url("../images/spr-browse-all.png") -16px -132px no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	cursor: pointer;
+}
+.check_container li .disabled{
+	background: url("../images/spr-browse-all.png") -60px -132px no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	cursor: default;
+}
+.check_container li p{
+	text-indent: 9px;
+	margin: 3px 0px 0px 10px;
+	overflow: hidden;
+	float: left;
+	font-size: 14px;
+	width: 135px;
+	
+}
