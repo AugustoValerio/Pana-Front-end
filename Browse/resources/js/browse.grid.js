@@ -148,12 +148,12 @@ function init(){
 		//******************Filters ***********************/
 		if($("#filterbar").hasClass("filterbar")){
 			if(($(this).scrollTop())>(posF.top-heightF)){
-				$(".filterbar").css({"position":"fixed"});
-				$('.more_filtersbtn').css({"position":"fixed"});
+				$(".filterbar").css({"position":"fixed","margin-top":"-155px"});
+				$('.more_filtersbtn').css({"position":"fixed","margin-top":"-87px"});
 				//$(".filterbar-complete").css({"position":"fixed","margin-top":heightB+"px"});
 			}else{
-				$(".filterbar").css({"position":"static"});
-				$('.more_filtersbtn').css({"position":"fixed"});
+				$(".filterbar").css({"position":"static","margin-top":"-70px"});
+				$('.more_filtersbtn').css({"position":"fixed","margin-top":"-1px"});
 				//$(".filterbar-complete").css({"position":"static"});
 			}	
 		}
@@ -198,14 +198,11 @@ function showCategory(){
 	var textCategoryActive = $(".filter_elements").find(".active").text();
 	//console.log(textCategoryActive);
 	$(".filter_active").text(textCategoryActive);
-	$(".category_selected").val(textCategoryActive);
 	$("#browse_browsebar h3").text("Brose all "+textCategoryActive.toLowerCase());
 }
 
 function showSort(){
 	var textSortActive = $(".sort_elements").find(".active").text();
-	$(".sort_selected").val(textSortActive);
 	$(".sort_active").text(textSortActive);
-
 }
 	

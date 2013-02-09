@@ -17,6 +17,7 @@ var filter = {
 
 		$(".hide_scroll").hide();
 		$(".hide_sort").hide();
+		$(".check_container").hide();
 
 		$('.more_filtersbtn .open').click(function(e){
 			filter.open(e);
@@ -41,6 +42,7 @@ var filter = {
 		$(".arrow_category").hide();
 		$(".hide_scroll").show();
 		$(".hide_sort").show();
+		$(".check_container").show();
 	},
 	close: function(e){
 		e.preventDefault();
@@ -52,6 +54,7 @@ var filter = {
 		$(".arrow_category").show();
 		$(".hide_scroll").hide();
 		$(".hide_sort").hide();
+		$(".check_container").hide();
 	}
 		
 }
