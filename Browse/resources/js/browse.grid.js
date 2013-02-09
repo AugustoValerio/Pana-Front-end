@@ -8,8 +8,8 @@ function init(){
 	align_circles();
 	showCategory();
 	showSort();
-	$('.hide_scroll').jScrollPane();
-	$('.hide_sort').jScrollPane();
+	$('.hide_scroll').jScrollPane({autoReinitialise:true});
+	$('.hide_sort').jScrollPane({autoReinitialise:true});
 	$(".box_results").mouseenter(function(){
 		$(this).css({"background":"url('resources/images/Loose_Graphics/img-prod-box-on-1px.png') repeat-y","border-top":'#bbb 1px solid','border-bottom':'#bbb 1px solid'});
 		$(this).find(".text_camera_results h2").css({"color":"#00a0c6"});
