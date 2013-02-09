@@ -166,6 +166,9 @@
 	float: left;
 	cursor: pointer;
 }
+.check_container li input{
+	display:none;
+}
 .check_container li .disabled{
 	background: url("../images/spr-browse-all.png") -60px -132px no-repeat;
 	width: 16px;
@@ -181,4 +184,10 @@
 	font-size: 14px;
 	width: 135px;
 	
+}
+
+.sbt_container{
+	width: 100%;
+	margin: 0 auto;
+	height: 20px;
 }

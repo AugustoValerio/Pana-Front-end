@@ -82,12 +82,14 @@
 			</div>
 		</div>
 		<div id="filterbar" class="filterbar">
+			<form action="#" method="get">
 			<div class="browse_filterbar container">
 				<p class="separator"></p>
 				<div class="category">
 					<div class='arrow_category'></div>
 					<p class="filter_title">Category</p>
-					<p class="filter_active"> Category Selected</p>
+					<p class="filter_active"></p>
+					<input type="hidden" class="category_selected" name="category" value="" />
 					<div class="hide_scroll">
 						<ul>
 							<li >
@@ -129,12 +131,12 @@
 				<p class="separator"></p>
 				<div class="filters" id="filters">
 					<div class="filter_box">
-						<input type="hidden" class="x1-min" value="0">
-						<input type="hidden" class="x2-max" value="500">
-						<input type="hidden" class="x1-range" value="25">
-						<input type="hidden" class="x2-range" value="500">
+						<input type="hidden" name="x1-min" class="x1-min" value="0">
+						<input type="hidden" name="x2-min" class="x2-max" value="500">
+						<input type="hidden" name="x1-range" class="x1-range" value="25">
+						<input type="hidden" name="x2-range" class="x2-range" value="500">
 						<input type="hidden" class="type left" value="$"><!--optional-->
-						<input type="hidden" class="id" value="price">
+						<input type="hidden" name="price" class="id" value="price">
 						<input type="hidden" class="label" value="Price">
 					</div>
 					<div class="filter_box">
@@ -143,7 +145,7 @@
 						<input type="hidden" class="x1-range" value="3">
 						<input type="hidden" class="x2-range" value="30">
 						<input type="hidden" class="type right" value="x"><!--optional-->
-						<input type="hidden" class="id" value="optZoom">
+						<input type="hidden" name="optZoom" class="id" value="optZoom">
 						<input type="hidden" class="label" value="Optical Zoom">
 					</div>
 					<div class="filter_box">
@@ -152,7 +154,7 @@
 						<input type="hidden" class="x1-range" value="3">
 						<input type="hidden" class="x2-range" value="3.6">
 						<input type="hidden" class="type" value=""><!--optional-->
-						<input type="hidden" class="id" value="megaPix">
+						<input type="hidden" name="megaPix" class="id" value="megaPix">
 						<input type="hidden" class="label" value="Mega Pixels">
 					</div>
 					<div class="clearfix"></div>
@@ -161,51 +163,56 @@
 							<li>
 								<a class="uncheck"></a>
 								<p>Wi-fi enabled</p>
-								<input type="hidden" name="a" value="false">
+								<input type="checkbox" name="a" value="false">
 							</li>
 							<li>
 								<a class="uncheck"></a>
 								<p>Panorama</p>
-								<input type="hidden" name="b" value="false">
+								<input type="checkbox" name="b" value="false">
 							</li>	
 							<li>
 								<a class="disabled"></a>
 								<p>Lorem ipsum</p>
-								<input type="hidden" name="c" value="false">
+								<input type="checkbox" name="c" value="false">
 							</li>	
 							<li>
 								<a class="uncheck"></a>
 								<p>LCD display</p>
-								<input type="hidden" name="d" value="false">
+								<input type="checkbox" name="d" value="false">
 							</li>	
 							<li>
 								<a class="uncheck"></a>
 								<p>3D still image</p>
-								<input type="hidden" name="e" value="false">
+								<input type="checkbox" name="e" value="false">
 							</li>	
 							<li>
 								<a class="uncheck"></a>
 								<p>Dolor sit amnet</p>
-								<input type="hidden" name="f" value="false">
+								<input type="checkbox" name="f" value="false">
 							</li>
 							<li>
 								<a class="uncheck"></a>
 								<p>Ruggedized</p>
-								<input type="hidden" name="g" value="false">
+								<input type="checkbox" name="g" value="false">
 							</li>
 							<li>
 								<a class="uncheck"></a>
 								<p>3D video</p>
-								<input type="hidden" name="h" value="false">
+								<input type="checkbox" name="h" value="false">
 							</li>		
 						</ul>
 					</div>
+					<div class="clearfix"></div>
+					<div class="sbt_container">
+						<input type="submit" value="submit">
+					</div>		
 				</div>
 				<p class="separator"></p>
 				<div class="sort">
 					<div class='arrow_category'></div>
 					<p class="filter_title">Sort by</p>
 					<p class="sort_active">Selected Sort</p>
+					<input type="hidden" class="sort_selected" name="sort" value="" />
 					<div class='hide_sort'>
 						<ul>
 							<li><a href="javascript:void(0)" class='sort_elements'> <p class="active">Sort 1</p> </a> </li>
@@ -220,6 +227,7 @@
 				<p class="separator"></p>
 			</div>
 			
+			</form>
 		</div>
 		<div class="browse_filterbtn">
 			<div id="filterbtn" class="container">

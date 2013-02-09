@@ -198,11 +198,14 @@ function showCategory(){
 	var textCategoryActive = $(".filter_elements").find(".active").text();
 	//console.log(textCategoryActive);
 	$(".filter_active").text(textCategoryActive);
+	$(".category_selected").val(textCategoryActive);
 	$("#browse_browsebar h3").text("Brose all "+textCategoryActive.toLowerCase());
 }
 
 function showSort(){
 	var textSortActive = $(".sort_elements").find(".active").text();
+	$(".sort_selected").val(textSortActive);
 	$(".sort_active").text(textSortActive);
+
 }
 	

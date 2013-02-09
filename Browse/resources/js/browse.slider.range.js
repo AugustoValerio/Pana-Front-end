@@ -34,7 +34,8 @@ var range = {
 					label.attr('for', id);
 					
 					input = $('<input />')
-					input.attr('disabled', 'true');
+					input.attr('readonly', 'true');
+					input.attr('name', id);
 					input.attr('type', 'text');
 					input.attr('id', id);
 					
