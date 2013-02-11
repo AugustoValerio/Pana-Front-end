@@ -2562,8 +2562,9 @@ a:hover.homepg-hero-arrows.left-arrow{
 }
 .homepg-bottom-content{
 	width: 100%;
-	background: #434343 url(../images/homepage/bg-homepg-bottom.jpg) no-repeat center top;
+	/*background: #434343 url(../images/homepage/bg-homepg-bottom.jpg) no-repeat center top;*/
 	display: block;
+	margin-bottom: 20px;
 }
 .homepg-bottom-content .hp-boxes{
 	width: 997px;
@@ -2580,6 +2581,7 @@ a:hover.homepg-hero-arrows.left-arrow{
 	background-position : left top ;
 	background-repeat : no-repeat ;
 	margin-left: 10px;
+	
 }
 .homepg-under-hero{
 	display: block;
@@ -2592,6 +2594,7 @@ a:hover.homepg-hero-arrows.left-arrow{
 .homepg-hero-controls{
 	float:left;
 	margin-left: 461.5px;
+	
 }
 .homepg-hero-controls li{
 	float:left;

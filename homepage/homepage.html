@@ -189,7 +189,78 @@
 	    </div>
     </div>
  <!-- slider secction -->
- 
+ 	<div class="homepg">
+		<div class="homepg-hero">
+			<div class="homepg-hero-wrap">
+				<div class="homepg-slider">
+				<div class="homepg-slide hslide1">
+					<div class="homepg-slide-wrap">
+						<div class="subtext1">
+							<h2 class="subheader1">Face Off</h2>
+							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
+							<a class="subtext1-btn">
+								<span class="slideBtnLeft"></span>
+								<span class="slideBtn">SHAVE IT</span>
+								<span class="slideBtnRight"></span>
+							</a>
+						</div><!--end .subtext1-->
+						<div class="subtext2">
+							<h2 class="subheader1">Game on</h2>
+							<p class="bodyCopy1">New York hockey star Henrik Lundqvist talks about how the goes from hitting the ice to hitting a night out in Big Apple.</p>
+						</div><!--end .subtext1-->	
+					</div><!--end homepg-hero-wrap -->	
+			  	</div><!--end homepg-slide.hslide1 -->
+				<div class="homepg-slide hslide2">
+					<div class="homepg-slide-wrap">
+						<div class="subtext1">
+							<h2 class="subheader1">Face Off</h2>
+							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
+							<a class="subtext1-btn">
+								<span class="slideBtnLeft"></span>
+								<span class="slideBtn">SHAVE IT</span>
+								<span class="slideBtnRight"></span>
+							</a>
+						</div><!--end .subtext1-->
+						<div class="subtext2">
+							<h2 class="subheader1">Game on</h2>
+							<p class="bodyCopy1">New York hockey star Henrik Lundqvist talks about how the goes from hitting the ice to hitting a night out in Big Apple.</p>
+						</div><!--end .subtext1-->	
+					</div><!--end homepg-hero-wrap -->	
+			  	</div><!--end homepg-slide.hslide2 -->
+				<div class="homepg-slide hslide3">
+					<div class="homepg-slide-wrap">
+						<div class="subtext1">
+							<h2 class="subheader1">Face Off</h2>
+							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
+							<a class="subtext1-btn">
+								<span class="slideBtnLeft"></span>
+								<span class="slideBtn">SHAVE IT</span>
+								<span class="slideBtnRight"></span>
+							</a>
+						</div><!--end .subtext1-->
+						<div class="subtext2">
+							<h2 class="subheader1">Game on</h2>
+							<p class="bodyCopy1">New York hockey star Henrik Lundqvist talks about how the goes from hitting the ice to hitting a night out in Big Apple.</p>
+						</div><!--end .subtext1-->	
+					</div><!--end homepg-hero-wrap -->	
+			  	</div><!--end homepg-slide.hslide3 -->
+				</div><!--end homepg-slider-->
+			</div> <!--end .homepg-hero-wrap-->
+		</div><!-- end .homepg-hero-->
+		<div class="homepg-arrow-wrap">
+			<a href="" class="homepg-hero-arrows left-arrow"></a>
+			<a href="" class="homepg-hero-arrows right-arrow"></a>
+		</div><!--end .homepg-arrow-wrap-->
+		
+		<div class="homepg-bottom-content">
+				<div class="homepg-under-hero">
+					<ul class="homepg-hero-controls">
+						<li><a href="#" class="active"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#" class="last"></a></li>
+					</ul><!--end .hompg-hero-controls-->
+				</div>
+		</div>
  
 <div id="spotlight" class="container">
 	<div class="spotlit" onClick="location.href='http://google.com'">
@@ -484,6 +555,32 @@
   <script src="resources/js/jScrollbar.jquery.min.js" type="text/javascript"></script>
   <script src="resources/js/navbar.js" type="text/javascript"></script>
   <script src="resources/js/hero.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+		/*	CarouFredSel: a circular, responsive jQuery carousel.
+			Configuration created by the "Configuration Robot"
+			at caroufredsel.dev7studios.com
+		*/
+		$(".homepg-slider").carouFredSel({
+			auto: false,
+			items: {
+				visible: 1,
+				height: 470
+			},
+			scroll: "easeOutExpo",
+			
+			prev: {
+				button: ".homepg-hero-arrows.left-arrow",
+				key: "left"
+			},
+			next: {
+				button: ".homepg-hero-arrows.right-arrow",
+				key: "right"
+			},
+			pagination: ".homepg-under-hero",
+			swipe: true,
+			responsive: true
+		});
+	</script>
 <script type="text/javascript">
   var win=null;
   function printIt(printThis, printStyle)
