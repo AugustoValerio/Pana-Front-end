@@ -13,8 +13,15 @@ $(document).ready(function(){
 	});
 
   $(".btn-fooslide").click(function(){
-    $("#foo_navmenu .hide").slideToggle("slow");
+    $("#foo_navmenu .hide").slideToggle("slow", function(){
+		
+	});
     $(".btn-fooslide").toggleClass("active foonavactive");
+	var countryPosition = $(document).height();
+	$('html, body').animate({
+	    scrollTop: $("#foo_navmenu").offset().top
+	 }, 1000);
+	
     return false;
   });
   
@@ -29,7 +36,7 @@ $(document).ready(function(){
   });
 
   $('.firmware_procedures').jScrollbar();
-
+	
   
 
 });
