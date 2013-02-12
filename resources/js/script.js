@@ -36,8 +36,6 @@ $(document).ready(function(){
   });
 
   $('.firmware_procedures').jScrollbar();
-	
-  
 
 });
 
