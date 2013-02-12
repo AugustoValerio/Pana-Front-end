@@ -1974,8 +1974,9 @@ footer a {
 }
 
 /*  table framework */
-.tech_specs {
-	border-left: #ccc solid 1px;
+.tech_specs td{
+	/*border-left: #ccc solid 1px;*/
+	border: #ccc solid 1px;
 }
 
 .tech_specs td {
