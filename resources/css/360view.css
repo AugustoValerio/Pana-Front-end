@@ -1,5 +1,5 @@
 #wrapper{
-	width:635px;
+	width:976px;
 	margin: auto;
 }
 
@@ -10,21 +10,21 @@
 	float:right;
 	font-weight: bold;
 	position: relative;
-	bottom: 20px;
-	right: 180px;
+	bottom: 33px;
+	right: 390px;
 	text-align: right;
 }
 
 #view_container360{
 	overflow:hidden;
-	width:635px;
-	height: 357px;
+	width:976px;
+	height: 490px;
 }
 
 #image_container{
 	position: relative;
 	top:0px;
-	width:635px;
+	width:976px;
 }
 
 #angle_scroll{

@@ -28,6 +28,9 @@ $(document).ready(function(){
   $(".contactslide").click(function(){
     $("#contactpanel").slideToggle("slow");
     $(".contactslide").toggleClass("active foonavactive");
+	$('html, body').animate({
+	    scrollTop: $("#foo_navmenu").offset().top
+	 }, 1000);
     return false;
   });
 
