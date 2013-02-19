@@ -1,0 +1,37 @@
+#wrapper{
+	width:635px;
+	margin: auto;
+}
+
+#wrapper p{
+	color:#fff;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	float:right;
+	font-weight: bold;
+	position: relative;
+	bottom: 20px;
+	right: 180px;
+	text-align: right;
+}
+
+#view_container360{
+	overflow:hidden;
+	width:635px;
+	height: 357px;
+}
+
+#image_container{
+	position: relative;
+	top:0px;
+	width:635px;
+}
+
+#angle_scroll{
+	background: url(../images/360images/angle_scroll.png);
+	width:142px;
+	height: 19px;
+	position: relative;
+	margin: auto;
+}
+
