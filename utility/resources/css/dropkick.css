@@ -1,0 +1,178 @@
+#dk_container_countrydp{
+	font-size: 14px;
+	margin: 0 0 0 0;
+}
+
+#dk_container_countryldp{
+	font-size: 14px;
+	margin: 0 0 0 0;
+}
+
+.dk_container {
+	background-color: #ebebeb;
+
+	font-size: 0.75em;					
+	margin-bottom: 1.5em;			
+	border-radius: .3333em;		
+	width: 180px;
+	white-space: nowrap;
+}
+
+.dk_container:focus {
+	outline: 0;
+}
+
+.dk_container a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.dk_toggle {
+	color: #262626;
+	padding: 0 4em 0 1em;
+	border-radius: .3333em;	
+	line-height: 2.5em;	
+	-webkit-transition: border-color .5s;
+	-moz-transition: border-color .5s;
+	-o-transition: border-color .5s;
+	-ms-transition: border-color .5s;
+	transition: border-color .5s;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dk_toggle:after {
+	color: #262626;
+	font-size: 1em;
+	line-height: 2.5em;	
+	content: url('../images/Loose_Graphics/arrow.png');
+	float: right;
+	margin-right: -3em;
+}
+
+.dk_open {
+	z-index: 10;
+}
+
+.dk_open .dk_toggle {
+	color: #262626;
+	z-index: 30;
+}
+
+.dk_open .dk_toggle:after {
+	color: #262626;	
+}
+
+.dk_options {	
+	border-radius: 0 0 .4em .4em;				
+}
+
+.dk_options a {
+	padding: 0 1em;
+	line-height: 2.5em;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dk_options li {
+	background-color: #ebebeb;
+}
+
+.dk_options li:first-child {
+	display: none;
+}
+
+.dk_options #divider {
+	width: 90%;
+	height: .1em;	
+	margin: auto;
+	background-color: #ebebeb;
+}
+
+.dk_options li:last-child #divider {
+	display: none;
+}
+
+.dk_options a:hover,.dk_option_current a {
+	color: #262626;
+	text-decoration: none;
+}
+
+.dk_options_inner {
+	border-bottom-width: .1em;
+	border-bottom-color: #2e3135;
+	color: #262626;
+	border-radius: 0 0 .4em .4em;
+}
+
+.dk_options_inner,.dk_touch .dk_options {
+	color: #262626;
+}
+
+.dk_container {
+	display: none;
+	float: left;
+	position: relative;
+}
+
+.dk_container a {
+	outline: 0;
+	color: #262626;
+}
+
+.dk_toggle {
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	position: relative;
+	zoom: 1;
+	width: 60%;
+}
+
+.dk_open {
+	position: relative;
+}
+
+.dk_open .dk_options {
+	display: block;
+}
+
+.dk_open .dk_label {
+	color: inherit;
+}
+
+.dk_options {
+	display: none;
+	margin-top: -.05em;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
+.dk_options a,.dk_options a:link,.dk_options a:visited {
+	display: block;
+}
+
+.dk_options_inner {
+	overflow: auto;
+	position: relative;
+}
+
+.dk_touch .dk_options {
+	overflow: hidden;
+}
+
+.dk_touch .dk_options_inner {
+	max-height: none;
+	overflow: visible;
+}
+
+.dk_fouc select {
+	position: relative;
+	top: -99999em;
+	visibility: hidden;
+}
