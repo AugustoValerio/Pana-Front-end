@@ -1,0 +1,315 @@
+body {
+	background: #e3e3e3 url(../images/page-bg.png) repeat-y center top;
+}
+#page{
+	width: 1200px;
+	margin: 0 auto;
+	background: #f6f6f6;
+}
+h1.searchTop {
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 27px 0 25px 0;
+	font-weight: bold;
+	background: url('../images/search/bg-seach-top-1px.png') repeat-x;
+}
+.searchBar{
+	width: 100%;
+	display: block;
+	height: 70px;
+	background: url('../images/search/bg-search-bar-1px.png') repeat-x;
+}
+.searchTab{
+	float:left;
+	margin: 13px 0;
+}
+.searchTab.left.on .searchTabLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : left -50px ;
+	background-repeat : no-repeat ;
+}
+.searchTab.left.on .searchTabRight{
+	float: left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -48px -50px ;
+	background-repeat : no-repeat ;
+}
+.searchTab.left.off .searchTabLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -72px top ;
+	background-repeat : no-repeat ;
+}
+.searchTab.left.off .searchTabRight{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -24px top ;
+	background-repeat : no-repeat ;
+}
+
+.searchTab.right.on .searchTabLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -24px -50px ;
+	background-repeat : no-repeat ;
+}
+.searchTab.right.on .searchTabRight{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -72px -50px ;
+	background-repeat : no-repeat ;
+}
+.searchTab.right.off .searchTabLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : -24px top ;
+	background-repeat : no-repeat ;
+}
+.searchTab.right.off .searchTabRight{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 18px ;
+	height : 44px ;
+	background-position : left top ;
+	background-repeat : no-repeat ;
+}
+
+.searchTabCenter{
+	width: 144px;
+	background: url('../images/search/img-tab-on-1px.png') repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	float:left;
+	text-transform: uppercase;
+	line-height: 44px;
+}
+.searchTab.off .searchTabCenter{
+	background: url('../images/search/img-tab-off-1px.png') repeat-x;
+	color: #1f1f1f;
+}
+
+.searchPageForm{
+	float:right;
+	margin-top: 13px;
+}
+.searchPageForm span.textLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png') no-repeat;
+	width : 14px ;
+	height : 43px ;
+	background-position : -96px top ;
+	background-repeat : no-repeat ;
+}
+.searchPageForm span.textRight{
+	float: left;
+	background: url('../images/search/spr-utility.png') no-repeat;
+	width : 14px ;
+	height : 43px ;
+	background-position : -116px top ;
+	background-repeat : no-repeat ;
+}
+.searchPageForm input{
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.searchPageForm input[type="text"]{
+	background: url('../images/search/img-txtbox-1px.png') repeat-x;
+	width: 438px;
+	line-height: 43px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1f1f1f;
+	float:left;
+}
+.searchFormSubmitA{
+	cursor: pointer;
+	float:left;
+	margin-left: 10px;
+}
+.searchPageForm .submitCenter{
+	background: url('../images/search/btn-search-1px.png') repeat-x;
+	float: left;
+	text-transform: uppercase;
+	line-height: 47px;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.searchPageForm .submitLeft{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 53px ;
+	height : 47px ;
+	background-position : -136px top ;
+	background-repeat : no-repeat ;
+}
+.searchPageForm .submitRight{
+	float:left;
+	background: url('../images/search/spr-utility.png');
+	width : 17px ;
+	height : 47px ;
+	background-position : -195px top ;
+	background-repeat : no-repeat ;
+}
+.searchBody{
+	width: 100%;
+	display: block;
+	background: #f7f7f7 url('../images/search/bg-search-body-1px.png') repeat-x;
+}
+.resultCount{
+	padding: 20px 0 24px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	color: #868686;
+ 	font-weight: normal;
+	width: 100%;
+}
+.searchResult{
+	width: 100%;
+	display: block;
+	margin-bottom: 30px;
+}
+.searchResult a{
+	display: block;
+	width: 893px;
+}
+.searchResult a .resultDesc{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #7a7a7a;
+	line-height: 16px;
+	font-weight: normal;
+}
+.searchResult a:hover .resultDesc{
+	color: #00a0c6;
+}
+.searchResult a h3{
+	font-size: 16px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #00a0c6;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.searchResult a:hover h3{
+	color: #00a0c6;
+}
+.searchResult .resultUrl span{
+	display: inline;
+	font-size: 11px;
+	color: #7a7a7a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 16px;
+	margin-right: 5px;
+}
+.searchResult .resultUrl a{
+	display: inline;
+	font-size: 11px;
+	color: #7a7a7a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 16px;
+}
+.searchResult a:hover .resultUrl{
+	color: #00a0c6;
+}
+.gpaging{
+	display: block;
+	width: 100%;
+	margin: 45px 0 0 0;
+	padding-bottom: 75px;
+	height: 18px;	
+}
+.gpaging ul{
+	display: block;
+	width: auto;
+	list-style-type: none;
+	float:left;
+}
+.gpaging ul li{
+	float:left;
+	margin: 0 0 0 28px;
+}
+.gpaging ul li:first-child{
+	margin-left: 0;
+}
+.gpaging li a.curr{
+	color: #1f1f1f;
+}
+
+/*
+.searchBody .cse .gsc-control-cse, .searchBody .gsc-control-cse{
+	background: none;
+	border: none;
+}
+.searchBody .gsc-orderby-container{
+	visibility: hidden;
+}
+.searchBody .gcsc-branding{
+	display: none;
+}
+.searchBody .gsc-above-wrapper-area{
+	border-bottom: none;
+}
+.searchBody .gsc-webResult.gsc-result{
+	border: none;
+}
+.searchBody .cse .gsc-webResult.gsc-result:hover, .searchBody .gsc-webResult.gsc-result:hover, .searchBody .gsc-webResult.gsc-result.gsc-promotion:hover, .searchBody .gsc-results .gsc-imageResult-classic:hover, .searchBody .gsc-results .gsc-imageResult-column:hover{
+	border: none;
+}
+.searchBar form.gsc-search-box{
+	float:right;
+	width: 568px;
+	margin-top: 13px;
+}
+.searchBar table.gsc-search-box td{
+	width: 438px;
+}
+.searchBar .gsc-input-box{
+	width: 438px;
+}
+.searchBar .gsc-input-box{
+	height: auto;
+	line-height: 43px;
+	font-size: 16px;
+}
+.searchBar input.gsc-input{
+	background: url('../images/search/img-txtbox-1px.png') repeat-x;
+	width: 438px;
+	line-height: 43px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1f1f1f;
+	float:left;
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.searchBar .gsc-search-box-tools .gsc-search-box .gsc-input{
+	padding-right: 10px;
+}*/
