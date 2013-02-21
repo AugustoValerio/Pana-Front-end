@@ -132,7 +132,7 @@
 						<div class="subtext1">
 							<h2 class="subheader1">Face Off</h2>
 							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
-							<a class="subtext1-btn">
+							<a href="#" class="subtext1-btn">
 								<span class="slideBtnLeft"></span>
 								<span class="slideBtn">SHAVE IT</span>
 								<span class="slideBtnRight"></span>
@@ -149,7 +149,7 @@
 						<div class="subtext1">
 							<h2 class="subheader1">Face Off</h2>
 							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
-							<a class="subtext1-btn">
+							<a href="#" class="subtext1-btn">
 								<span class="slideBtnLeft"></span>
 								<span class="slideBtn">SHAVE IT</span>
 								<span class="slideBtnRight"></span>
@@ -166,7 +166,7 @@
 						<div class="subtext1">
 							<h2 class="subheader1">Face Off</h2>
 							<p class="bodyCopy1">Get the perfect shave, wet or dry, and be ready to face the day</p>
-							<a class="subtext1-btn">
+							<a href="#" class="subtext1-btn">
 								<span class="slideBtnLeft"></span>
 								<span class="slideBtn">SHAVE IT</span>
 								<span class="slideBtnRight"></span>
@@ -456,7 +456,13 @@
 				visible: 1,
 				height: 470
 			},
-			scroll: "easeOutExpo",
+			scroll: {
+				 easing: "easeOutExpo",
+			     onBefore : function( data ) {
+					data.items.old.each(function() { $(this).attr("id", ""); });
+					data.items.visible.each(function() { $(this).attr("id","visibleSlide"); });
+				 },
+			},
 			
 			prev: {
 				button: ".homepg-hero-arrows.left-arrow",
@@ -469,6 +475,9 @@
 			pagination: ".homepg-under-hero",
 			swipe: true,
 			responsive: true
+		});
+		$(document).ready(function(){
+			$('.hslide1').attr("id","visibleSlide");
 		});
 	</script>
 	</body>

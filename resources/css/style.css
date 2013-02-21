@@ -2519,6 +2519,13 @@ a:hover.homepg-hero-arrows.left-arrow{
 	height: 470px;
 	position: relative;
 }
+.homepg-slide a{
+	display: none;
+}
+.homepg-slide#visibleSlide a{
+	display: block;
+}
+
 .homepg-slide.hslide1{
 	background: #434343 url(../images/homepage/bg-homepage-shave.jpg) no-repeat center;
 }
@@ -2562,6 +2569,9 @@ a:hover.homepg-hero-arrows.left-arrow{
 	padding-bottom: 15px;
 	float:left;
 	line-height: 17px;
+}
+.homepg-slide a.subtext1-btn{
+	float:left;
 }
 .homepg-slide a .slideBtn{
 	font-family: 'Open Sans Condensed', sans-serif;

@@ -14,7 +14,7 @@ $('form.searchPageForm').submit(function(){
 $('.searchFormSubmitA').click(function(event){
 	event.preventDefault();
 	query = $('input[name=gsearch]').val();
-	urlReq = "https://www.googleapis.com/customsearch/v1?key="+gApiKey+"&cx="+cx+"&q="+query+"&start=1";
+	urlReq = "https://www.googleapis.com/customsearch/v1?key="+gApiKey+"&cx="+cx+"&q="+query+"&start=1&filter=0";
 	$('.gpaging ul li a').html("");
 	$('.gpaging .pagingClick.curr').removeClass("curr");
 	$('.gpaging ul li:nth-child(1) a').addClass("curr");
@@ -26,7 +26,7 @@ $('.gpaging .pagingClick').click(function(event){
 	$('.gpaging .pagingClick.curr').removeClass("curr");
 	$(this).addClass("curr");
 	var startIndex = ((parseInt($(this).text())-1)*10)+1;
-	urlReq = "https://www.googleapis.com/customsearch/v1?key="+gApiKey+"&cx="+cx+"&q="+query+"&start="+startIndex;
+	urlReq = "https://www.googleapis.com/customsearch/v1?key="+gApiKey+"&cx="+cx+"&q="+query+"&start="+startIndex+"&filter=0";
 	gsearch(urlReq);
 });
 
@@ -75,7 +75,17 @@ function displayResults(response){
 		var breadTitle = "";
 		var breadLink = "";
 		 var item = response.items[i];
-	     var breadcrumb = item.pagemap.breadcrumb;
+		if(item.pagemap != undefined){
+			if(item.pagemap.breadcrumb != undefined){
+				var breadcrumb = item.pagemap.breadcrumb;
+			}
+		    else{
+				var breadcrumb = undefined;
+			}
+		}
+		else{
+			var breadcrumb = undefined;
+		}
 		var displayUrl = "";
 		 if(breadcrumb == undefined){
 			displayUrl = '<a href="'+item['link']+'">'+item['htmlFormattedUrl']+'</a>';
