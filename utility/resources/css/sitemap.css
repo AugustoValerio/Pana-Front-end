@@ -1,0 +1,59 @@
+@import url('utility.css');
+
+
+
+#container{
+	background: url("../images/Loose_Graphics/bg-utility-1px.gif") #f7f7f7 repeat-x;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#content{
+	width: 976px;
+	margin: 0 auto;
+}
+
+.container4box{
+	width: 1200px;
+	overflow: hidden;
+}
+
+#content h1{
+	margin:32px 0 45px 0;
+	text-align: center;
+}
+
+#content h2{
+	padding: 0 0 12px 0;
+	border-bottom: #a8a8a8 2px solid;
+	margin-bottom: 24px;
+}
+
+#content li{
+	float: left;
+	width: 229px;
+	margin-right: 20px;
+}
+
+#content li ul li{
+	float: none;
+}
+
+#content li ul{
+	margin: 24px 0 48px 0;
+}
+
+.principal .li{
+	margin-bottom: 24px;
+}
+
+.sitemapProducts{
+	overflow: hidden;
+	margin-bottom: 27px;
+}
+
+.sitemapOthers{
+	overflow: hidden;
+	margin-bottom: 27px;
+}

@@ -25,6 +25,16 @@
 	text-decoration: none;
 }
 
+.subheader3{
+	font-family: 'Open Sans Condensed';                 
+	font-size: 20px;
+	line-height: 24px;
+	color: #b2b2b2;
+	font-weight: bold; 
+	font-style: normal;
+	text-decoration: none;
+}
+
 .body_copy1{
 	color: #1f1f1f;
 	font: 'Arial';
@@ -41,6 +51,22 @@
 	line-height: 17px;
 	color: #1f1f1f;
 	font-style: normal;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.link1{
+	font: 'Arial';
+	font-size: 12px;
+	line-height: 16px;
+	color: #1f1f1f;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.link1:hover{	
+	color: #00a0c6;
 	font-weight: bold;
 }
 
