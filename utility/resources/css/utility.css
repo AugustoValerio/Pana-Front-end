@@ -15,6 +15,16 @@
 	font-style: normal;
 }
 
+.subheader2{
+	font-family: 'Open Sans Condensed';                 
+	font-size: 20px;
+	line-height: 24px;
+	color: #1f1f1f;
+	font-weight: bold; 
+	font-style: normal;
+	text-decoration: none;
+}
+
 .body_copy1{
 	color: #1f1f1f;
 	font: 'Arial';
@@ -82,13 +92,20 @@
 
 #utility .container h1{
 	clear: both;
-	margin: 5px 0px 0px 0px;
 	text-align: center;
+}
+
+#utility .container .topMargin{
+	padding: 32px 0px 32px 0px;
+}
+
+#utility .container .middleMargin{
+	padding: 150px 0px 10px 0px;
 }
 
 #utility .container #title_legend{
 	width: 810px;
-	margin: 32px auto 35px auto;
+	margin: 0px auto 15px auto;
 	text-align: center;
 }
 
@@ -113,18 +130,21 @@
 }
 
 #utility .container .ch1{
-	border-top: 1px solid #c9c9c9;
-	border-left: 1px solid #c9c9c9;
-	border-right: 1px solid #c9c9c9;
+	
 	border-bottom: 1px solid #c9c9c9;
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 #utility .container .chn{
-	border-left: 1px solid #c9c9c9;
-	border-right: 1px solid #c9c9c9;
+	
 	border-bottom: 1px solid #c9c9c9;
 	padding-top: 50px;
+}
+
+#utility .container .cht{
+	
+	border-top: 1px solid #c9c9c9;
+	margin-top: 165px;
 }
 
 #utility .container .box_section h2{
@@ -147,9 +167,7 @@
 #utility .container .box_section .box_section_container .backTop{
 	clear: both;
 	height: 75px;
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
+	margin-left: 46%;
 	position: relative;
 }
 
@@ -167,4 +185,37 @@
 	background-position : -132px -65px ;
 	height: 6px;
 	width: 9px;
+}
+
+#utility .container .box_section .box_section_container ol {
+	list-style: decimal;
+	text-indent: -1px;
+	margin-left: 25px;
+}
+
+#utility .container .box_section .box_section_container ol li{
+	padding: 0px 0px 42px 0px;
+}
+
+#utility .container .box_section .box_section_container .linkbox{
+	min-width: 280px;
+	max-width: 280px;
+	float: right;
+	margin-top: 80px;
+	background-color: #e2e2e2;
+	padding: 22px 0px 28px 24px;
+}
+
+#utility .container .box_section .box_section_container .linkbox li{
+	padding: 0px 0px 5px 0px;
+	
+}
+
+#utility .container .box_section .box_section_container .linkbox ul{
+	padding: 30px 0px 0px 0px;
+	margin: 0px;
+}
+
+#utility .container .box_section .box_section_container .customeContent{
+	float: left;
 }
