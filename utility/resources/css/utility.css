@@ -187,17 +187,17 @@
 	width: 9px;
 }
 
-#utility .container .box_section .box_section_container ol {
+#utility .container .box_section  ol {
 	list-style: decimal;
 	text-indent: -1px;
 	margin-left: 25px;
 }
 
-#utility .container .box_section .box_section_container ol li{
+#utility .container .box_section  ol li{
 	padding: 0px 0px 42px 0px;
 }
 
-#utility .container .box_section .box_section_container .linkbox{
+#utility .container .box_section  .linkbox{
 	min-width: 280px;
 	max-width: 280px;
 	float: right;
@@ -206,16 +206,16 @@
 	padding: 22px 0px 28px 24px;
 }
 
-#utility .container .box_section .box_section_container .linkbox li{
+#utility .container .box_section  .linkbox li{
 	padding: 0px 0px 5px 0px;
 	
 }
 
-#utility .container .box_section .box_section_container .linkbox ul{
+#utility .container .box_section  .linkbox ul{
 	padding: 30px 0px 0px 0px;
 	margin: 0px;
 }
 
-#utility .container .box_section .box_section_container .customeContent{
+#utility .container .box_section  .customeContent{
 	float: left;
 }
