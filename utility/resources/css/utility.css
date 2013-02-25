@@ -126,7 +126,7 @@
 }
 
 #utility .container .middleMargin{
-	padding: 150px 0px 10px 0px;
+	padding: 58px 0px 10px 0px;
 }
 
 #utility .container #title_legend{
@@ -170,7 +170,7 @@
 #utility .container .cht{
 	
 	border-top: 1px solid #c9c9c9;
-	margin-top: 150px;
+	margin-top: 95px;
 }
 
 #utility .container .box_section h2{
@@ -245,3 +245,55 @@
 #utility .container .box_section  .customeContent{
 	float: left;
 }
+
+#utility .more_info_link{
+	background: url("../images/Loose_Graphics/btn-get-info-1px.png") repeat-x;
+	margin: 43px auto 0px auto;
+	height: 36px;
+	min-width: 30px;
+	max-width: 300px; 
+	width: 170px;
+	text-indent: 5px;
+}
+#utility .more_info_link:before{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	margin:0px 0px 0px -11px;
+	width : 11px ;
+	height : 36px ;
+	background-position : -183px -74px ;
+	background-repeat : no-repeat ;
+	
+}
+#utility .more_info_link:after{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: right;
+	margin:0px -11px 0px 0px;
+	width : 11px ;
+	height : 36px ;
+	background-position : -202px -74px ;
+	background-repeat : no-repeat ;
+	
+}
+#utility .more_info_link  a{
+	padding-top: 11px;
+	float: left;
+	display: block;
+	width: auto;
+	background-repeat: no-repeat;
+}
+#utility .more_info_link a:before{
+	background: url("../images/spr-browse-all.png");
+	content: "";
+	display: block;
+	float: left;
+	background-position : -200px -56px ;
+	width : 7px ;
+	height : 9px ;
+	margin:1px 0px 0px 0px;
+}
+
